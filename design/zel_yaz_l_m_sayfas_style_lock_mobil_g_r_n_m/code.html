@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Özel Yazılım Çözümleri | Yazılım Ajansı</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5bb3a5",
+              "background-light": "#f4f6f6",
+              "accent-teal": "#dff1ee",
+              "text-main": "#1a1a1a",
+              "text-muted": "#64748b"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "2xl": "1rem", // Lock to 16px as requested
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f6;
+            color: #1a1a1a;
+        }
+        .timeline-dot::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 2px;
+            height: 100%;
+            background-color: #5bb3a5;
+            transform: translateX(-50%);
+        }
+        .timeline-item:last-child .timeline-dot::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display">
+<!-- Mobile Container (Simulated 375px centered for desktop view) -->
+<div class="max-w-[375px] mx-auto bg-background-light min-h-screen relative pb-24 shadow-2xl overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-5 py-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary text-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-text-main">SoftTech</span>
+</div>
+<button class="p-2">
+<span class="material-symbols-outlined text-text-main">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="px-6 pt-12 pb-10 text-center">
+<h1 class="text-3xl font-extrabold leading-tight tracking-tight text-text-main mb-4">
+                Özel Yazılım Çözümleriyle <span class="text-primary">İşinizi Büyütün</span>
+</h1>
+<p class="text-text-muted text-base leading-relaxed mb-8 px-2">
+                İhtiyaçlarınıza özel, ölçeklenebilir ve modern yazılım mimarileriyle dijital dönüşümünüzü hızlandırın.
+            </p>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20">
+                    Projeye Başlayın
+                </button>
+</div>
+</section>
+<!-- Modules Section -->
+<section class="px-5 py-10">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-text-main">Modüller &amp; Çözümler</h2>
+<span class="text-primary text-sm font-medium">Tümünü Gör</span>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Module Card 1 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-50 flex items-start gap-4">
+<div class="bg-accent-teal p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div>
+<h3 class="font-bold text-text-main mb-1">Web Tabanlı Sistemler</h3>
+<p class="text-sm text-text-muted leading-relaxed">Yüksek performanslı ve modern web arayüzleri.</p>
+</div>
+</div>
+<!-- Module Card 2 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-50 flex items-start gap-4">
+<div class="bg-accent-teal p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<div>
+<h3 class="font-bold text-text-main mb-1">Mobil Uygulamalar</h3>
+<p class="text-sm text-text-muted leading-relaxed">iOS ve Android uyumlu native ve hybrid çözümler.</p>
+</div>
+</div>
+<!-- Module Card 3 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-50 flex items-start gap-4">
+<div class="bg-accent-teal p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined">sync_alt</span>
+</div>
+<div>
+<h3 class="font-bold text-text-main mb-1">ERP/CRM Entegrasyonları</h3>
+<p class="text-sm text-text-muted leading-relaxed">Kesintisiz veri akışı ve kurumsal otomasyon.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Architecture Section (Teal Block) -->
+<section class="mx-5 my-6 p-6 bg-accent-teal rounded-2xl">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">architecture</span>
+<h2 class="text-lg font-bold text-text-main">Teknoloji Mimarisi</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-text-main/80 font-medium">Mikroservis tabanlı ölçeklenebilir altyapı</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-text-main/80 font-medium">AWS &amp; Azure Cloud Entegrasyonu</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-text-main/80 font-medium">Yüksek güvenlikli API standartları</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-text-main/80 font-medium">Real-time veri işleme kapasitesi</span>
+</li>
+</ul>
+</section>
+<!-- Process Section -->
+<section class="px-5 py-10">
+<h2 class="text-xl font-bold text-text-main mb-8">Geliştirme Süreci</h2>
+<div class="flex flex-col gap-0">
+<!-- Step 1 -->
+<div class="timeline-item flex gap-6 pb-10">
+<div class="relative">
+<div class="timeline-dot size-6 rounded-full bg-primary flex items-center justify-center z-10 relative">
+<span class="text-[10px] text-white font-bold">1</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-text-main">Keşif ve Analiz</h4>
+<p class="text-sm text-text-muted mt-1">İş ihtiyaçlarınızın analizi ve yol haritası.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="timeline-item flex gap-6 pb-10">
+<div class="relative">
+<div class="timeline-dot size-6 rounded-full bg-primary flex items-center justify-center z-10 relative border-4 border-accent-teal">
+<span class="text-[10px] text-white font-bold">2</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-text-main">MVP Geliştirme</h4>
+<p class="text-sm text-text-muted mt-1">Hızlı pazara giriş için temel fonksiyonların yayını.</p>
+<div class="mt-3 inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full border border-gray-100 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">bolt</span>
+<span class="text-[11px] font-bold text-primary tracking-wider uppercase">KRİTİK AŞAMA</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="timeline-item flex gap-6 pb-10">
+<div class="relative">
+<div class="timeline-dot size-6 rounded-full bg-primary flex items-center justify-center z-10 relative">
+<span class="text-[10px] text-white font-bold">3</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-text-main">Sprintler &amp; İyileştirme</h4>
+<p class="text-sm text-text-muted mt-1">Çevik (Agile) metodoloji ile sürekli geliştirme.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="timeline-item flex gap-6">
+<div class="relative">
+<div class="timeline-dot size-6 rounded-full bg-primary flex items-center justify-center z-10 relative">
+<span class="text-[10px] text-white font-bold">4</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-text-main">Tam Ölçekli Yayın</h4>
+<p class="text-sm text-text-muted mt-1">Testlerin tamamlanması ve global erişim.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Content Placeholder -->
+<section class="px-5 mb-10">
+<div class="w-full h-48 rounded-2xl bg-cover bg-center overflow-hidden shadow-inner flex items-center justify-center" data-alt="Modern software engineering team working in office" style="background-image: linear-gradient(rgba(91, 179, 165, 0.1), rgba(91, 179, 165, 0.2)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfmvejRPhWtaRZTd3KCwYauI9r6VnwKxxTr8-trTveqs9-W1Lbh8zdD_LGE60HsK5OiIIfWVV5lp1rM5WAi6lt7hDMobhpD2kA7afsgCunzq4XomJTdkkVd6DuEyTEEjxNOAnPXks0bsvFNjxAUxlXB6kqwuokXy2uK-6JWARiJ6QCtYeFnrHbJbJv5A92v__KOWRc9MvLAeCrDg3tlc34uDUqy-rppmtcAy8Dy598-Ddgs63Wp_bEcBdNXyH4Whic2OGoPQYlBERp');">
+<div class="bg-white/90 backdrop-blur p-4 rounded-xl border border-white/50 text-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-1">rocket_launch</span>
+<p class="text-xs font-bold text-text-main uppercase tracking-widest">Geleceği Kodluyoruz</p>
+</div>
+</div>
+</section>
+<!-- Sticky Footer CTA -->
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[375px] bg-white border-t border-gray-100 p-4 z-[100] flex gap-3 items-center">
+<button class="bg-background-light p-4 rounded-xl text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">chat</span>
+</button>
+<button class="flex-1 bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                Teklif Al
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

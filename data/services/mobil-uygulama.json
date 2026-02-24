@@ -1,0 +1,85 @@
+{
+    "slug": "mobil-uygulama",
+    "seo": {
+        "title": "Mobil Uygulama Geliştirme | iOS & Android Çözümleri",
+        "description": "Fikrinizi cebinizdeki güce dönüştürün. Native ve hybrid mobil uygulama geliştirme çözümleri.",
+        "ogImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
+    },
+    "hero": {
+        "badge": "Mobil Uygulama",
+        "title": "Fikrinizi Cebinizdeki Güce Dönüştürün",
+        "subtitle": "Kullanıcı deneyimi en üst düzeyde, yüksek performanslı iOS ve Android uygulamaları geliştiriyoruz. Geleceğin mobil dünyasında yerinizi alın.",
+        "primaryCta": "Proje Başlat",
+        "secondaryCta": "Teknolojiler"
+    },
+    "targetAudience": [
+        {
+            "icon": "smartphone",
+            "title": "Girişimler ve Kobiler",
+            "description": "Hizmetlerini mobile taşımak isteyen yeni nesil işletmeler."
+        }
+    ],
+    "deliverables": [
+        "iOS (Swift) Uygulama",
+        "Android (Kotlin) Uygulama",
+        "Cross-Platform (React Native)",
+        "App Store & Play Store Yayın"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Tasarım",
+            "duration": "3 Hafta",
+            "description": "UX/UI çalışmaları."
+        },
+        {
+            "step": 2,
+            "title": "Geliştirme",
+            "duration": "8 Hafta",
+            "description": "Kodlama ve API entegrasyonu."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "app_shortcut",
+            "label": "React Native"
+        },
+        {
+            "icon": "code",
+            "label": "Flutter"
+        },
+        {
+            "icon": "cloud",
+            "label": "Firebase"
+        }
+    ],
+    "packages": [
+        {
+            "title": "MVP Uygulama",
+            "price": "₺35.000",
+            "features": [
+                "iOS + Android",
+                "Temel Özellikler",
+                "App Store Yayını"
+            ],
+            "ctaText": "Teklif Al",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Hangi teknolojileri kullanıyorsunuz?",
+            "answer": "Gereksinime göre React Native, Flutter veya Native (Swift/Kotlin) kullanıyoruz."
+        }
+    ],
+    "summary": {
+        "duration": "12+ Hafta",
+        "startingPrice": "35.000 TL",
+        "format": "App Store Build",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Mobil Yazılım Lideri",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    }
+}

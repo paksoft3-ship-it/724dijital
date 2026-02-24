@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ajans Ana Sayfa - Mobil Görünüm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f1729",
+                        "primary-light": "#1e293b",
+                        "accent": "#14B8A6",
+                        "accent-dark": "#0d9488",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#14171e",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 15px rgba(20, 184, 166, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for the mobile container */
+        .mobile-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+        .mobile-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .mobile-scroll::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        
+        /* Simulating mobile frame */
+        body {
+            background-color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mobile-frame {
+            width: 100%;
+            max-width: 400px; /* iPhone 14 Pro Max width approx */
+            height: 90vh;
+            max-height: 850px;
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            position: relative;
+            border: 8px solid #0f1729;
+        }
+
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 24px;
+            width: 120px;
+            background-color: #0f1729;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body>
+<!-- Mobile Device Simulation Frame -->
+<div class="mobile-frame relative flex flex-col bg-background-light dark:bg-background-dark">
+<!-- Notch (Purely aesthetic) -->
+<div class="notch"></div>
+<!-- Sticky Header -->
+<header class="sticky top-0 z-40 bg-surface-light/90 backdrop-blur-md border-b border-gray-100 flex items-center justify-between px-6 py-4 mt-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-lg">A</div>
+<span class="font-display font-bold text-primary text-lg tracking-tight">AjansX</span>
+</div>
+<button class="text-primary hover:text-accent transition-colors p-1">
+<span class="material-icons">menu</span>
+</button>
+</header>
+<!-- Main Content Area (Scrollable) -->
+<main class="flex-1 overflow-y-auto mobile-scroll pb-24">
+<!-- Hero Section -->
+<section class="px-6 pt-8 pb-10 flex flex-col gap-6">
+<div class="relative rounded-2xl overflow-hidden h-48 w-full shadow-soft group">
+<img alt="Modern office team working on digital strategy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern office team working on digital strategy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh0cjX_WshXr0mNcDpZ_WZnqea7jRPoh_mISYItdELUeNsguVO0kZvpBaFYSl81uw7UMAhjSPTVRG7z9ULBtmCKDyhn_zxKA2qfaa7aUaWeO-1WhXYVDfKtiaveKY-nxPKN7-aVgMZ41zaQX0bWPySwm4KPtqBVPRTUqzna_tkX0oJ28D5NmRGdw-8_gGXVC-y4yNAYWbwc0Jv4mIXebe2eR0sYbi4cYWBKUnMQeyvD-9N3zeILuZnKfLCtQGaNqmiJj6exFKYbgDo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-4">
+<span class="text-white/90 text-xs font-medium bg-accent/20 backdrop-blur-sm px-2 py-1 rounded border border-accent/30">
+                            Sincan, Ankara
+                        </span>
+</div>
+</div>
+<div class="space-y-4">
+<h1 class="font-display font-bold text-3xl text-primary leading-tight">
+                        Dijital Dönüşümde <span class="text-accent">Güvenilir</span> Ortağınız
+                    </h1>
+<p class="text-gray-600 leading-relaxed text-sm">
+                        İşletmenizi geleceğe taşıyacak yenilikçi yazılım çözümleri ve stratejik dijital pazarlama ile büyümenize hız katıyoruz.
+                    </p>
+<div class="flex flex-col gap-3 pt-2">
+<button class="w-full bg-primary hover:bg-primary-light text-white font-medium py-3.5 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
+<span>Ücretsiz Analiz Alın</span>
+<span class="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="w-full bg-white border border-gray-200 text-primary hover:bg-gray-50 font-medium py-3.5 px-6 rounded-lg transition-colors">
+                            Hizmetlerimiz
+                        </button>
+</div>
+</div>
+</section>
+<!-- Stats / KPI Grid -->
+<section class="px-6 py-8 bg-white border-y border-gray-100">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-background-light border border-gray-100 flex flex-col items-center text-center">
+<span class="text-accent font-bold text-2xl mb-1">10+</span>
+<span class="text-gray-500 text-xs font-medium">Yıllık Deneyim</span>
+</div>
+<div class="p-4 rounded-xl bg-background-light border border-gray-100 flex flex-col items-center text-center">
+<span class="text-accent font-bold text-2xl mb-1">200+</span>
+<span class="text-gray-500 text-xs font-medium">Mutlu Müşteri</span>
+</div>
+<div class="p-4 rounded-xl bg-background-light border border-gray-100 flex flex-col items-center text-center">
+<span class="text-accent font-bold text-2xl mb-1">%98</span>
+<span class="text-gray-500 text-xs font-medium">Müşteri Memnuniyeti</span>
+</div>
+<div class="p-4 rounded-xl bg-background-light border border-gray-100 flex flex-col items-center text-center">
+<span class="text-accent font-bold text-2xl mb-1">7/24</span>
+<span class="text-gray-500 text-xs font-medium">Kesintisiz Destek</span>
+</div>
+</div>
+</section>
+<!-- Services List -->
+<section class="px-6 py-10">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-display font-bold text-xl text-primary">Hizmetlerimiz</h2>
+<a class="text-accent text-sm font-medium hover:underline" href="#">Tümünü Gör</a>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Service Card 1 -->
+<div class="group bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+<span class="material-icons">code</span>
+</div>
+<div>
+<h3 class="font-bold text-primary mb-1">Özel Yazılım Geliştirme</h3>
+<p class="text-xs text-gray-500 line-clamp-2">İş süreçlerinizi optimize eden, firmanıza özel web ve mobil uygulamalar.</p>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+<span class="material-icons">trending_up</span>
+</div>
+<div>
+<h3 class="font-bold text-primary mb-1">Dijital Pazarlama &amp; SEO</h3>
+<p class="text-xs text-gray-500 line-clamp-2">Google'da üst sıralara çıkın, sosyal medyada markanızı büyütün.</p>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:border-accent/30 hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+<span class="material-icons">storefront</span>
+</div>
+<div>
+<h3 class="font-bold text-primary mb-1">E-Ticaret Çözümleri</h3>
+<p class="text-xs text-gray-500 line-clamp-2">Ürünlerinizi online pazarda güvenle satın. Altyapı ve entegrasyon desteği.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial / Trust Section -->
+<section class="px-6 py-10 bg-primary text-white">
+<div class="flex flex-col items-center text-center">
+<span class="bg-white/10 text-accent-dark font-medium px-3 py-1 rounded-full text-xs mb-4 border border-white/10">Müşteri Yorumları</span>
+<h2 class="font-display font-bold text-xl mb-6">İş Ortaklarımız Ne Diyor?</h2>
+<div class="bg-white/5 p-6 rounded-xl border border-white/10 relative">
+<span class="material-icons absolute top-4 left-4 text-accent/20 text-4xl">format_quote</span>
+<p class="text-gray-300 text-sm italic mb-4 relative z-10 leading-relaxed">
+                            "AjansX ile çalışmaya başladıktan sonra online satışlarımızda %40 artış gördük. Profesyonel yaklaşımları ve yerel pazar bilgileri harika."
+                        </p>
+<div class="flex items-center justify-center gap-3">
+<img alt="Portrait of a business client" class="w-10 h-10 rounded-full border-2 border-accent object-cover" data-alt="Portrait of a business client" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm8eE6eM0BM1H5sJO8nQsyrmI_SoKYrVxRUW8tpjoKYWDO5lj54N891KjHT3neG7nGVtqUrSuS33j4EkSQgeqnR1Qn-_L-wxIGAOiJd33_nV1J8nIudcnCLPmlSEcknc3wMWsbuj6V6dFfCsxH4cU0ZpEO-hagYrNWyOy96RZTDOd-084XCp2Q78GiKcEjIX4ck-6qDtrgD0WKSVebaXl38o_qYZu1A0JlpxucdjZFZyoibyP60M8mt0GTt2cHHPlMKDs06gX49gkE"/>
+<div class="text-left">
+<div class="font-bold text-sm">Ahmet Yılmaz</div>
+<div class="text-xs text-gray-400">Yılmaz Mobilya, CEO</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Simplified Footer -->
+<footer class="bg-background-light p-6 text-center border-t border-gray-200 pb-28">
+<div class="flex items-center justify-center gap-2 mb-4 opacity-70">
+<div class="w-6 h-6 bg-primary rounded flex items-center justify-center text-white font-bold text-xs">A</div>
+<span class="font-display font-bold text-primary text-sm">AjansX</span>
+</div>
+<p class="text-xs text-gray-500 mb-2">Çankaya Mah. Atatürk Bulvarı No:123<br/>Ankara, Türkiye</p>
+<p class="text-xs text-gray-400">© 2023 AjansX. Tüm hakları saklıdır.</p>
+</footer>
+</main>
+<!-- Floating Action Button (WhatsApp) -->
+<a class="absolute bottom-6 right-6 z-50 group" href="#">
+<span class="absolute -top-10 right-0 bg-white text-primary text-xs font-bold py-1 px-3 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Bize Yazın 👋
+            </span>
+<div class="w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] rounded-full shadow-glow flex items-center justify-center text-white transition-all transform hover:scale-110 active:scale-95">
+<i class="fab fa-whatsapp text-3xl"></i>
+</div>
+</a>
+<!-- Bottom Navigation Bar (Optional for App-like feel, kept minimal here) -->
+<div class="absolute bottom-0 w-full bg-surface-light border-t border-gray-100 px-6 py-3 flex justify-between items-center text-gray-400 z-40">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-icons text-2xl">home</span>
+<span class="text-[10px] font-medium">Ana Sayfa</span>
+</button>
+<button class="flex flex-col items-center gap-1 hover:text-primary transition-colors">
+<span class="material-icons text-2xl">grid_view</span>
+<span class="text-[10px] font-medium">Projeler</span>
+</button>
+<button class="flex flex-col items-center gap-1 hover:text-primary transition-colors">
+<span class="material-icons text-2xl">article</span>
+<span class="text-[10px] font-medium">Blog</span>
+</button>
+<button class="flex flex-col items-center gap-1 hover:text-primary transition-colors">
+<span class="material-icons text-2xl">person</span>
+<span class="text-[10px] font-medium">İletişim</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,52 @@
+{
+    "hero": {
+        "title": "Dijital Dönüşümde Güvenilir Çözüm Ortağınız",
+        "subtitle": "Ankara, Konya ve Kayseri'deki KOBİ'lerin büyüme hedeflerine ulaşması için özel yazılım, veri analitiği ve dijital pazarlama stratejileri geliştiriyoruz.",
+        "ctaText": "Hemen Başlayın",
+        "ctaLink": "/iletisim",
+        "secondaryCtaText": "Projeleri İncele",
+        "secondaryCtaLink": "/projeler"
+    },
+    "stats": [
+        {
+            "label": "Başarılı Proje",
+            "value": "100+"
+        },
+        {
+            "label": "Hizmet Verilen Şehir",
+            "value": "15+"
+        },
+        {
+            "label": "Müşteri Memnuniyeti",
+            "value": "%98"
+        },
+        {
+            "label": "Teknik Destek",
+            "value": "7/24"
+        }
+    ],
+    "servicesPreview": {
+        "title": "İşinizi Geleceğe Taşıyan Teknolojiler",
+        "subtitle": "İhtiyacınıza özel, ölçeklenebilir ve modern çözümlerle rekabette bir adım öne geçin."
+    },
+    "projectsPreview": {
+        "title": "Son Projelerimiz",
+        "subtitle": "Bölgedeki KOBİ'ler için hayata geçirdiğimiz dijital dönüşüm örnekleri."
+    },
+    "ctaBand": {
+        "title": "Projenizi Hayata Geçirelim",
+        "subtitle": "Dijital dönüşüm yolculuğunuzda size rehberlik etmeye hazırız. Ücretsiz ön görüşme ve teklif için hemen bize ulaşın.",
+        "ctaText": "Teklif İste",
+        "ctaLink": "/iletisim",
+        "secondaryCtaText": "Bizi Arayın",
+        "secondaryCtaLink": "tel:+903120000000"
+    },
+    "testimonials": [
+        {
+            "quote": "724dijital ile çalışmaya başladıktan sonra online satışlarımızda %40 artış gördük. Profesyonel yaklaşımları ve yerel pazar bilgileri harika.",
+            "author": "Ahmet Yılmaz",
+            "role": "CEO, Yılmaz Mobilya",
+            "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=2070"
+        }
+    ]
+}

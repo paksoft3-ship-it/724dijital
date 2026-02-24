@@ -1,0 +1,20 @@
+[
+    {
+        "id": "c1",
+        "name": "Global Tech",
+        "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Bkfml86Pkpzu8M_c0oIcswQNE9PeCx5Z_B7K8_HKyawvxJao6w_cOTt8fsx3EmaZMyNYBEgWJq2iYcJk1xZzfKBUUZXPqS4kR4ovcIgMvfqW6wWT2F5igsM3tNCuNawQgBb5eYowmZoDW0whWW3wy9nSDY4gZfw4RWisgsjljRizHQ-aB5VD6ibP7UIcnNnYSlh9CMgw8qLXtIRFVVuVvNV7u7Y3f8zbA2tq-U10S3B7uoGZ77CWF-puau6BFLtunn8B6D5PqtMT",
+        "sector": "Teknoloji"
+    },
+    {
+        "id": "c2",
+        "name": "Eco Market",
+        "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Bkfml86Pkpzu8M_c0oIcswQNE9PeCx5Z_B7K8_HKyawvxJao6w_cOTt8fsx3EmaZMyNYBEgWJq2iYcJk1xZzfKBUUZXPqS4kR4ovcIgMvfqW6wWT2F5igsM3tNCuNawQgBb5eYowmZoDW0whWW3wy9nSDY4gZfw4RWisgsjljRizHQ-aB5VD6ibP7UIcnNnYSlh9CMgw8qLXtIRFVVuVvNV7u7Y3f8zbA2tq-U10S3B7uoGZ77CWF-puau6BFLtunn8B6D5PqtMT",
+        "sector": "Perakende"
+    },
+    {
+        "id": "c3",
+        "name": "Finance Plus",
+        "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Bkfml86Pkpzu8M_c0oIcswQNE9PeCx5Z_B7K8_HKyawvxJao6w_cOTt8fsx3EmaZMyNYBEgWJq2iYcJk1xZzfKBUUZXPqS4kR4ovcIgMvfqW6wWT2F5igsM3tNCuNawQgBb5eYowmZoDW0whWW3wy9nSDY4gZfw4RWisgsjljRizHQ-aB5VD6ibP7UIcnNnYSlh9CMgw8qLXtIRFVVuVvNV7u7Y3f8zbA2tq-U10S3B7uoGZ77CWF-puau6BFLtunn8B6D5PqtMT",
+        "sector": "Finans"
+    }
+]

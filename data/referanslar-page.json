@@ -1,0 +1,23 @@
+{
+    "hero": {
+        "title": "Referanslarımız & Müşteri Yorumları",
+        "subtitle": "Birlikte başarıya ulaştığımız iş ortaklarımızın hikayeleri ve bize duydukları güven."
+    },
+    "filters": {
+        "services": [
+            "Tümü",
+            "Özel Yazılım",
+            "E-Ticaret",
+            "Dijital Pazarlama",
+            "SEO Hizmeti"
+        ],
+        "sectors": [
+            "Tümü",
+            "Teknoloji",
+            "Perakende",
+            "Finans",
+            "Mobilya",
+            "Sağlık"
+        ]
+    }
+}

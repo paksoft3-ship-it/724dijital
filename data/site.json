@@ -1,0 +1,92 @@
+{
+    "brandName": "724dijital",
+    "navItems": [
+        {
+            "label": "Hizmetler",
+            "href": "/hizmetler"
+        },
+        {
+            "label": "Blog",
+            "href": "/blog"
+        },
+        {
+            "label": "Referanslar",
+            "href": "/referanslar"
+        },
+        {
+            "label": "Hakkımızda",
+            "href": "/hakkimizda"
+        },
+        {
+            "label": "İletişim",
+            "href": "/iletisim"
+        }
+    ],
+    "footerColumns": [
+        {
+            "title": "Kurumsal",
+            "links": [
+                {
+                    "label": "Hakkımızda",
+                    "href": "/hakkimizda"
+                },
+                {
+                    "label": "Referanslar",
+                    "href": "/referanslar"
+                },
+                {
+                    "label": "Süreç",
+                    "href": "/surec"
+                },
+                {
+                    "label": "İletişim",
+                    "href": "/iletisim"
+                }
+            ]
+        },
+        {
+            "title": "Hizmetler",
+            "links": [
+                {
+                    "label": "Web Geliştirme",
+                    "href": "/hizmetler/web-gelistirme"
+                },
+                {
+                    "label": "Mobil Uygulama",
+                    "href": "/hizmetler/mobil-uygulama"
+                },
+                {
+                    "label": "Özel Yazılım",
+                    "href": "/hizmetler/ozel-yazilim"
+                },
+                {
+                    "label": "SEO Hizmeti",
+                    "href": "/hizmetler/seo"
+                }
+            ]
+        }
+    ],
+    "contact": {
+        "phone": "+90 5XX XXX XX XX",
+        "email": "info@724dijital.com",
+        "address": "Kayseri, Türkiye",
+        "whatsapp": "905XXXXXXXXX"
+    },
+    "socialLinks": [
+        {
+            "platform": "Instagram",
+            "url": "https://instagram.com/724dijital",
+            "icon": "instagram"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/company/724dijital",
+            "icon": "linkedin"
+        },
+        {
+            "platform": "Twitter",
+            "url": "https://twitter.com/724dijital",
+            "icon": "twitter"
+        }
+    ]
+}

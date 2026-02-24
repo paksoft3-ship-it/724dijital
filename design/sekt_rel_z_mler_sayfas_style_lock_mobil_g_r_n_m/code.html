@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sektörel Çözümler | Dijital Ajans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb3a5",
+                        "background-light": "#f4f6f6",
+                        "background-dark": "#151d1c",
+                        "card-white": "#ffffff",
+                        "text-main": "#131615",
+                        "text-muted": "#6d7e7b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f6;
+        }
+        .sticky-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.05);
+            z-index: 50;
+        }
+        .bullet-point::before {
+            content: "•";
+            color: #5bb3a5;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased">
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-100 px-5 py-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">deployed_code</span>
+</div>
+<h1 class="font-extrabold text-lg tracking-tight">Dijital Ajans</h1>
+</div>
+<button class="p-2 rounded-lg bg-gray-50 text-text-main hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="px-6 pt-12 pb-8 text-center">
+<h2 class="text-3xl font-black leading-tight tracking-tight mb-4 text-text-main">
+                Sektöre Özel <br/> <span class="text-primary">Dijital Çözümler</span>
+</h2>
+<p class="text-text-muted text-base leading-relaxed max-w-xs mx-auto">
+                İşinizi geleceğe taşıyacak stratejik ve sektörel dijital yaklaşımlar sunuyoruz.
+            </p>
+</section>
+<!-- Industry Cards Stack -->
+<section class="px-5 space-y-4">
+<!-- Card 1: E-Ticaret -->
+<div class="bg-card-white rounded-xl p-6 shadow-sm border border-gray-50">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-3xl">shopping_cart</span>
+</div>
+<h3 class="text-xl font-bold mb-3">E-Ticaret Çözümleri</h3>
+<p class="text-text-muted text-sm mb-4 leading-relaxed">
+                    Dönüşüm odaklı kullanıcı deneyimi ve satış artırıcı stratejilerle pazar payınızı büyütün.
+                </p>
+<ul class="space-y-2 pl-4">
+<li class="bullet-point text-sm font-medium text-text-main">Kullanıcı Deneyimi (UX)</li>
+<li class="bullet-point text-sm font-medium text-text-main">Satış Optimizasyonu</li>
+<li class="bullet-point text-sm font-medium text-text-main">Pazaryeri Entegrasyonu</li>
+</ul>
+<div class="mt-6">
+<img alt="E-commerce digital interface" class="w-full h-40 object-cover rounded-lg" data-alt="Digital retail shopping dashboard illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Bkfml86Pkpzu8M_c0oIcswQNE9PeCx5Z_B7K8_HKyawvxJao6w_cOTt8fsx3EmaZMyNYBEgWJq2iYcJk1xZzfKBUUZXPqS4kR4ovcIgMvfqW6wWT2F5igsM3tNCuNawQgBb5eYowmZoDW0whWW3wy9nSDY4gZfw4RWisgsjljRizHQ-aB5VD6ibP7UIcnNnYSlh9CMgw8qLXtIRFVVuVvNV7u7Y3f8zbA2tq-U10S3B7uoGZ77CWF-puau6BFLtunn8B6D5PqtMT"/>
+</div>
+</div>
+<!-- Card 2: Finansal Servisler -->
+<div class="bg-card-white rounded-xl p-6 shadow-sm border border-gray-50">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-3xl">account_balance</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Finansal Servisler</h3>
+<p class="text-text-muted text-sm mb-4 leading-relaxed">
+                    Güven ve şeffaflık odaklı dijital bankacılık ve modern finansal teknoloji çözümleri.
+                </p>
+<ul class="space-y-2 pl-4">
+<li class="bullet-point text-sm font-medium text-text-main">Veri Güvenliği</li>
+<li class="bullet-point text-sm font-medium text-text-main">Müşteri Sadakati</li>
+<li class="bullet-point text-sm font-medium text-text-main">Dijital Cüzdan Çözümleri</li>
+</ul>
+</div>
+<!-- Card 3: Sağlık Teknolojileri -->
+<div class="bg-card-white rounded-xl p-6 shadow-sm border border-gray-50">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Sağlık Teknolojileri</h3>
+<p class="text-text-muted text-sm mb-4 leading-relaxed">
+                    Hasta etkileşimini ve operasyonel verimliliği artıran yeni nesil sağlık sistemleri.
+                </p>
+<ul class="space-y-2 pl-4">
+<li class="bullet-point text-sm font-medium text-text-main">Hasta Takip Sistemleri</li>
+<li class="bullet-point text-sm font-medium text-text-main">Randevu Yönetimi</li>
+<li class="bullet-point text-sm font-medium text-text-main">Tele-Sağlık Altyapısı</li>
+</ul>
+</div>
+</section>
+<!-- Regional Expertise Block -->
+<section class="mt-12 px-6 py-10 bg-white border-y border-gray-100">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">public</span>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Global Vizyon</span>
+</div>
+<h2 class="text-2xl font-extrabold mb-4 leading-tight">Bölgesel Güç, Küresel Etki</h2>
+<p class="text-text-muted text-base leading-relaxed mb-6">
+                İstanbul merkezli ekibimizle, EMEA bölgesindeki markalara yerel dinamikleri gözeten global standartlarda dijital danışmanlık sağlıyoruz.
+            </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-background-light border border-gray-100">
+<div class="text-2xl font-black text-primary mb-1">15+</div>
+<div class="text-xs font-semibold text-text-muted uppercase">Ülke Deneyimi</div>
+</div>
+<div class="p-4 rounded-lg bg-background-light border border-gray-100">
+<div class="text-2xl font-black text-primary mb-1">200+</div>
+<div class="text-xs font-semibold text-text-muted uppercase">Proje Teslimi</div>
+</div>
+</div>
+</section>
+<!-- Locations -->
+<section class="px-6 py-12">
+<h3 class="text-lg font-bold mb-4">Ofislerimiz</h3>
+<div class="aspect-video w-full rounded-xl overflow-hidden shadow-sm border border-gray-200">
+<img class="w-full h-full object-cover" data-alt="Map showing agency office locations in Istanbul" data-location="Istanbul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDYiS08FSOS6_gN33d9OfvNgrSqr9KfJX7QJF4xEx7H7V9FHy0wTiXjwW71OGZSMxpXIo0Fzqin0rdU1JMCFqEod4WB_o9SxOl7FtBol-UgujUiw3-T6vB1yxudHLgGSH_8E5F2JHOdY_jT1zC81eVW-8JIL1w_RDBcr7JUFNUCdsxa2PUxbtXNpz9VXDMT1yNc50Z3tJ_H3U4dO8rZ9MoKvdaQEswR5YM1QzXtQ8vH9DmLT6J8KARO1YJNlm61--BTf8SM9rexqHQ"/>
+</div>
+<div class="mt-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="font-bold text-sm">Merkez Ofis</p>
+<p class="text-xs text-text-muted">Levent, Büyükdere Cd. No:123, 34394 Şişli/İstanbul</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Footer -->
+<div class="sticky-footer">
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:bg-primary/90 active:scale-[0.98] transition-all">
+<span>Sektörel Plan Al</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</body></html>

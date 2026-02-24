@@ -1,0 +1,75 @@
+{
+    "post": {
+        "id": "1",
+        "slug": "shopify-hiz-optimizasyonu-satis-artisi",
+        "title": "Shopify Hız Optimizasyonu: Satışlarınızı %20 Artırmanın Yolları",
+        "excerpt": "E-ticaret sitenizin hızı doğrudan dönüşüm oranlarını etkiler. Google Core Web Vitals metriklerini nasıl iyileştireceğinizi ve müşteri deneyimini nasıl artıracağınıza dair rehberimiz.",
+        "category": "E-Ticaret",
+        "date": "12 Haz 2024",
+        "readTime": "6 dk okuma",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+        "difficulty": "Orta",
+        "city": "Global",
+        "author": {
+            "name": "Ahmet Yılmaz",
+            "role": "CEO"
+        }
+    },
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "Dijital dünyada varlık göstermek artık bir seçenek değil, KOBİ'ler için bir zorunluluk haline geldi. Doğru strateji ile bütçenizi en verimli şekilde kullanarak rakiplerinizin önüne geçebilirsiniz."
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "1. Giriş: Dijital Dönüşüm",
+            "id": "giris"
+        },
+        {
+            "type": "paragraph",
+            "content": "E-ticaret sitenizin hızı doğrudan dönüşüm oranlarını etkiler. Google Core Web Vitals metriklerini nasıl iyileştireceğinizi ve müşteri deneyimini nasıl artıracağınızı keşfedin."
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "2. SEO Neden Önemli?",
+            "id": "seo"
+        },
+        {
+            "type": "paragraph",
+            "content": "Arama motoru optimizasyonu, küçük ve orta ölçekli işletmelerin reklam bütçelerine bağımlı kalmadan sürdürülebilir bir büyüme yakalamasını sağlar. Organik trafik, en yüksek dönüşüm oranına sahip ziyaretçi kaynağıdır."
+        },
+        {
+            "type": "callout",
+            "title": "İşletmenizi Birlikte Büyütelim",
+            "description": "Size özel dijital büyüme stratejisi oluşturmamız için bugün bizimle iletişime geçin.",
+            "buttonText": "Ücretsiz Analiz İsteyin",
+            "link": "#teklif"
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "3. Bütçe Yönetimi ve ROI",
+            "id": "butce"
+        },
+        {
+            "type": "paragraph",
+            "content": "Bütçe yönetimi konusunda yapılan en büyük hata, tüm kaynağı tek bir kanala aktarmaktır. Çok kanallı bir yaklaşım, risklerinizi minimize ederken erişiminizi maksimize eder."
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "4. Sonuç ve Öneriler",
+            "id": "sonuc"
+        },
+        {
+            "type": "paragraph",
+            "content": "Sonuç olarak, dijital dünyada başarılı olmak için veriye dayalı kararlar almalı ve sitenizi her zaman optimize etmelisiniz."
+        }
+    ],
+    "relatedPostIds": [
+        "2",
+        "3"
+    ]
+}

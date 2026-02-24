@@ -1,0 +1,46 @@
+{
+    "title": "Ekibimizle Tanışın",
+    "subtitle": "Fikirlerinizi gerçeğe dönüştüren, alanında uzman tutkulu profesyoneller.",
+    "members": [
+        {
+            "id": "1",
+            "name": "Ahmet Yılmaz",
+            "role": "CEO & Kurucu Ortak",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBmj5mDUzOZrRMbsHYTCXO63of1f_up9qVnEBHdC5m9xrxqSvDTFm6o_rfug5jiSI_hmF24E4GIqJ4w5eN1psNJIf_GOIS7ifVhFVxxO7Ln048640FkG1cRnJGNSo3AmtWlKdCzWd1wGpADjwExh9Wd0veEkllH4u4HZCZsc0xzfjGXUxUh4yjUg2fPt49q2b2X7vRucyoZOA8xcRRxyYui8jIYzs9_Vh8rQFje6fr7RmDMO9o-R7-Ltb7OiX3BwJ2dxIApAKc0tjsJ",
+            "skills": [
+                "Strateji",
+                "Yönetim"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Elif Kaya",
+            "role": "Senior Developer",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuClRrJ70DNqD4O07zAz7mgQ5NX1MrdO9rLhoAkcbZ1U0Hi8-GZGYrcgLKdvIDheKlTzLVEl7EAoQ11-I6sb2HQTfiWBxTxWjb8kHeqvosYTV2uQKvW2DhV1_MZnngU7UeVidkfS2ETpBhtnCos0m8BMaji76K8L5M_DGCybSYH7CpyrXuwvutlbxGGyNjnX9syz26eYrCmcb_pzykUc1JSBZiepYVo6S0DM-lBCZShGYWeFWKT9OIRidJ58Z8n9VjsohRg8HWB6XHjS",
+            "skills": [
+                "React",
+                "Node.js"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Can Demir",
+            "role": "UI/UX Designer",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAx9DgEoXAq_Mr4bY3sBWw-SfFf9eFNy2tQHS1OK3WKgBENjuDbaScphdeOcOQahbZvPPVGecsERVC0BmVoy9EretBjGvUXdAcGGh9_P0c4gezeq2V_l-r7_637z5ZA0791dqYRsOEEoVO91ZYb8L6Z7yzWHpRZkN7ncBqaRrQoSCM5Vt7PLYdmLyhfxPEmbpX4VBbtswyCGOYvs8GxG-UKKQykPrstMywx04hKdvoWxPYdPS1hC55_5y11MCsG_BXZ1Z_7Q6Zp5zqE",
+            "skills": [
+                "Figma",
+                "Branding"
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Selin Aras",
+            "role": "SEO Specialist",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCPSc6zr5hyHgIAub5rcWWSR9LQMTi1TglYtJln7eB92ey4ociopqcqAe48ksECyV6mFF8yg0-K1LT6EH2F8OvP2XrWEF_o3lp-5d_KyaNEJQ_NjFhkPiqiVLTI7JYNELoxSvo2xveN34Jby42WaNFPgaZP35qLA1TB_yE1LnBUfxG8zknkKP1ddTm0G1HFFipog9v12ssPzKsBOT1zzfyLKnxhPMFUQjM0sASlna3E427nHhZvKCLNlq-x0wBebKx4JvIkP3Pac3u3",
+            "skills": [
+                "Growth",
+                "Ads"
+            ]
+        }
+    ]
+}

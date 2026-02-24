@@ -1,0 +1,161 @@
+{
+    "slug": "veri-analizi",
+    "seo": {
+        "title": "Veri Analizi ve Raporlama | Veri Odaklı Kararlar",
+        "description": "Verilerinizi anlamlı kararlara dönüştürün. Karmaşık verileri temizliyor ve içgörülere dönüştürüyoruz.",
+        "ogImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+    },
+    "hero": {
+        "badge": "Veri Odaklı Büyüme",
+        "title": "Verilerinizi Anlamlı Kararlara Dönüştürün",
+        "subtitle": "Veriye dayalı büyüme stratejileri ile işinizi ölçeklendirin. Karmaşık verileri temizliyor, modelliyor ve içgörülere dönüştürüyoruz.",
+        "primaryCta": "Hemen Başlayın",
+        "secondaryCta": "Süreç Nasıl İşler?"
+    },
+    "targetAudience": [
+        {
+            "icon": "analytics",
+            "title": "Data-Driven Markalar",
+            "description": "Her kararını verilere dayandırmak isteyen vizyoner işletmeler."
+        }
+    ],
+    "deliverables": [
+        "Temizlenmiş Veri Seti",
+        "Özel Dashboard Tasarımı",
+        "Stratejik Analiz Raporu",
+        "KPI Takip Sistemi"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Veri Toplama",
+            "duration": "1 Hafta",
+            "description": "Farklı kaynaklardan verilerin çekilmesi."
+        },
+        {
+            "step": 2,
+            "title": "Analiz",
+            "duration": "2 Hafta",
+            "description": "Veri modelleme ve rapor hazırlama."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "bar_chart",
+            "label": "Power BI / Tableau"
+        },
+        {
+            "icon": "search",
+            "label": "Google Data Studio"
+        },
+        {
+            "icon": "database",
+            "label": "BigQuery / SQL"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Analiz Paketi",
+            "price": "₺12.000",
+            "features": [
+                "3 Veri Kaynağı",
+                "İnteraktif Dashboard",
+                "Aylık Yorumlama"
+            ],
+            "ctaText": "Teklif Al",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Hangi veri kaynaklarını bağlayabiliriz?",
+            "answer": "Google Ads, Meta, CRM ve Excel gibi tüm kaynakları bağlayabiliyoruz."
+        }
+    ],
+    "summary": {
+        "duration": "4+ Hafta",
+        "startingPrice": "12.000 TL",
+        "format": "Online Dashboard",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Veri Bilimci",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    },
+    "customSections": {
+        "platforms": {
+            "title": "Veri Kaynakları",
+            "subtitle": "Tüm veri ekosisteminizi tek bir merkezde topluyoruz.",
+            "items": [
+                {
+                    "icon": "ads_click",
+                    "title": "Reklam Kanalları",
+                    "description": "Google, Meta ve TikTok Ads verilerinizi otomatik çekiyoruz."
+                },
+                {
+                    "icon": "shopping_cart",
+                    "title": "E-Ticaret",
+                    "description": "Shopify, WooCommerce satış verilerinizi analiz edin."
+                },
+                {
+                    "icon": "groups",
+                    "title": "CRM Sistemleri",
+                    "description": "Salesforce ve HubSpot verileriyle LTV ölçümleyin."
+                },
+                {
+                    "icon": "description",
+                    "title": "Offline Veri",
+                    "description": "Excel ve manuel veri setlerini entegre edin."
+                }
+            ]
+        },
+        "modules": {
+            "title": "Hizmet Sürecimiz",
+            "subtitle": "Karmaşık ham veriden stratejik yol haritasına uzanan 4 aşamalı metodoloji.",
+            "items": [
+                {
+                    "icon": "cleaning_services",
+                    "title": "Veri Temizleme",
+                    "description": "Hatalı ve mükerrer verileri ayıklıyoruz."
+                },
+                {
+                    "icon": "model_training",
+                    "title": "Modelleme",
+                    "description": "Veriler arası ilişkileri kuruyoruz."
+                },
+                {
+                    "icon": "dashboard",
+                    "title": "Dashboard Tasarımı",
+                    "description": "Tek bakışta anlaşılır paneller tasarlıyoruz."
+                },
+                {
+                    "icon": "lightbulb",
+                    "title": "Stratejik İçgörü",
+                    "description": "Aksiyon alınabilir planlar sunuyoruz."
+                }
+            ]
+        },
+        "metrics": {
+            "items": [
+                {
+                    "label": "CAC (Edinme Maliyeti)",
+                    "value": "₺124.50",
+                    "change": "12% İyileşme",
+                    "trend": "down"
+                },
+                {
+                    "label": "LTV (Yaşam Boyu Değer)",
+                    "value": "₺2,850",
+                    "change": "24% Artış",
+                    "trend": "up"
+                },
+                {
+                    "label": "Dönüşüm Oranı",
+                    "value": "4.82%",
+                    "change": "0.5% Artış",
+                    "trend": "up"
+                }
+            ]
+        }
+    }
+}

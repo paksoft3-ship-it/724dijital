@@ -1,0 +1,97 @@
+{
+    "hero": {
+        "badge": "Vizyonumuz",
+        "title": "Dijital Dönüşümde Yerel Güç, Global Standart",
+        "subtitle": "İç Anadolu'daki KOBİ'leri dijital dünyada güçlendirmek ve küresel standartlarda rekabet etmelerini sağlamak için yenilikçi çözümler üretiyoruz."
+    },
+    "story": {
+        "title": "Yolculuğumuz",
+        "subtitle": "2015'ten bugüne, her adımda teknoloji ve güven inşa ederek büyüdük.",
+        "milestones": [
+            {
+                "year": "2015",
+                "title": "Kuruluş",
+                "description": "Merkez ofisimizde küçük bir ekip ve büyük hayallerle temellerimizi attık.",
+                "icon": "rocket"
+            },
+            {
+                "year": "2018",
+                "title": "İlk Büyük Proje",
+                "description": "Bölgesel başarılarımızı ulusal çapta ses getiren projelerle taçlandırdık.",
+                "icon": "trophy"
+            },
+            {
+                "year": "2023",
+                "title": "Teknoloji Odaklı Büyüme",
+                "description": "Yapay zeka ve ileri veri analitiği ile global teknoloji adaptasyonumuzu tamamladık.",
+                "icon": "analytics"
+            }
+        ]
+    },
+    "values": {
+        "title": "Değerlerimiz",
+        "subtitle": "Bizi biz yapan, projelerimizin kalbinde yer alan sarsılmaz ilkelerimiz.",
+        "items": [
+            {
+                "title": "Şeffaflık",
+                "description": "Tüm süreçlerimizde açık iletişim kuruyor, müşterilerimizi projenin her aşamasına dahil ediyoruz.",
+                "icon": "eye"
+            },
+            {
+                "title": "Hız",
+                "description": "Dijital dünyanın dinamizmine ayak uyduruyor, kaliteden ödün vermeden en hızlı çözümleri sunuyoruz.",
+                "icon": "zap"
+            },
+            {
+                "title": "Ölçülebilirlik",
+                "description": "Tahminlerle değil, verilerle hareket ediyoruz. Başarımızı somut KPI'lar üzerinden raporluyoruz.",
+                "icon": "bar-chart"
+            }
+        ]
+    },
+    "talent": {
+        "title": "Yetenek Matrisimiz",
+        "description": "Ekibimizin birleşik uzmanlığı, en karmaşık dijital problemleri çözmek için optimize edilmiştir. Teknolojiyi sadece kullanmıyor, ona yön veriyoruz.",
+        "skills": [
+            {
+                "name": "React & Frontend",
+                "percentage": 95
+            },
+            {
+                "name": "Python & Backend",
+                "percentage": 88
+            },
+            {
+                "name": "SEO & Data Analytics",
+                "percentage": 92
+            },
+            {
+                "name": "UI/UX Design",
+                "percentage": 90
+            }
+        ],
+        "stats": [
+            {
+                "label": "Tamamlanan Proje",
+                "value": "150+"
+            },
+            {
+                "label": "Uzman Ekip",
+                "value": "25+"
+            },
+            {
+                "label": "Yıllık Tecrübe",
+                "value": "8"
+            },
+            {
+                "label": "Müşteri Memnuniyeti",
+                "value": "98%"
+            }
+        ]
+    },
+    "cta": {
+        "title": "İşinizi Geleceğe Birlikte Taşıyalım",
+        "subtitle": "Dijital dönüşüm yolculuğunuzda size rehberlik etmek için sabırsızlanıyoruz. Kahvemizi içmeye bekleriz!",
+        "buttonText": "Bizimle Tanışın"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "hero": {
+        "title": "Büyüme Odaklı Dijital Rehber",
+        "placeholder": "Örn: Shopify hız optimizasyonu"
+    },
+    "categories": [
+        "Hepsi",
+        "Web Geliştirme",
+        "E-Ticaret",
+        "SEO",
+        "Sosyal Medya",
+        "Dijital Strateji"
+    ],
+    "filters": {
+        "difficulty": [
+            "Zorluk Seviyesi",
+            "Başlangıç",
+            "Orta",
+            "İleri"
+        ],
+        "readTime": [
+            "Okuma Süresi",
+            "< 5 dk",
+            "5-10 dk",
+            "10+ dk"
+        ],
+        "cities": [
+            "Şehir Odağı",
+            "Global",
+            "İstanbul",
+            "Ankara"
+        ]
+    },
+    "leadMagnet": {
+        "badge": "Ücretsiz İndir",
+        "title": "Ücretsiz SEO Kontrol Listesi",
+        "description": "Sitenizi Google aramalarında en tepeye taşıyacak 25 kritik maddeyi hemen kontrol edin.",
+        "buttonText": "Listeyi İndir",
+        "icon": "checklist"
+    },
+    "newsletter": {
+        "title": "Bültene Abone Ol",
+        "description": "Haftalık dijital büyüme ipuçlarını kaçırmayın. Sadece değerli içerik gönderiyoruz.",
+        "buttonText": "Kayıt Ol"
+    },
+    "cta": {
+        "title": "İşinize özel dijital yol haritası mı arıyorsunuz?",
+        "subtitle": "Uzman ekibimizle 30 dakika ücretsiz görüşün, büyüme potansiyelinizi beraber keşfedelim.",
+        "primaryButton": "Teklif Al",
+        "secondaryButton": "WhatsApp'tan Yaz"
+    }
+}

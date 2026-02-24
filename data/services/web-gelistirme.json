@@ -1,0 +1,195 @@
+{
+    "slug": "web-gelistirme",
+    "seo": {
+        "title": "Web Geliştirme Hizmetleri | Profesyonel Çözümler",
+        "description": "İşletmenizi dijital dünyada öne çıkaran, modern teknolojilerle donatılmış yüksek performanslı web çözümleri.",
+        "ogImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+    },
+    "hero": {
+        "badge": "Geleceğin Web Standartları",
+        "title": "Hızlı, SEO Uyumlu ile Dönüşüm Odaklı Web Siteleri",
+        "subtitle": "İşletmenizi dijital dünyada öne çıkaran, modern teknolojilerle donatılmış yüksek performanslı web çözümleri. Sadece bir site değil, bir büyüme aracı inşa ediyoruz.",
+        "primaryCta": "Hemen Başlayalım",
+        "secondaryCta": "Portfolyomuz"
+    },
+    "targetAudience": [
+        {
+            "icon": "business",
+            "title": "Kurumsal Firmalar",
+            "description": "Profesyonel bir imaj sergilemek isteyen tüm ölçeklerdeki şirketler."
+        }
+    ],
+    "deliverables": [
+        "Kurumsal Site",
+        "Landing Page",
+        "CRM Entegrasyonu",
+        "E-Ticaret Çözümleri"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Keşif",
+            "duration": "1 Hafta",
+            "description": "İhtiyaç analizi ve pazar araştırması."
+        },
+        {
+            "step": 2,
+            "title": "Tasarım",
+            "duration": "2 Hafta",
+            "description": "UX odaklı modern arayüz çalışmaları."
+        },
+        {
+            "step": 3,
+            "title": "Geliştirme",
+            "duration": "3 Hafta",
+            "description": "Yüksek performanslı kodlama süreci."
+        },
+        {
+            "step": 4,
+            "title": "Test",
+            "duration": "1 Hafta",
+            "description": "Hata ayıklama ve hız optimizasyonu."
+        },
+        {
+            "step": 5,
+            "title": "Yayın",
+            "duration": "1 Gün",
+            "description": "Canlıya alım ve sürekli destek."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "logo_dev",
+            "label": "Next.js"
+        },
+        {
+            "icon": "code",
+            "label": "React"
+        },
+        {
+            "icon": "palette",
+            "label": "Tailwind CSS"
+        },
+        {
+            "icon": "data_object",
+            "label": "Headless CMS"
+        },
+        {
+            "icon": "cloud_done",
+            "label": "Node.js"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Kurumsal",
+            "price": "₺15.000",
+            "features": [
+                "Modern Tasarım",
+                "%100 Mobil Uyum",
+                "SEO Altyapısı"
+            ],
+            "ctaText": "Teklif Al",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Bir projenin teslim süresi nedir?",
+            "answer": "Projenin kapsamına bağlı olarak genellikle 4-8 hafta arasında teslimat yapmaktayız."
+        },
+        {
+            "question": "SEO uyumluluğu sağlıyor musunuz?",
+            "answer": "Evet, teknik SEO kriterlerinin tamamını projenin çekirdeğine entegre ediyoruz."
+        }
+    ],
+    "summary": {
+        "duration": "4-8 Hafta",
+        "startingPrice": "15.000 TL",
+        "format": "Online Yayın",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Teknik Direktör",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    },
+    "customSections": {
+        "problem": {
+            "title": "Neden Mevcut Siteniz Beklentilerinizi Karşılamıyor?",
+            "subtitle": "Zayıf bir dijital varlık, potansiyel müşterilerinizi kaybetmenize neden olur.",
+            "cards": [
+                {
+                    "icon": "bolt",
+                    "title": "yavaş Yüklenen Sayfalar",
+                    "description": "Ziyaretçilerinizin %53'ü 3 saniyeden geç açılan siteleri terk ediyor.",
+                    "color": "red"
+                },
+                {
+                    "icon": "sentiment_dissatisfied",
+                    "title": "Düşük Dönüşüm Oranları",
+                    "description": "Kullanıcı deneyimi zayıf tasarımlar, müşterilerinizi rakiplerinize kaçırıyor.",
+                    "color": "orange"
+                },
+                {
+                    "icon": "settings_account_box",
+                    "title": "Teknik Dağınıklık",
+                    "description": "Eski altyapılar güvenlik açıkları oluştururken yönetimi kabusa çevirir.",
+                    "color": "blue"
+                }
+            ]
+        },
+        "solutions": {
+            "title": "İşletmeniz İçin Uçtan Uca Modern Çözümler",
+            "subtitle": "Klasik web sitelerinin ötesine geçiyoruz. İşinizi büyüten dijital ekosistemler kuruyoruz.",
+            "checkmarks": [
+                "Kurumsal Site",
+                "Landing Page",
+                "CRM Entegrasyonu",
+                "E-Ticaret Çözümleri"
+            ],
+            "grid": [
+                {
+                    "icon": "devices",
+                    "title": "%100 Mobil Uyum"
+                },
+                {
+                    "icon": "search",
+                    "title": "Gelişmiş SEO"
+                },
+                {
+                    "icon": "shield",
+                    "title": "Maksimum Güvenlik"
+                },
+                {
+                    "icon": "bar_chart",
+                    "title": "Analitik İzleme"
+                }
+            ]
+        },
+        "customCases": [
+            {
+                "title": "Global Lojistik Portalı",
+                "description": "Yüzlerce araçlık filonun yönetimini kolaylaştıran kurumsal web çözümü.",
+                "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+                "category": "Lojistik",
+                "stats": [
+                    {
+                        "label": "HIZ",
+                        "value": "+40%"
+                    }
+                ]
+            },
+            {
+                "title": "Fintech Ödeme Sistemi",
+                "description": "Kullanıcı dönüşümünü merkeze alan sade ve güven veren dashboard tasarımı.",
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
+                "category": "SaaS",
+                "stats": [
+                    {
+                        "label": "LEAD",
+                        "value": "+25%"
+                    }
+                ]
+            }
+        ]
+    }
+}

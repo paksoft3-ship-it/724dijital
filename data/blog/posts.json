@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "slug": "shopify-hiz-optimizasyonu-satis-artisi",
+        "title": "Shopify Hız Optimizasyonu: Satışlarınızı %20 Artırmanın Yolları",
+        "excerpt": "E-ticaret sitenizin hızı doğrudan dönüşüm oranlarını etkiler. Google Core Web Vitals metriklerini nasıl iyileştireceğinizi ve müşteri deneyimini nasıl artıracağınıza dair rehberimiz.",
+        "category": "E-Ticaret",
+        "date": "12 Haz 2024",
+        "readTime": "6 dk okuma",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+        "difficulty": "Orta",
+        "city": "Global"
+    },
+    {
+        "id": "2",
+        "slug": "kobiler-icin-instagram-algoritmasi-2024",
+        "title": "KOBİ'ler İçin 2024 Instagram Algoritma Rehberi",
+        "excerpt": "Küçük işletmeler için organik erişimi artırmanın yeni yolları. Reels, Stories ve Feed paylaşımlarında doğru zamanlama nasıl yapılır?",
+        "category": "Sosyal Medya",
+        "date": "10 Haz 2024",
+        "readTime": "4 dk okuma",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
+        "difficulty": "Başlangıç",
+        "city": "Global",
+        "isRecent": true
+    },
+    {
+        "id": "3",
+        "slug": "neden-headless-cms-tercih-etmelisiniz",
+        "title": "Neden Headless CMS Tercih Etmelisiniz?",
+        "excerpt": "Geleneksel CMS yapılarından modern headless mimarisine geçişin avantajları ve teknik gereklilikleri üzerine detaylı bir inceleme.",
+        "category": "Web Geliştirme",
+        "date": "08 Haz 2024",
+        "readTime": "8 dk okuma",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800",
+        "difficulty": "İleri",
+        "city": "Global",
+        "isRecent": true
+    },
+    {
+        "id": "4",
+        "slug": "veri-analitigi-reklam-butcesi-optimizasyonu",
+        "title": "Veri Analitiği İle Reklam Bütçenizi Nasıl Optimize Edersiniz?",
+        "excerpt": "Reklam harcamalarınızın geri dönüşünü (ROAS) artırmak için hangi verileri takip etmeniz gerektiğini öğrenin.",
+        "category": "Dijital Strateji",
+        "date": "05 Haz 2024",
+        "readTime": "5 dk okuma",
+        "image": "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800",
+        "difficulty": "Orta",
+        "city": "İstanbul"
+    }
+]

@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "title": "Sektöre Özel",
+        "highlightTitle": "Dijital Çözümler",
+        "subtitle": "İşinizi geleceğe taşıyacak stratejik ve sektörel dijital yaklaşımlar sunuyoruz."
+    },
+    "sectors": [
+        {
+            "id": "ecommerce",
+            "title": "E-Ticaret Çözümleri",
+            "description": "Dönüşüm odaklı kullanıcı deneyimi ve satış artırıcı stratejilerle pazar payınızı büyütün.",
+            "icon": "shopping_cart",
+            "features": [
+                "Kullanıcı Deneyimi (UX)",
+                "Satış Optimizasyonu",
+                "Pazaryeri Entegrasyonu"
+            ],
+            "image": "https://images.unsplash.com/photo-1551288049-bbda4865cda1?auto=format&fit=crop&q=80&w=800",
+            "kpiTags": [
+                "ROI",
+                "Conversion"
+            ]
+        },
+        {
+            "id": "fintech",
+            "title": "Finansal Servisler",
+            "description": "Güven ve şeffaflık odaklı dijital bankacılık ve modern finansal teknoloji çözümleri.",
+            "icon": "account_balance",
+            "features": [
+                "Veri Güvenliği",
+                "Müşteri Sadakati",
+                "Dijital Cüzdan Çözümleri"
+            ],
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            "id": "healthtech",
+            "title": "Sağlık Teknolojileri",
+            "description": "Hasta etkileşimini ve operasyonel verimliliği artıran yeni nesil sağlık sistemleri.",
+            "icon": "medical_services",
+            "features": [
+                "Hasta Takip Sistemleri",
+                "Randevu Yönetimi",
+                "Tele-Sağlık Altyapısı"
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160550-217359f42f8c?auto=format&fit=crop&q=80&w=800"
+        }
+    ],
+    "expertise": {
+        "badge": "Global Vizyon",
+        "title": "Bölgesel Güç, Küresel Etki",
+        "description": "İstanbul merkezli ekibimizle, EMEA bölgesindeki markalara yerel dinamikleri gözeten global standartlarda dijital danışmanlık sağlıyoruz.",
+        "stats": [
+            {
+                "label": "Ülke Deneyimi",
+                "value": "15+"
+            },
+            {
+                "label": "Proje Teslimi",
+                "value": "200+"
+            }
+        ]
+    },
+    "offices": {
+        "title": "Ofislerimiz",
+        "locations": [
+            {
+                "name": "Merkez Ofis",
+                "address": "Levent, Büyükdere Cd. No:123, 34394 Şişli/İstanbul",
+                "mapImage": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=1200"
+            }
+        ]
+    },
+    "cta": {
+        "text": "Sektörel Plan Al",
+        "buttonText": "Sektörel Plan Al"
+    }
+}

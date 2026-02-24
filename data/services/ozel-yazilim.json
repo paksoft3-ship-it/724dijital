@@ -1,0 +1,167 @@
+{
+    "slug": "ozel-yazilim",
+    "seo": {
+        "title": "Özel Yazılım Çözümleri | Yazılım Ajansı",
+        "description": "İş süreçlerinizi modernize eden, ölçeklenebilir ve güvenli özel yazılım projeleri geliştiriyoruz.",
+        "ogImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB4dLRkpaeadCb353vyjgULSoeXbYZo970dIJcDAkOqca6o99zv2bOBzfosgDottnhxaBiKGqMJrw6YJSHRiG8vJUeFkz4-7E6cNu99Hf1RDarqu1Y3KSKNtd1inh5syQP2uzZnUclGOmHy-7YDr9GuODQiGGpQUNHNfUf0mvT3vJy3fFEM_RTTgaW-zH6sqZpchpJsis_GtYHNFLFQB_oWk08qnaIM4HXdI0MQo9jJ_-5KQP8glabUNV1VrMrvys4KU5Rko0fBgLK0"
+    },
+    "hero": {
+        "badge": "Yazılım Geliştirme",
+        "title": "İşinize Özel Güçlü Yazılım Çözümleri",
+        "subtitle": "İş süreçlerinizi modernize eden, ölçeklenebilir ve güvenli özel yazılım projeleri geliştiriyoruz. Karmaşık problemleri basit arayüzlerle çözüyoruz.",
+        "primaryCta": "Hemen Başlayın",
+        "secondaryCta": "Projeleri İncele"
+    },
+    "targetAudience": [
+        {
+            "icon": "settings",
+            "title": "Kompleks Süreçli İşler",
+            "description": "Özel veri akışları ve karmaşık algoritmalar gerektiren yapılar."
+        }
+    ],
+    "deliverables": [
+        "İhtiyaç Analizi",
+        "Yazılım Mimarisi",
+        "Full-stack Geliştirme",
+        "API Entegrasyonu"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "MVP",
+            "duration": "4 Hafta",
+            "description": "Temel özelliklerle hızlı prototip."
+        },
+        {
+            "step": 2,
+            "title": "Sprint",
+            "duration": "2 Hafta",
+            "description": "Düzenli geliştirme ve geri bildirim."
+        },
+        {
+            "step": 3,
+            "title": "Yayın",
+            "duration": "1 Hafta",
+            "description": "Canlıya geçiş ve sürekli destek."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "code",
+            "label": "Next.js"
+        },
+        {
+            "icon": "storage",
+            "label": "PostgreSQL"
+        },
+        {
+            "icon": "cloud",
+            "label": "AWS"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Özel Proje",
+            "price": "Teklif Alın",
+            "features": [
+                "Özel Mimari",
+                "Sınırsız Ölçeklenebilirlik",
+                "7/24 Destek"
+            ],
+            "ctaText": "Teklif Formunu Doldur",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Yazılım geliştirme süreci ne kadar sürer?",
+            "answer": "Bir MVP genellikle 4-8 hafta arasında tamamlanmaktadır."
+        }
+    ],
+    "summary": {
+        "duration": "8+ Hafta",
+        "startingPrice": "Değişken",
+        "format": "Full Source + Cloud",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Teknik Direktör",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    },
+    "customSections": {
+        "useCases": {
+            "title": "Kullanım Senaryoları",
+            "cards": [
+                {
+                    "icon": "group",
+                    "title": "Müşteri Yönetim Paneli",
+                    "description": "Müşteri verilerinizi merkezileştirin, satış süreçlerinizi tek bir platformdan yönetin."
+                },
+                {
+                    "icon": "dashboard",
+                    "title": "Operasyonel Dashboard",
+                    "description": "Verilerinizi anlık grafiklerle takip edin, iş performansınızı analiz edin."
+                },
+                {
+                    "icon": "settings_applications",
+                    "title": "Özel Admin Panelleri",
+                    "description": "Sektörünüze özel geliştirilmiş, esnek ve güvenli yönetim arayüzleri."
+                }
+            ]
+        },
+        "modules": {
+            "title": "Güçlü Yazılım Modülleri",
+            "subtitle": "Projelerimize entegre ettiğimiz standart üstü yetenekler.",
+            "items": [
+                {
+                    "icon": "shield_person",
+                    "title": "Kullanıcı Yönetimi",
+                    "description": "Gelişmiş yetkilendirme sistemi ile güvenli erişim kontrolü."
+                },
+                {
+                    "icon": "analytics",
+                    "title": "Gelişmiş Raporlama",
+                    "description": "Özelleştirilebilir filtreler ve dışa aktarma seçenekleri."
+                },
+                {
+                    "icon": "notifications_active",
+                    "title": "Bildirim Sistemi",
+                    "description": "Push, SMS ve E-posta kanalları üzerinden anlık bilgilendirme."
+                },
+                {
+                    "icon": "api",
+                    "title": "API Entegrasyonları",
+                    "description": "Mevcut sistemlerinizle kusursuz veri alışverişi."
+                }
+            ]
+        },
+        "architecture": {
+            "title": "Güvenli ve Ölçeklenebilir Mimari",
+            "subtitle": "Yazılımlarımızı modern web teknolojileri üzerine inşa ediyoruz.",
+            "stats": [
+                {
+                    "label": "Uptime Garantisi",
+                    "value": "99.9%"
+                },
+                {
+                    "label": "Yanıt Süresi",
+                    "value": "< 100ms"
+                }
+            ],
+            "techs": [
+                {
+                    "icon": "terminal",
+                    "label": "Next.js"
+                },
+                {
+                    "icon": "rebase_edit",
+                    "label": "React"
+                },
+                {
+                    "icon": "database",
+                    "label": "PostgreSQL"
+                }
+            ]
+        }
+    }
+}

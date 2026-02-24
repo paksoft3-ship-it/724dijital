@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Özel Yazılım Çözümleri | Yazılım Ajansı</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb3a5",
+                        "background-light": "#F6F8F8",
+                        "background-dark": "#151d1c",
+                        "border-subtle": "#E3ECEA",
+                        "text-main": "#1F2B2B",
+                        "text-muted": "#5F6B6D"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'module': '0 6px 18px 0 rgba(0, 0, 0, 0.08)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F6F8F8;
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #E3ECEA;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main font-display">
+<!-- Header -->
+<header class="sticky-header">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block">developer_mode</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-text-main">YazılımAjansı</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">Hizmetler</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">Çözümler</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">Teknolojiler</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">Süreç</a>
+<a class="text-sm font-medium text-text-muted hover:text-primary transition-colors" href="#">SSS</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-opacity-90 transition-all">
+                    Teklif Al
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-6">
+<!-- Hero Section -->
+<section class="py-20 md:py-32 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<h1 class="text-5xl md:text-6xl font-black text-text-main leading-[1.1] tracking-tight">
+                    İşinize Özel Güçlü Yazılım Çözümleri
+                </h1>
+<p class="text-lg text-text-muted leading-relaxed max-w-[540px]">
+                    İş süreçlerinizi modernize eden, ölçeklenebilir ve güvenli özel yazılım projeleri geliştiriyoruz. Karmaşık problemleri basit arayüzlerle çözüyoruz.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 hover:translate-y-[-2px] transition-all">
+                        Hemen Başlayın
+                    </button>
+<button class="bg-white border border-border-subtle text-text-main px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all">
+                        Projeleri İncele
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="aspect-square bg-white rounded-3xl border border-border-subtle p-4 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5"></div>
+<img alt="Dashboard Preview" class="w-full h-full object-cover rounded-2xl relative z-10 border border-border-subtle shadow-sm" data-alt="Modern analytics dashboard interface with charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4dLRkpaeadCb353vyjgULSoeXbYZo970dIJcDAkOqca6o99zv2bOBzfosgDottnhxaBiKGqMJrw6YJSHRiG8vJUeFkz4-7E6cNu99Hf1RDarqu1Y3KSKNtd1inh5syQP2uzZnUclGOmHy-7YDr9GuODQiGGpQUNHNfUf0mvT3vJy3fFEM_RTTgaW-zH6sqZpchpJsis_GtYHNFLFQB_oWk08qnaIM4HXdI0MQo9jJ_-5KQP8glabUNV1VrMrvys4KU5Rko0fBgLK0"/>
+</div>
+</div>
+</section>
+<!-- Use Case Grid -->
+<section class="py-20">
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-text-main mb-4">Kullanım Senaryoları</h2>
+<div class="h-1.5 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white border border-border-subtle p-8 rounded-2xl hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">group</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Müşteri Yönetim Paneli</h3>
+<p class="text-text-muted leading-relaxed">
+                        Müşteri verilerinizi merkezileştirin, satış süreçlerinizi tek bir platformdan uçtan uca yönetin.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-border-subtle p-8 rounded-2xl hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">dashboard</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Operasyonel Dashboard</h3>
+<p class="text-text-muted leading-relaxed">
+                        Verilerinizi anlık grafiklerle takip edin, iş performansınızı gerçek zamanlı analizlerle artırın.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border border-border-subtle p-8 rounded-2xl hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">settings_applications</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Özel Admin Panelleri</h3>
+<p class="text-text-muted leading-relaxed">
+                        Sektörünüze özel geliştirilmiş, esnek ve yüksek güvenlikli yönetim arayüzleri ile kontrol sizde.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Module Cards -->
+<section class="py-20">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold text-text-main mb-4">Güçlü Yazılım Modülleri</h2>
+<p class="text-text-muted">Projelerimize entegre ettiğimiz standart üstü yetenekler.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-10 rounded-2xl shadow-module flex gap-6 items-start">
+<div class="p-3 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">shield_person</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main mb-2">Kullanıcı ve Rol Yönetimi</h4>
+<p class="text-text-muted">Gelişmiş yetkilendirme sistemi ile güvenli erişim kontrolü sağlayın.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-module flex gap-6 items-start">
+<div class="p-3 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main mb-2">Gelişmiş Raporlama</h4>
+<p class="text-text-muted">Özelleştirilebilir filtreler ve dışa aktarma seçenekleri ile derinlemesine analiz.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-module flex gap-6 items-start">
+<div class="p-3 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main mb-2">Anlık Bildirim Sistemi</h4>
+<p class="text-text-muted">Push, SMS ve E-posta kanalları üzerinden anlık bilgilendirme akışları.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-module flex gap-6 items-start">
+<div class="p-3 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">api</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main mb-2">API Entegrasyonları</h4>
+<p class="text-text-muted">Mevcut sistemlerinizle kusursuz veri alışverişi ve tam uyumluluk.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Architecture Section -->
+<section class="py-20">
+<div class="bg-[#DFF1EE] rounded-3xl p-12 md:p-20 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-3xl font-bold text-text-main mb-6">Güvenli ve Ölçeklenebilir Mimari</h2>
+<p class="text-text-muted mb-8 leading-relaxed">
+                        Yazılımlarımızı modern web teknolojileri üzerine inşa ediyoruz. Geleceğin ihtiyaçlarına bugünden hazır, hızlı ve yüksek performanslı çözümler sunuyoruz.
+                    </p>
+<div class="flex gap-8">
+<div class="flex items-center gap-3">
+<div class="bg-white p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">terminal</span>
+</div>
+<span class="font-bold text-text-main">Next.js</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-white p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">rebase_edit</span>
+</div>
+<span class="font-bold text-text-main">React</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-white p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">database</span>
+</div>
+<span class="font-bold text-text-main">PostgreSQL</span>
+</div>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white/40">
+<p class="text-primary font-bold text-3xl mb-1">99.9%</p>
+<p class="text-text-muted text-sm">Uptime Garantisi</p>
+</div>
+<div class="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white/40">
+<p class="text-primary font-bold text-3xl mb-1">&lt; 100ms</p>
+<p class="text-text-muted text-sm">Yanıt Süresi</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Flow -->
+<section class="py-20">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-text-main mb-4">Geliştirme Süreci</h2>
+<p class="text-text-muted">Fikirden ürüne uzanan şeffaf yol haritamız.</p>
+</div>
+<div class="relative flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto gap-12 md:gap-4">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border-subtle -translate-y-1/2 -z-10"></div>
+<div class="flex flex-col items-center text-center bg-background-light px-4 z-10">
+<div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mb-4 border-4 border-white">1</div>
+<h4 class="font-bold text-text-main mb-1">MVP</h4>
+<p class="text-sm text-text-muted">Temel özelliklerle<br/>hızlı prototip</p>
+</div>
+<div class="flex flex-col items-center text-center bg-background-light px-4 z-10">
+<div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mb-4 border-4 border-white">2</div>
+<h4 class="font-bold text-text-main mb-1">Sprint</h4>
+<p class="text-sm text-text-muted">Düzenli geliştirme<br/>ve geri bildirim</p>
+</div>
+<div class="flex flex-col items-center text-center bg-background-light px-4 z-10">
+<div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mb-4 border-4 border-white">3</div>
+<h4 class="font-bold text-text-main mb-1">Yayın</h4>
+<p class="text-sm text-text-muted">Canlıya geçiş ve<br/>sürekli destek</p>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-20 max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold text-text-main mb-12 text-center">Sıkça Sorulan Sorular</h2>
+<div class="space-y-4">
+<details class="group bg-white rounded-xl border border-border-subtle overflow-hidden" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-semibold text-text-main">Yazılım geliştirme süreci ne kadar sürer?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-text-muted leading-relaxed">
+                        Projenin kapsamına bağlı olarak değişkenlik göstermekle birlikte, bir MVP (Minimum Uygulanabilir Ürün) genellikle 4-8 hafta arasında tamamlanmaktadır. Detaylı proje planı analiz aşamasından sonra sunulur.
+                    </div>
+</details>
+<details class="group bg-white rounded-xl border border-border-subtle overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-semibold text-text-main">Fiyatlandırma nasıl belirleniyor?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-text-muted leading-relaxed">
+                        Fiyatlandırma, projenin teknik karmaşıklığı, geliştirilecek modül sayısı ve ihtiyaç duyulan uzmanlık seviyesine göre belirlenir. Şeffaf bir maliyetlendirme için ücretsiz ön görüşme yapıyoruz.
+                    </div>
+</details>
+<details class="group bg-white rounded-xl border border-border-subtle overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-semibold text-text-main">Bakım ve destek hizmeti veriyor musunuz?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-text-muted leading-relaxed">
+                        Evet, projeler yayınlandıktan sonra hata takibi, performans iyileştirmeleri ve yeni özellik eklemeleri için aylık bakım ve destek paketleri sunuyoruz.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 text-center">
+<div class="max-w-2xl mx-auto space-y-8">
+<h2 class="text-4xl font-black text-text-main">Projeniz İçin Teklif Alın</h2>
+<p class="text-text-muted text-lg">Hemen bir toplantı planlayalım ve hayalinizdeki yazılım projesini birlikte gerçeğe dönüştürelim.</p>
+<button class="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-xl shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Teklif Formunu Doldur
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-border-subtle py-12">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block text-sm">developer_mode</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-text-main">YazılımAjansı</span>
+</div>
+<p class="text-text-muted text-sm">© 2024 Yazılım Ajansı. Tüm hakları saklıdır.</p>
+<div class="flex gap-6">
+<a class="text-text-muted hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-text-muted hover:text-primary" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-text-muted hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,138 @@
+{
+    "hero": {
+        "badge": "Dijital Çözümler",
+        "title": "İhtiyacınıza Uygun Hizmeti Seçin",
+        "subtitle": "İşletmenizi dijital dünyada büyütmek, operasyonlarınızı optimize etmek ve satışlarınızı artırmak için gereken tüm çözümler tek çatı altında."
+    },
+    "filters": [
+        {
+            "id": "all",
+            "label": "Tümü"
+        },
+        {
+            "id": "web",
+            "label": "Yeni web sitesi"
+        },
+        {
+            "id": "ecommerce",
+            "label": "E-ticaret büyüme"
+        },
+        {
+            "id": "automation",
+            "label": "Otomasyon"
+        },
+        {
+            "id": "ads",
+            "label": "Reklam performansı"
+        },
+        {
+            "id": "reporting",
+            "label": "Raporlama"
+        }
+    ],
+    "comparison": {
+        "title": "Hangi Hizmet Hangi Hedefe Uygun?",
+        "subtitle": "Hedeflerinize en hızlı şekilde ulaşmanızı sağlayacak doğru hizmet kombinasyonunu belirleyin.",
+        "columns": [
+            "Satış Artırma",
+            "Marka Bilinirliği",
+            "Verimlilik",
+            "Müşteri Sadakati"
+        ],
+        "rows": [
+            {
+                "service": "Web Yazılım",
+                "goals": {
+                    "Satış Artırma": true,
+                    "Marka Bilinirliği": true,
+                    "Verimlilik": false,
+                    "Müşteri Sadakati": false
+                }
+            },
+            {
+                "service": "E-Ticaret",
+                "goals": {
+                    "Satış Artırma": true,
+                    "Marka Bilinirliği": false,
+                    "Verimlilik": true,
+                    "Müşteri Sadakati": false
+                }
+            },
+            {
+                "service": "Performans Pazarlama",
+                "goals": {
+                    "Satış Artırma": true,
+                    "Marka Bilinirliği": true,
+                    "Verimlilik": false,
+                    "Müşteri Sadakati": false
+                }
+            },
+            {
+                "service": "Otomasyon",
+                "goals": {
+                    "Satış Artırma": false,
+                    "Marka Bilinirliği": false,
+                    "Verimlilik": true,
+                    "Müşteri Sadakati": true
+                }
+            },
+            {
+                "service": "Mobil Uygulama",
+                "goals": {
+                    "Satış Artırma": true,
+                    "Marka Bilinirliği": false,
+                    "Verimlilik": false,
+                    "Müşteri Sadakati": true
+                }
+            }
+        ]
+    },
+    "strategy": {
+        "badge": "Stratejimiz",
+        "title": "Büyüme Yolculuğunuz",
+        "subtitle": "İşletmenizin bulunduğu aşamaya özel yaklaşım modellerimiz.",
+        "packages": [
+            {
+                "id": "starter",
+                "title": "Başlangıç",
+                "description": "Dijital dünyada varlık göstermeye yeni başlayanlar için temel altyapının kurulması.",
+                "features": [
+                    "Kurumsal Kimlik & Web Sitesi",
+                    "Temel SEO Ayarları",
+                    "Sosyal Medya Kurulumu"
+                ],
+                "stepNumber": "01"
+            },
+            {
+                "id": "growth",
+                "title": "Büyüme",
+                "description": "Ziyaretçi trafiğini satışa dönüştürmek ve pazar payını artırmak isteyenler için.",
+                "features": [
+                    "Performans Pazarlama (Ads)",
+                    "Dönüşüm Optimizasyonu (CRO)",
+                    "İçerik Pazarlaması",
+                    "Aylık Raporlama"
+                ],
+                "isPopular": true,
+                "stepNumber": "02"
+            },
+            {
+                "id": "enterprise",
+                "title": "Kurumsal",
+                "description": "Lider konumunu korumak ve verimliliği maksimize etmek isteyen büyük ölçekli yapılar.",
+                "features": [
+                    "Özel Yazılım Çözümleri",
+                    "İş Süreçleri Otomasyonu",
+                    "Veri Ambarı & BI"
+                ],
+                "stepNumber": "03"
+            }
+        ]
+    },
+    "finalCta": {
+        "title": "Doğru paketi birlikte belirleyelim.",
+        "subtitle": "Sizin için en uygun stratejiyi oluşturmak üzere uzman ekibimizle ücretsiz bir görüşme planlayın.",
+        "primaryCtaText": "Ücretsiz Analiz Alın",
+        "secondaryCtaText": "Hemen Arayın"
+    }
+}

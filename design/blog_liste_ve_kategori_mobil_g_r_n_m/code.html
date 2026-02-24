@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Liste ve Kategori - Dijital Ajans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d4d4",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102222",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Mobile Container (Centered for desktop preview) -->
+<div class="max-w-[375px] mx-auto bg-white dark:bg-slate-900 min-h-screen relative shadow-2xl flex flex-col">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 px-4 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+<span class="font-bold text-lg tracking-tight">Dijital Ajans</span>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 pb-24">
+<!-- Hero Section -->
+<section class="px-4 pt-8 pb-4">
+<h1 class="text-[28px] font-bold leading-tight tracking-tight mb-6">
+                    Dijitalde Büyümenize <br/>
+<span class="text-primary">Yardımcı Oluyoruz</span>
+</h1>
+<!-- Search Bar -->
+<div class="relative mb-6">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-slate-100 dark:bg-slate-800 border-none rounded-xl focus:ring-2 focus:ring-primary text-sm font-medium" placeholder="Bloglarda ara..." type="text"/>
+</div>
+<!-- Horizontal Category Scroll -->
+<div class="flex gap-2 overflow-x-auto hide-scrollbar pb-2">
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-primary text-white text-sm font-semibold shadow-sm shadow-primary/20">Tümü</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">SEO</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">E-Ticaret</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Sosyal Medya</button>
+<button class="whitespace-nowrap px-5 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Ads</button>
+</div>
+</section>
+<!-- Filter Button -->
+<div class="px-4 py-2">
+<button class="w-full flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-800 py-3 rounded-xl text-sm font-bold border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-lg">tune</span>
+                    Filtrele ve Sırala
+                </button>
+</div>
+<!-- Blog Feed -->
+<section class="px-4 py-6 space-y-6">
+<!-- Blog Card 1 -->
+<article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-transform active:scale-[0.98]">
+<div class="h-48 w-full bg-slate-200 dark:bg-slate-700 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Modern business analytics dashboard on screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF8sQ6DtRHRSUPJIDvstgmm2pQRLD2ieXxX_qrhcpnxCP8LzASaG1ZraThwq5OQaCX5KR-JtKniDypJxDD4vbPNeLUT4BopyUzAa2hGpu2Z8-lE3ClE9sE2TLSn6CbG_EXqiPnzW0W6R9NhEYYfhyD3WX8zOwjN7OqOW0JZoZtlY0SFgS3V6oJ4TJT6WDN-oNkIBLFDWVeyNHckcYC0ELmTHuOiBKhNJqrC7DKI1TkV4fyBmS06BP-7kToVr1vmx5MtG4arp7Hafq2"/>
+<span class="absolute top-3 left-3 bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">SEO</span>
+</div>
+<div class="p-4">
+<div class="flex items-center gap-2 text-slate-400 text-xs mb-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>5 dk okuma</span>
+<span class="w-1 h-1 rounded-full bg-slate-300"></span>
+<span>12 Mayıs 2024</span>
+</div>
+<h3 class="text-lg font-bold leading-snug mb-2 group-hover:text-primary transition-colors">KOBİ'ler İçin 2024 Yerel SEO Stratejileri</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">İşletmenizi Google Haritalar'da en üst sıraya çıkaracak kanıtlanmış yöntemleri keşfedin.</p>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-transform active:scale-[0.98]">
+<div class="h-48 w-full bg-slate-200 dark:bg-slate-700 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="E-commerce digital marketing tools visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkkVmMXvpcFYYy60Nknr5p5hpS9pAe79cdjqRjMdv6wAVd-m2p09iQYvLult94qiv6hC7asE1gEXs0ro0iJEeqw2hy1Q5sItFPPjkGae4n7H_vIQqcicNmLfj1VWLEUmmU1vgYVzDkOlenj5DD2wQZ8Z56BrSbn_WPxEjD5LkM-9-w5h6ibgYbeFnhPaoE41qDoePx95yoQpKDGglVzXPO1YmJQg3aZB1tOlBUMVLIsR7uBIVXKTjYiH6H20LfJDcDKGGZa1K_D9oi"/>
+<span class="absolute top-3 left-3 bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">E-TİCARET</span>
+</div>
+<div class="p-4">
+<div class="flex items-center gap-2 text-slate-400 text-xs mb-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>8 dk okuma</span>
+<span class="w-1 h-1 rounded-full bg-slate-300"></span>
+<span>10 Mayıs 2024</span>
+</div>
+<h3 class="text-lg font-bold leading-snug mb-2 group-hover:text-primary transition-colors">E-Ticarette Dönüşüm Oranlarını %40 Artırın</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">Sepet terk oranlarını düşürmek ve müşteri sadakatini artırmak için ipuçları.</p>
+</div>
+</article>
+</section>
+<!-- Conversion Sidebar Bottom -->
+<section class="px-4 py-8 space-y-6 bg-slate-50 dark:bg-slate-800/50">
+<!-- Lead Magnet -->
+<div class="bg-gradient-to-br from-primary/20 to-primary/5 p-6 rounded-xl border border-primary/30 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-3">query_stats</span>
+<h4 class="text-lg font-bold mb-2">Ücretsiz SEO Analizi</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">Web sitenizin performansını hemen ölçün, rakiplerinizin önüne geçin.</p>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20 hover:brightness-110">Analizi Başlat</button>
+</div>
+<!-- Newsletter -->
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+<h4 class="text-base font-bold mb-2">Bültene Katılın</h4>
+<p class="text-sm text-slate-500 mb-4">Haftalık dijital pazarlama ipuçlarını kaçırmayın.</p>
+<div class="space-y-3">
+<input class="w-full px-4 py-3 bg-slate-100 dark:bg-slate-900 border-none rounded-lg text-sm" placeholder="E-posta adresiniz" type="email"/>
+<button class="w-full bg-slate-900 dark:bg-primary text-white dark:text-slate-900 font-bold py-3 rounded-lg">Abone Ol</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Action Bar -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[375px] bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-100 dark:border-slate-800 px-4 py-4 flex gap-3 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50">
+<button class="flex-1 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 text-sm border border-slate-200 dark:border-slate-700 active:scale-[0.97] transition-transform">
+<span class="material-symbols-outlined text-xl">description</span>
+                Teklif Al
+            </button>
+<button class="flex-1 bg-primary text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg shadow-primary/25 active:scale-[0.97] transition-transform">
+<span class="material-symbols-outlined text-xl">chat</span>
+                WhatsApp
+            </button>
+</nav>
+</div>
+</body></html>

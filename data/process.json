@@ -1,0 +1,55 @@
+{
+    "hero": {
+        "title": "Nasıl Çalışıyoruz?",
+        "subtitle": "Hayalinizdeki projeyi gerçeğe dönüştürmek için izlediğimiz şeffaf süreç."
+    },
+    "steps": [
+        {
+            "id": 1,
+            "title": "Strateji & Analiz",
+            "description": "İhtiyaçlarınızı belirliyor, pazar analizi ve kullanıcı araştırması yapıyoruz.",
+            "duration": "1 Hafta",
+            "deliverable": "Proje Yol Haritası & Kapsam"
+        },
+        {
+            "id": 2,
+            "title": "Tasarım Süreci",
+            "description": "UI/UX prensipleri doğrultusunda markanıza özel modern arayüzler tasarlıyoruz.",
+            "duration": "2 Hafta",
+            "deliverable": "Figma Prototip & Tasarım Sistemi"
+        },
+        {
+            "id": 3,
+            "title": "Geliştirme",
+            "description": "Tasarımı yüksek performanslı kod yapısıyla hayata geçiriyoruz.",
+            "duration": "4-6 Hafta",
+            "deliverable": "Beta Sürüm & Kaynak Kodları"
+        },
+        {
+            "id": 4,
+            "title": "Test & QA",
+            "description": "Tüm fonksiyonları ve tarayıcı uyumluluğunu titizlikle test ediyoruz.",
+            "duration": "1 Hafta",
+            "deliverable": "Hata Raporu & Optimizasyon"
+        },
+        {
+            "id": 5,
+            "title": "Yayına Alım",
+            "description": "Onayınız sonrası projenizi canlı ortama taşıyor ve teslim ediyoruz.",
+            "duration": "2 Gün",
+            "deliverable": "Canlı Proje & Teknik Destek"
+        }
+    ],
+    "communication": {
+        "title": "İletişim & Takip",
+        "icon": "analytics",
+        "subtitle": "Haftalık Raporlama",
+        "description": "Her Cuma günü projenizin mevcut durumunu ve bir sonraki hafta planını paylaşıyoruz."
+    },
+    "cta": {
+        "text": "Birlikte Başaralım",
+        "buttonText": "Süreci Başlat",
+        "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+        "imageTagline": "Birlikte Başaralım"
+    }
+}

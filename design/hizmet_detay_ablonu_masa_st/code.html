@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hizmet Detay Şablonu - E-Ticaret Çözümleri</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                "primary": "#14b8a5",
+                "primary-dark": "#0d9488",
+                "background-light": "#f6f8f8",
+                "background-dark": "#11211f",
+                "surface-light": "#ffffff",
+                "surface-dark": "#1a2c2a",
+                },
+                fontFamily: {
+                "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+            },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased font-display">
+<!-- Navigation (Placeholder for context) -->
+<nav class="w-full bg-surface-light dark:bg-surface-dark border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex items-center">
+<div class="flex-shrink-0 flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">A</div>
+<span class="font-bold text-xl tracking-tight text-slate-900 dark:text-white">Agency</span>
+</div>
+<div class="hidden sm:ml-10 sm:flex sm:space-x-8">
+<a class="border-primary text-slate-900 dark:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="#">Hizmetler</a>
+<a class="border-transparent text-slate-500 dark:text-slate-400 hover:border-slate-300 hover:text-slate-700 dark:hover:text-slate-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="#">Projeler</a>
+<a class="border-transparent text-slate-500 dark:text-slate-400 hover:border-slate-300 hover:text-slate-700 dark:hover:text-slate-200 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="#">Hakkımızda</a>
+</div>
+</div>
+<div class="flex items-center">
+<button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">İletişime Geç</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<header class="relative bg-surface-light dark:bg-surface-dark overflow-hidden pb-12 pt-16 lg:pt-24 lg:pb-20 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+<div class="lg:w-2/3">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wide mb-4 border border-primary/20">
+                    Dijital Dönüşüm
+                </div>
+<h1 class="text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+                    E-Ticaret Çözümleri ile <span class="text-primary">Satışlarınızı Katlayın</span>
+</h1>
+<p class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-2xl">
+                    Kullanıcı deneyimi odaklı, yüksek performanslı ve mobil uyumlu e-ticaret altyapıları ile markanızı dijital dünyada bir adım öne taşıyoruz. Güvenli ödeme sistemleri ve modern arayüzler bir arada.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                        Hemen Başlayalım
+                    </button>
+<button class="inline-flex justify-center items-center px-8 py-3.5 border border-slate-300 dark:border-slate-700 text-base font-medium rounded-lg text-slate-700 dark:text-slate-300 bg-white dark:bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200">
+                        Örnekleri İncele
+                    </button>
+</div>
+</div>
+</div>
+<!-- Decorative subtle pattern -->
+<div class="absolute top-0 right-0 -mt-20 -mr-20 lg:w-1/2 h-full opacity-10 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-l from-primary/30 to-transparent rounded-full blur-3xl transform translate-x-1/2"></div>
+</div>
+</header>
+<!-- Main Content Layout -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+<div class="lg:grid lg:grid-cols-12 lg:gap-12 xl:gap-24 items-start">
+<!-- Left Column (Content) -->
+<main class="lg:col-span-8 space-y-20">
+<!-- Kimler İçin Uygun? -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Kimler İçin Uygun?
+                    </h2>
+<div class="grid md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 p-6 rounded-xl hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-icons">storefront</span>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Startup &amp; Girişimler</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Hızlı pazara giriş yapmak isteyen ve ölçeklenebilir bir altyapıya ihtiyaç duyan yeni nesil girişimler için ideal.
+                            </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 p-6 rounded-xl hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-icons">business</span>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">KOBİ'ler</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Fiziksel mağazasını dijitale taşımak veya mevcut eski altyapısını modernize etmek isteyen işletmeler.
+                            </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 p-6 rounded-xl hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-icons">domain</span>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Kurumsal Markalar</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Özel entegrasyonlara (ERP, CRM) ve yüksek trafik kapasitesine ihtiyaç duyan büyük ölçekli markalar.
+                            </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 p-6 rounded-xl hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-icons">public</span>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">İhracat Yapanlar (E-İhracat)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Çoklu dil ve para birimi desteği ile global pazarlara açılmayı hedefleyen ihracatçı firmalar.
+                            </p>
+</div>
+</div>
+</section>
+<!-- Neler Dahil? -->
+<section class="bg-surface-light dark:bg-surface-dark rounded-2xl p-8 border border-slate-200 dark:border-slate-800">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Paket İçeriği: Neler Dahil?
+                    </h2>
+<div class="grid md:grid-cols-2 gap-y-4 gap-x-8">
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Özel UX/UI Tasarım</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Responsive (Mobil Uyumlu) Kodlama</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Yönetim Paneli Entegrasyonu</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Ödeme Sistemleri Kurulumu (Iyzico, Stripe)</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Temel SEO Optimizasyonu</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Kargo Entegrasyonları</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">1 Yıl Ücretsiz SSL ve Hosting</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+<span class="material-icons text-primary text-sm font-bold">check</span>
+</div>
+<span class="text-slate-700 dark:text-slate-300">Google Analytics Kurulumu</span>
+</div>
+</div>
+</section>
+<!-- Süreç ve Teslim Süresi -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-10 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Süreç ve Teslim Takvimi
+                    </h2>
+<div class="relative pl-8 border-l-2 border-slate-200 dark:border-slate-700 space-y-12">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-[41px] bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md ring-4 ring-background-light dark:ring-background-dark">1</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Keşif ve Analiz (1. Hafta)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">İhtiyaçlarınızı dinliyor, rakip analizi yapıyor ve proje yol haritasını birlikte belirliyoruz.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-[41px] bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md ring-4 ring-background-light dark:ring-background-dark">2</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Tasarım ve Onay (2-3. Hafta)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Marka kimliğinize uygun arayüz tasarımlarını (UI) hazırlıyor ve onayınıza sunuyoruz.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-[41px] bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md ring-4 ring-background-light dark:ring-background-dark">3</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Geliştirme ve Kodlama (4-5. Hafta)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Onaylanan tasarımları, seçilen teknoloji altyapısı ile kodluyor ve işlevsel hale getiriyoruz.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-[41px] bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md ring-4 ring-background-light dark:ring-background-dark">4</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Test ve Canlıya Alım (6. Hafta)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Tüm fonksiyonları test ediyor, hataları gideriyor ve sitenizi yayına alıyoruz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Araçlar ve Teknolojiler -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Kullandığımız Teknolojiler
+                    </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 hover:shadow-md transition-shadow">
+<span class="material-icons text-4xl text-slate-400">code</span>
+<span class="font-medium text-slate-700 dark:text-slate-300">React.js</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 hover:shadow-md transition-shadow">
+<span class="material-icons text-4xl text-slate-400">css</span>
+<span class="font-medium text-slate-700 dark:text-slate-300">Tailwind CSS</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 hover:shadow-md transition-shadow">
+<span class="material-icons text-4xl text-slate-400">storage</span>
+<span class="font-medium text-slate-700 dark:text-slate-300">Node.js</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 hover:shadow-md transition-shadow">
+<span class="material-icons text-4xl text-slate-400">cloud</span>
+<span class="font-medium text-slate-700 dark:text-slate-300">AWS</span>
+</div>
+</div>
+</section>
+<!-- Örnek Çıktılar -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Örnek Çalışmalar
+                    </h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+<div class="aspect-w-16 aspect-h-12 bg-slate-200 dark:bg-slate-700">
+<img alt="Modern e-commerce dashboard interface with charts" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Modern e-commerce dashboard interface with charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALNkl7zg9C5TPL4FWW3PZSqlO56l_kGjIPZ01tOc0UueNiAKzQFCfZkHBMeTc3UWnWmUw0Bw-UxhkwjAjUy38NdVkBBisUx-j2kalbuhQTEMuCWD-ihIpdfk-cFxXwMSwSdSuFSvJXvhABS4NUMDK8KWIVhQ08fBbMlOammaBsGKU15FnrvPdNtDhfuN1QNIZ4jgK--irE2cHdOGC127mGbSfznrdnX5GkormMPuc8vuaJibm2SCBRRvOrqpxC8C1m_Eg4Cyx8dmNH"/>
+</div>
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-medium border border-white px-4 py-2 rounded-lg">Detayı Gör</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+<div class="aspect-w-16 aspect-h-12 bg-slate-200 dark:bg-slate-700">
+<img alt="Clean mobile shopping app interface mockup" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Clean mobile shopping app interface mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCx2iob3fmsNt1TBISjXdRHaL3gaWfpSJipd3pfSrh7ViAzQHr1L2HSz2-DSljCiy5CFBZcGe9wEG3oPV0s9y_jHTrwvyFsdlQOFj6PQBK0K-doBpKo3rmo2lcK91ezyOG2-ABi_3q2A1LgZdxn4gGvdYnr40yQZi_XSKiTGyibWImqsHjvRLAQQqHc2pbX1JX2EWL1Nroaw53_NC6KyATI2XYSm0j60gbxd44PWsLcGqYLUNFYJIoxB718ig5Ejvj3cCCUySoKzgn"/>
+</div>
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-medium border border-white px-4 py-2 rounded-lg">Detayı Gör</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Paket Seçenekleri -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Paket Seçenekleri
+                    </h2>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Basic Plan -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-slate-800 flex flex-col">
+<div class="mb-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Başlangıç</h3>
+<div class="text-3xl font-bold text-slate-900 dark:text-white mt-2">₺15.000</div>
+</div>
+<ul class="space-y-3 mb-8 flex-1">
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Hazır Tema</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>50 Ürün Girişi</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Standart SEO</li>
+</ul>
+<button class="w-full py-2 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Seç</button>
+</div>
+<!-- Pro Plan (Highlighted) -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-6 border-2 border-primary relative flex flex-col transform md:-translate-y-2 shadow-xl z-10">
+<div class="absolute top-0 right-0 bg-primary text-white text-xs px-2 py-1 rounded-bl-lg rounded-tr-lg font-bold">POPÜLER</div>
+<div class="mb-4">
+<h3 class="text-lg font-bold text-primary">Pro</h3>
+<div class="text-3xl font-bold text-slate-900 dark:text-white mt-2">₺25.000</div>
+</div>
+<ul class="space-y-3 mb-8 flex-1">
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Özel Tasarım</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Sınırsız Ürün</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Gelişmiş SEO</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Pazaryeri Entegrasyonu</li>
+</ul>
+<button class="w-full py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30">Seç</button>
+</div>
+<!-- Enterprise Plan -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-6 border border-slate-200 dark:border-slate-800 flex flex-col">
+<div class="mb-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Kurumsal</h3>
+<div class="text-3xl font-bold text-slate-900 dark:text-white mt-2">Teklif Al</div>
+</div>
+<ul class="space-y-3 mb-8 flex-1">
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>Tamamen Özel Altyapı</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>ERP/CRM Entegrasyonu</li>
+<li class="text-sm text-slate-600 dark:text-slate-400 flex items-center gap-2"><span class="material-icons text-primary text-sm">check</span>7/24 Öncelikli Destek</li>
+</ul>
+<button class="w-full py-2 border border-slate-300 dark:border-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">İletişime Geç</button>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center gap-3">
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+                        Sıkça Sorulan Sorular
+                    </h2>
+<div class="space-y-4">
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<summary class="flex justify-between items-center p-5 cursor-pointer font-medium text-slate-900 dark:text-white">
+<span>Bakım hizmeti veriyor musunuz?</span>
+<span class="material-icons text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-5 pb-5 text-slate-600 dark:text-slate-400 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">
+                                Evet, projenin canlıya alınmasından sonraki ilk 1 ay ücretsiz destek veriyoruz. Sonrasında aylık veya yıllık bakım anlaşmaları ile teknik destek sağlamaya devam ediyoruz.
+                            </div>
+</details>
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<summary class="flex justify-between items-center p-5 cursor-pointer font-medium text-slate-900 dark:text-white">
+<span>Kendi hostingimi kullanabilir miyim?</span>
+<span class="material-icons text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-5 pb-5 text-slate-600 dark:text-slate-400 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">
+                                Elbette. Eğer mevcut bir hosting altyapınız varsa ve gerekli teknik gereksinimleri (PHP sürümü, veritabanı vb.) karşılıyorsa kurulumu oraya yapabiliriz.
+                            </div>
+</details>
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<summary class="flex justify-between items-center p-5 cursor-pointer font-medium text-slate-900 dark:text-white">
+<span>Ödeme koşulları nasıl?</span>
+<span class="material-icons text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-5 pb-5 text-slate-600 dark:text-slate-400 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">
+                                Genellikle projenin başında %40, tasarım onayı sonrası %30 ve proje tesliminde kalan %30 şeklinde çalışıyoruz. Ancak kurumsal anlaşmalarda farklı taksitlendirme seçeneklerimiz mevcuttur.
+                            </div>
+</details>
+</div>
+</section>
+</main>
+<!-- Right Column (Sticky Summary Card) -->
+<aside class="hidden lg:block lg:col-span-4 relative h-full">
+<div class="sticky top-24 bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="bg-surface-dark dark:bg-black/30 p-6">
+<h3 class="text-white text-lg font-bold">Hizmet Özeti</h3>
+<p class="text-slate-400 text-sm mt-1">E-Ticaret Paketi</p>
+</div>
+<div class="p-6 space-y-6">
+<!-- Key Metric 1 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-icons">schedule</span>
+</div>
+<div>
+<div class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider">Tahmini Süre</div>
+<div class="text-slate-900 dark:text-white font-medium">4-6 Hafta</div>
+</div>
+</div>
+<!-- Key Metric 2 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-icons">payments</span>
+</div>
+<div>
+<div class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider">Başlangıç Fiyatı</div>
+<div class="text-slate-900 dark:text-white font-medium">15.000 TL <span class="text-xs text-slate-400 font-normal">+ KDV</span></div>
+</div>
+</div>
+<!-- Key Metric 3 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-icons">inventory_2</span>
+</div>
+<div>
+<div class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider">Teslim Formatı</div>
+<div class="text-slate-900 dark:text-white font-medium">Canlı Yayın + Kaynak Kodlar</div>
+</div>
+</div>
+<hr class="border-slate-200 dark:border-slate-700"/>
+<div class="space-y-3">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2">
+<span>Teklif Al</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+<p class="text-xs text-center text-slate-500 dark:text-slate-400">
+                                1 iş günü içinde dönüş yapıyoruz.
+                            </p>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 p-4 border-t border-slate-200 dark:border-slate-700 flex items-center gap-3">
+<img alt="Support representative portrait" class="w-10 h-10 rounded-full object-cover border-2 border-white dark:border-slate-600" data-alt="Support representative portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"/>
+<div>
+<div class="text-xs text-slate-500 dark:text-slate-400">Sorularınız mı var?</div>
+<div class="text-sm font-semibold text-slate-900 dark:text-white">Ayşe ile görüşün</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Mobile Sticky CTA (Visible only on small screens) -->
+<div class="lg:hidden fixed bottom-0 left-0 w-full bg-white dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800 p-4 z-40 shadow-[0_-5px_20px_-5px_rgba(0,0,0,0.1)]">
+<div class="flex items-center gap-4">
+<div class="flex-1">
+<div class="text-xs text-slate-500 uppercase">Fiyat</div>
+<div class="font-bold text-slate-900 dark:text-white">15.000 TL'den başlar</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 rounded-lg font-bold shadow-lg">Teklif Al</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">A</div>
+<span class="font-bold text-xl text-slate-900 dark:text-white">Agency</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Dijital dünyada markanızı büyütmek için buradayız. Teknoloji ve tasarımı birleştirerek değer yaratıyoruz.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-4">Hizmetler</h4>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Web Tasarım</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Mobil Uygulama</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">E-Ticaret</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">SEO &amp; Pazarlama</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-4">Kurumsal</h4>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Hakkımızda</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Kariyer</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-4">Bize Ulaşın</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-2">hello@agency.com</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">+90 212 123 45 67</p>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-slate-500 dark:text-slate-400">© 2023 Agency. Tüm hakları saklıdır.</p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">facebook</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">smart_display</span></a> <!-- used smart_display for youtube/video-like icon -->
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">share</span></a> <!-- generic social icon -->
+</div>
+</div>
+</div>
+</footer>
+</body></html>

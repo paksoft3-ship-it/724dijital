@@ -1,0 +1,89 @@
+{
+    "hero": {
+        "title": "Dijital Geleceğinizi Birlikte İnşa Edelim",
+        "subtitle": "KOBİ'ler için modern, premium yazılım ve dijital ajans çözümleri. Güven, netlik ve teknolojik yetkinlikle markanızı büyütüyoruz.",
+        "ctaText": "Hemen Başla",
+        "ctaLink": "/iletisim",
+        "secondaryCtaText": "Hizmetlerimizi Gör",
+        "secondaryCtaLink": "/hizmetler"
+    },
+    "stats": [
+        {
+            "label": "Mutlu Müşteri",
+            "value": "50+"
+        },
+        {
+            "label": "Tamamlanan Proje",
+            "value": "120+"
+        },
+        {
+            "label": "Yıllık Deneyim",
+            "value": "10+"
+        },
+        {
+            "label": "Uzman Ekip",
+            "value": "15+"
+        }
+    ],
+    "processSteps": [
+        {
+            "number": 1,
+            "title": "Keşif",
+            "description": "İhtiyaçlarınızı ve hedeflerinizi dinliyoruz."
+        },
+        {
+            "number": 2,
+            "title": "Strateji",
+            "description": "Size en uygun yol haritasını çıkarıyoruz."
+        },
+        {
+            "number": 3,
+            "title": "Tasarım",
+            "description": "Modern ve kullanıcı odaklı arayüzler tasarlıyoruz."
+        },
+        {
+            "number": 4,
+            "title": "Geliştirme",
+            "description": "En son teknolojilerle kodlama yapıyoruz."
+        },
+        {
+            "number": 5,
+            "title": "Ölçüm",
+            "description": "Sonuçları analiz edip optimize ediyoruz."
+        }
+    ],
+    "servicesPreview": {
+        "title": "Uzmanlık Alanlarımız",
+        "subtitle": "İşletmenizin dijital dönüşüm yolculuğunda yanınızdayız."
+    },
+    "projectsPreview": {
+        "title": "Neler Yapıyoruz?",
+        "subtitle": "Başarıyla tamamladığımız bazı projelerimiz."
+    },
+    "ctaBand": {
+        "title": "Hayalinizdeki Projeyi Gerçeğe Dönüştürelim",
+        "subtitle": "Ücretsiz teklif almak ve süreçlerimiz hakkında bilgi edinmek için bize ulaşın.",
+        "ctaText": "Ücretsiz Teklif Al",
+        "ctaLink": "/iletisim"
+    },
+    "testimonials": [
+        {
+            "quote": "724dijital ile çalışmaya başladıktan sonra e-ihracat satışlarımızda %200 artış yakaladık. Bölgeyi tanımaları büyük avantaj.",
+            "author": "Mehmet Yılmaz",
+            "role": "Genel Müdür, Yılmaz Makine",
+            "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=2070"
+        },
+        {
+            "quote": "Süreç yönetimi ve iletişimleri harika. Ne zaman bir sorunumuz olsa 1 saat içinde çözüm ürettiler.",
+            "author": "Ayşe Demir",
+            "role": "Pazarlama Müdürü, Anatolia Gıda",
+            "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1974"
+        },
+        {
+            "quote": "Kurumsal web sitemiz tam istediğimiz gibi oldu. Modern, hızlı ve mobil uyumlu. Teşekkürler.",
+            "author": "Caner Erkin",
+            "role": "Kurucu, Erkin Lojistik",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974"
+        }
+    ]
+}

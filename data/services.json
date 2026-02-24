@@ -1,0 +1,98 @@
+[
+    {
+        "slug": "web-gelistirme",
+        "title": "Kurumsal Web Tasarım",
+        "shortDesc": "Marka kimliğinizi yansıtan, modern ve mobil uyumlu arayüzlerle güven inşa edin.",
+        "iconKey": "globe",
+        "tags": [
+            "React",
+            "Next.js",
+            "Headless CMS"
+        ],
+        "category": "web"
+    },
+    {
+        "slug": "e-ticaret-gelistirme",
+        "title": "E-Ticaret Geliştirme",
+        "shortDesc": "Satış odaklı, hızlı ve ölçeklenebilir e-ticaret altyapıları ile cironuzu katlayın.",
+        "iconKey": "shopping-cart",
+        "tags": [
+            "Shopify",
+            "Woocommerce",
+            "Magento"
+        ],
+        "category": "ecommerce"
+    },
+    {
+        "slug": "dijital-pazarlama",
+        "title": "Dijital Pazarlama",
+        "shortDesc": "Google ve Meta reklamlarıyla doğru hedef kitleye ulaşıp reklam harcamanızı yatırıma dönüştürün.",
+        "iconKey": "megaphone",
+        "tags": [
+            "Google Ads",
+            "Meta Ads",
+            "SEO"
+        ],
+        "category": "ads"
+    },
+    {
+        "slug": "seo",
+        "title": "SEO & Arama Motoru Optimizasyonu",
+        "shortDesc": "Arama sonuçlarında üst sıralara çıkarak organik trafiğinizi ve görünürlüğünüzü artırın.",
+        "iconKey": "bar-chart",
+        "tags": [
+            "SEO",
+            "Content Strategy",
+            "Backlink"
+        ],
+        "category": "ads"
+    },
+    {
+        "slug": "python-otomasyon",
+        "title": "Python & İş Süreçleri Otomasyonu",
+        "shortDesc": "Manuel iş yükünü azaltın, tekrarlayan görevleri Python ile otomatikleştirin.",
+        "iconKey": "settings",
+        "tags": [
+            "Python",
+            "Zapier",
+            "Flows"
+        ],
+        "category": "automation"
+    },
+    {
+        "slug": "veri-analizi",
+        "title": "Veri Analizi & Raporlama",
+        "shortDesc": "Veriye dayalı kararlar almanız için işletme metriklerinizi görselleştiriyoruz.",
+        "iconKey": "bar-chart",
+        "tags": [
+            "GA4",
+            "Looker Studio",
+            "BigQuery"
+        ],
+        "category": "reporting"
+    },
+    {
+        "slug": "mobil-uygulama",
+        "title": "Mobil Uygulama",
+        "shortDesc": "Müşterilerinizin her an yanında olun. iOS ve Android için performanslı native uygulamalar.",
+        "iconKey": "smartphone",
+        "tags": [
+            "Flutter",
+            "React Native",
+            "Swift"
+        ],
+        "category": "web"
+    },
+    {
+        "slug": "ozel-yazilim",
+        "title": "Özel Yazılım Çözümleri",
+        "shortDesc": "İşletmenize özel, ölçeklenebilir ve güvenli yazılım altyapıları geliştiriyoruz.",
+        "iconKey": "code",
+        "tags": [
+            "Custom",
+            "Scalable",
+            "Enterprise"
+        ],
+        "category": "automation"
+    }
+]

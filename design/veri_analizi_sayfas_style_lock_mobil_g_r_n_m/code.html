@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veri Analizi Sayfası - Dijital Ajans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb3a5",
+                        "background-light": "#f4f6f6",
+                        "background-dark": "#151d1c",
+                        "neutral-soft": "#e5e9e9",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-[#131615] font-display min-h-screen pb-24">
+<!-- Header / Nav -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-soft px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-bold">query_stats</span>
+<h2 class="text-[#131615] text-lg font-extrabold leading-tight tracking-tight">Veri Analizi</h2>
+</div>
+<button class="p-2 rounded-lg bg-background-light text-[#131615]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="max-w-[480px] mx-auto">
+<!-- Hero Section -->
+<section class="px-6 pt-10 pb-8 text-center bg-white border-b border-neutral-soft">
+<h1 class="text-[#131615] text-3xl font-black leading-tight tracking-tight mb-4">
+                Veri Odaklı Büyüme Stratejileri
+            </h1>
+<p class="text-gray-600 text-base font-normal leading-relaxed mb-8">
+                Dijital performansınızı profesyonel veri analizi ve raporlama çözümleriyle maksimize edin.
+            </p>
+<button class="w-full bg-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                Hemen Başlayın
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</section>
+<!-- Data Sources (Horizontal Scroll) -->
+<section class="py-6">
+<h3 class="px-6 text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">Entegre Veri Kaynakları</h3>
+<div class="flex gap-3 px-6 overflow-x-auto hide-scrollbar">
+<div class="flex shrink-0 items-center gap-2 bg-white border border-neutral-soft px-4 py-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">google</span>
+<span class="text-sm font-semibold whitespace-nowrap">Google Ads</span>
+</div>
+<div class="flex shrink-0 items-center gap-2 bg-white border border-neutral-soft px-4 py-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">social_leaderboard</span>
+<span class="text-sm font-semibold whitespace-nowrap">Meta Business</span>
+</div>
+<div class="flex shrink-0 items-center gap-2 bg-white border border-neutral-soft px-4 py-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<span class="text-sm font-semibold whitespace-nowrap">Console</span>
+</div>
+<div class="flex shrink-0 items-center gap-2 bg-white border border-neutral-soft px-4 py-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">insights</span>
+<span class="text-sm font-semibold whitespace-nowrap">GA4</span>
+</div>
+</div>
+</section>
+<!-- Services Section (Vertical Stack) -->
+<section class="px-6 py-4 space-y-4">
+<h3 class="text-xl font-bold text-[#131615]">Analiz Hizmetlerimiz</h3>
+<div class="bg-white p-5 rounded-xl border border-neutral-soft shadow-sm flex items-start gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">Stratejik Raporlama</h4>
+<p class="text-sm text-gray-500 leading-normal">Haftalık ve aylık bazda derinlemesine performans analizleri.</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-xl border border-neutral-soft shadow-sm flex items-start gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">Dönüşüm Optimizasyonu</h4>
+<p class="text-sm text-gray-500 leading-normal">Kullanıcı davranışlarını analiz ederek satış oranlarını artırma.</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-xl border border-neutral-soft shadow-sm flex items-start gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">pie_chart</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">Pazar Analizi</h4>
+<p class="text-sm text-gray-500 leading-normal">Rakip analizi ve sektörel trendlerin veriyle tespiti.</p>
+</div>
+</div>
+</section>
+<!-- KPI Cards -->
+<section class="px-6 py-6 grid grid-cols-2 gap-4">
+<div class="bg-white p-5 rounded-xl border border-neutral-soft shadow-sm">
+<p class="text-xs font-bold text-gray-400 uppercase mb-2">ROI Artışı</p>
+<div class="flex items-end gap-1">
+<span class="text-2xl font-black text-primary">%45</span>
+<span class="material-symbols-outlined text-primary text-sm mb-1">north_east</span>
+</div>
+</div>
+<div class="bg-white p-5 rounded-xl border border-neutral-soft shadow-sm">
+<p class="text-xs font-bold text-gray-400 uppercase mb-2">Maliyet Azalımı</p>
+<div class="flex items-end gap-1">
+<span class="text-2xl font-black text-[#131615]">%20</span>
+<span class="material-symbols-outlined text-red-400 text-sm mb-1">south_east</span>
+</div>
+</div>
+</section>
+<!-- Report Preview (Simplified Bar Chart) -->
+<section class="px-6 py-4">
+<div class="bg-white p-6 rounded-xl border border-neutral-soft shadow-sm">
+<div class="flex justify-between items-center mb-8">
+<h4 class="font-bold text-[#131615]">Aylık Performans Özeti</h4>
+<span class="material-symbols-outlined text-gray-300">more_horiz</span>
+</div>
+<div class="flex items-end justify-between h-40 gap-3">
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 40%"></div>
+</div>
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 65%"></div>
+</div>
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 50%"></div>
+</div>
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 85%"></div>
+</div>
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 70%"></div>
+</div>
+<div class="w-full bg-primary/20 rounded-t-md relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-md" style="height: 95%"></div>
+</div>
+</div>
+<div class="flex justify-between mt-4 text-[10px] font-bold text-gray-400 uppercase">
+<span>Oca</span>
+<span>Şub</span>
+<span>Mar</span>
+<span>Nis</span>
+<span>May</span>
+<span>Haz</span>
+</div>
+</div>
+</section>
+<!-- Testimonial/Trust Section -->
+<section class="px-6 py-10 text-center">
+<div class="flex justify-center gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-lg italic font-medium text-gray-700">
+                "Veri analizi sayesinde bütçemizi %30 daha verimli kullanmaya başladık."
+            </p>
+<p class="text-sm font-bold mt-2 text-gray-500">— E-Ticaret Yöneticisi</p>
+</section>
+</main>
+<!-- Sticky Footer -->
+<footer class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-lg border-t border-neutral-soft p-4 z-50">
+<div class="max-w-[480px] mx-auto">
+<button class="w-full bg-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">analytics</span>
+                Ücretsiz Veri Analizi
+            </button>
+</div>
+</footer>
+</body></html>

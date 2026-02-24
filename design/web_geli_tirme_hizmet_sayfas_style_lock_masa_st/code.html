@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Geliştirme Hizmetleri | Profesyonel Çözümler</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb3a5", // The requested #5AB3A4 / #5BB3A5
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#151d1c",
+                        "brand-dark": "#1F2B2B",
+                        "brand-muted": "#5F6B6D",
+                        "brand-border": "#E3ECEA",
+                        "brand-mint": "#DFF1EE",
+                        "success-badge": "#6BBF59"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-brand-dark overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky-nav w-full bg-white border-b border-brand-border px-6 md:px-20 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-brand-dark uppercase">Ajans<span class="text-primary">Dijital</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-brand-dark hover:text-primary transition-colors" href="#">Hizmetler</a>
+<a class="text-sm font-semibold text-brand-dark hover:text-primary transition-colors" href="#">Portfolyo</a>
+<a class="text-sm font-semibold text-brand-dark hover:text-primary transition-colors" href="#">Hakkımızda</a>
+<a class="text-sm font-semibold text-brand-dark hover:text-primary transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-opacity-90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm">
+                Teklif Al
+            </button>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center gap-12 px-6 md:px-20 py-16 md:py-24">
+<div class="flex-1 space-y-8">
+<div class="inline-flex items-center gap-2 bg-brand-mint px-3 py-1 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold text-primary uppercase tracking-wider">Geleceğin Web Standartları</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-black text-brand-dark leading-[1.1] tracking-tight">
+                    Hızlı, SEO Uyumlu ve <span class="text-primary">Dönüşüm</span> Odaklı Web Siteleri
+                </h1>
+<p class="text-lg text-brand-muted max-w-xl leading-relaxed">
+                    İşletmenizi dijital dünyada öne çıkaran, modern teknolojilerle donatılmış yüksek performanslı web çözümleri. Sadece bir site değil, bir büyüme aracı inşa ediyoruz.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-xl text-base font-bold transition-all shadow-lg shadow-primary/20">
+                        Hemen Başlayalım
+                    </button>
+<button class="bg-white border border-brand-border hover:bg-gray-50 text-brand-dark px-8 py-4 rounded-xl text-base font-bold transition-all">
+                        Portfolyomuz
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="w-full aspect-square bg-gradient-to-tr from-brand-mint to-white rounded-3xl overflow-hidden shadow-2xl border border-brand-border">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;q=80&amp;w=800')] bg-cover bg-center mix-blend-overlay opacity-40" data-alt="Modern web development dashboard interface visualization"></div>
+<div class="relative p-8 h-full flex flex-col justify-end">
+<div class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<div class="text-xs text-brand-muted font-bold uppercase">Performans Skoru</div>
+<div class="text-2xl font-black text-brand-dark">99/100</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="px-6 md:px-20 py-20 bg-background-light">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-3xl font-bold text-brand-dark">Neden Mevcut Siteniz Beklentilerinizi Karşılamıyor?</h2>
+<p class="text-brand-muted max-w-2xl mx-auto">Zayıf bir dijital varlık, potansiyel müşterilerinizi kaybetmenize neden olur.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-brand-border shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center text-red-500 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h3 class="text-xl font-bold text-brand-dark mb-4">Yavaş Yüklenen Sayfalar</h3>
+<p class="text-brand-muted leading-relaxed">
+                        Ziyaretçilerinizin %53'ü 3 saniyeden geç açılan siteleri terk ediyor. Hız, kullanıcı deneyiminin temelidir.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-brand-border shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 rounded-xl bg-orange-50 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">sentiment_dissatisfied</span>
+</div>
+<h3 class="text-xl font-bold text-brand-dark mb-4">Düşük Dönüşüm Oranları</h3>
+<p class="text-brand-muted leading-relaxed">
+                        Kullanıcı deneyimi zayıf tasarımlar, potansiyel müşterilerinizi sipariş vermeden rakiplerinize kaçırıyor.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-brand-border shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">settings_account_box</span>
+</div>
+<h3 class="text-xl font-bold text-brand-dark mb-4">Teknik Dağınıklık</h3>
+<p class="text-brand-muted leading-relaxed">
+                        Eski altyapılar ve güncellenmeyen sistemler güvenlik açıkları oluştururken yönetimi kabusa çevirir.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="px-6 md:px-20 py-24 bg-brand-mint rounded-[3rem] mx-6 md:mx-20 my-10 overflow-hidden relative">
+<div class="absolute top-0 right-0 p-20 opacity-10">
+<span class="material-symbols-outlined text-[20rem] text-primary">verified</span>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 space-y-6">
+<h2 class="text-4xl font-black text-brand-dark leading-tight">İşletmeniz İçin Uçtan Uca Modern Çözümler</h2>
+<p class="text-brand-muted text-lg leading-relaxed">
+                        Klasik web sitelerinin ötesine geçiyoruz. Sizin için sadece bir arayüz değil, işinizi büyüten tam entegre bir dijital ekosistem kuruyoruz.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-badge">check_circle</span>
+<span class="font-semibold text-brand-dark">Kurumsal Site</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-badge">check_circle</span>
+<span class="font-semibold text-brand-dark">Landing Page</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-badge">check_circle</span>
+<span class="font-semibold text-brand-dark">CRM Entegrasyonu</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-badge">check_circle</span>
+<span class="font-semibold text-brand-dark">E-Ticaret Çözümleri</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">devices</span>
+<p class="font-bold text-brand-dark">%100 Mobil Uyum</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">search</span>
+<p class="font-bold text-brand-dark">Gelişmiş SEO</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">shield</span>
+<p class="font-bold text-brand-dark">Maksimum Güvenlik</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-primary/10 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">bar_chart</span>
+<p class="font-bold text-brand-dark">Analitik İzleme</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology Stack -->
+<section class="px-6 md:px-20 py-20">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-dark mb-4">Kullandığımız Teknolojiler</h2>
+<p class="text-brand-muted">Sektör lideri araçlarla en iyi performansı garanti ediyoruz.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<div class="bg-white border border-brand-border px-8 py-6 rounded-xl flex items-center gap-4 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary">dynamic_form</span>
+<span class="font-bold text-lg">Next.js</span>
+</div>
+<div class="bg-white border border-brand-border px-8 py-6 rounded-xl flex items-center gap-4 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary">deployed_code</span>
+<span class="font-bold text-lg">React</span>
+</div>
+<div class="bg-white border border-brand-border px-8 py-6 rounded-xl flex items-center gap-4 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary">palette</span>
+<span class="font-bold text-lg">Tailwind CSS</span>
+</div>
+<div class="bg-white border border-brand-border px-8 py-6 rounded-xl flex items-center gap-4 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary">data_object</span>
+<span class="font-bold text-lg">Headless CMS</span>
+</div>
+<div class="bg-white border border-brand-border px-8 py-6 rounded-xl flex items-center gap-4 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary">cloud_done</span>
+<span class="font-bold text-lg">Node.js</span>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="px-6 md:px-20 py-20 bg-white">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-brand-dark mb-4">Başarıya Giden Yol Haritamız</h2>
+<p class="text-brand-muted">Şeffaf ve planlı bir süreçle hayallerinizi gerçeğe dönüştürüyoruz.</p>
+</div>
+<div class="relative">
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-brand-border -translate-y-1/2 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-6 ring-8 ring-white shadow-lg">1</div>
+<h4 class="font-bold text-brand-dark mb-2">Keşif</h4>
+<p class="text-xs text-brand-muted">İhtiyaç analizi ve pazar araştırması.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-6 ring-8 ring-white shadow-lg">2</div>
+<h4 class="font-bold text-brand-dark mb-2">Tasarım</h4>
+<p class="text-xs text-brand-muted">UX odaklı modern arayüz çalışmaları.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-6 ring-8 ring-white shadow-lg">3</div>
+<h4 class="font-bold text-brand-dark mb-2">Geliştirme</h4>
+<p class="text-xs text-brand-muted">Yüksek performanslı kodlama süreci.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-6 ring-8 ring-white shadow-lg">4</div>
+<h4 class="font-bold text-brand-dark mb-2">Test</h4>
+<p class="text-xs text-brand-muted">Hata ayıklama ve hız optimizasyonu.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-6 ring-8 ring-white shadow-lg">5</div>
+<h4 class="font-bold text-brand-dark mb-2">Yayın</h4>
+<p class="text-xs text-brand-muted">Canlıya alım ve sürekli destek.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies -->
+<section class="px-6 md:px-20 py-20 bg-background-light">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-bold text-brand-dark mb-4">Başarı Hikayelerimiz</h2>
+<p class="text-brand-muted">Müşterilerimiz için yarattığımız farkı rakamlarla görün.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                    Tüm Projeler <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Case 1 -->
+<div class="group cursor-pointer">
+<div class="relative h-80 w-full rounded-2xl overflow-hidden mb-6 border border-brand-border">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&amp;fit=crop&amp;q=80&amp;w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="High tech logistics company dashboard preview"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-success-badge text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">+40% HIZ</span>
+<span class="bg-brand-dark text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Lojistik</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-brand-dark mb-2">Global Lojistik Portalı</h3>
+<p class="text-brand-muted">Yüzlerce araçlık filonun yönetimini kolaylaştıran, gerçek zamanlı veri akışlı kurumsal web çözümü.</p>
+</div>
+<!-- Case 2 -->
+<div class="group cursor-pointer">
+<div class="relative h-80 w-full rounded-2xl overflow-hidden mb-6 border border-brand-border">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bbda4865cda1?auto=format&amp;fit=crop&amp;q=80&amp;w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="SaaS platform landing page performance stats"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-success-badge text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">+25% LEAD</span>
+<span class="bg-brand-dark text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">SaaS</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-brand-dark mb-2">Fintech Ödeme Sistemi</h3>
+<p class="text-brand-muted">Kullanıcı dönüşümünü merkeze alan, sade ve güven veren Landing Page ve Dashboard tasarımı.</p>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="px-6 md:px-20 py-20 bg-white">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold text-brand-dark mb-10 text-center">Sıkça Sorulan Sorular</h2>
+<div class="space-y-4">
+<div class="border border-brand-border rounded-xl p-6 hover:bg-background-light transition-colors">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-bold text-brand-dark">Bir projenin teslim süresi nedir?</h4>
+<span class="material-symbols-outlined text-primary">add</span>
+</div>
+<div class="mt-4 text-brand-muted text-sm leading-relaxed hidden">
+                            Projenin kapsamına bağlı olarak genellikle 4-8 hafta arasında teslimat yapmaktayız. Basit açılış sayfaları (Landing Page) 1-2 haftada tamamlanabilir.
+                        </div>
+</div>
+<div class="border border-brand-border rounded-xl p-6 hover:bg-background-light transition-colors">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-bold text-brand-dark">SEO uyumluluğu sağlıyor musunuz?</h4>
+<span class="material-symbols-outlined text-primary">remove</span>
+</div>
+<div class="mt-4 text-brand-muted text-sm leading-relaxed">
+                            Evet, teknik SEO kriterlerinin tamamını (sayfa hızı, meta etiketler, semantik kodlama, mobil uyumluluk) projenin çekirdeğine entegre ediyoruz.
+                        </div>
+</div>
+<div class="border border-brand-border rounded-xl p-6 hover:bg-background-light transition-colors">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-bold text-brand-dark">Hosting ve alan adı desteği veriyor musunuz?</h4>
+<span class="material-symbols-outlined text-primary">add</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-6 md:px-20 py-20">
+<div class="bg-brand-dark rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-50"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-3xl md:text-5xl font-black text-white leading-tight">Dijital Dönüşümünüzü <br/> Bugün Başlatın</h2>
+<p class="text-gray-400 max-w-xl mx-auto text-lg">
+                        Mevcut sitenizi analiz edelim ve size en uygun stratejiyi birlikte kuralım.
+                    </p>
+<div class="pt-6">
+<button class="bg-primary hover:bg-opacity-90 text-white px-10 py-5 rounded-xl text-lg font-black transition-all shadow-xl shadow-primary/30">
+                            Web Sitemi Yenilemek İstiyorum
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-brand-border py-12 px-6 md:px-20 mt-10">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-lg text-white">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-brand-dark uppercase">Ajans<span class="text-primary">Dijital</span></span>
+</div>
+<div class="flex gap-8">
+<a class="text-brand-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+<a class="text-brand-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-brand-muted hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+<p class="text-sm text-brand-muted">© 2024 Ajans Dijital. Tüm hakları saklıdır.</p>
+</div>
+</footer>
+</body></html>

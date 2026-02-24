@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Layout - Masaüstü Görünüm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b8a5",
+                        "primary-hover": "#0d9488",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#11211f",
+                        "dark-slate": "#0F172A",
+                        "accent-amber": "#F59E0B",
+                        "accent-amber-hover": "#D97706",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased selection:bg-primary selection:text-white">
+<!-- Header & Mega Menu -->
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md shadow-sm border-b border-slate-200 dark:border-slate-800 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+<div class="w-10 h-10 bg-gradient-to-br from-primary to-teal-700 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/30">
+                        A
+                    </div>
+<span class="font-bold text-xl tracking-tight text-slate-900 dark:text-white">Agency<span class="text-primary">Turk</span></span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex space-x-1">
+<a class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors" href="#">Anasayfa</a>
+<!-- Mega Menu Trigger -->
+<div class="group relative">
+<button class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary inline-flex items-center gap-1 transition-colors group-hover:text-primary">
+                            Hizmetler
+                            <span class="material-icons text-base transition-transform group-hover:-rotate-180">expand_more</span>
+</button>
+<!-- Invisible bridge to keep hover active -->
+<div class="absolute top-full left-0 w-full h-4 bg-transparent"></div>
+<!-- Mega Menu Content -->
+<div class="absolute top-[calc(100%+0.5rem)] left-1/2 -translate-x-1/2 w-screen max-w-7xl px-4 sm:px-6 lg:px-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out transform group-hover:translate-y-0 translate-y-2">
+<div class="bg-white dark:bg-[#1a2c29] rounded-xl shadow-2xl border border-slate-100 dark:border-slate-800 overflow-hidden ring-1 ring-black/5">
+<div class="grid grid-cols-6 gap-8 p-8">
+<!-- Col 1 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">code</span>
+<h4>Web Geliştirme</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Kurumsal Web Sitesi</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Landing Page</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">CMS Çözümleri</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">API Entegrasyonları</a></li>
+</ul>
+</div>
+<!-- Col 2 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">shopping_bag</span>
+<h4>E-Ticaret</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Shopify Kurulum</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">WooCommerce</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">B2B Altyapıları</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Ödeme Sistemleri</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">trending_up</span>
+<h4>Dijital Pazarlama</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">SEO Optimizasyonu</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Google Ads</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Sosyal Medya Yönetimi</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">İçerik Pazarlaması</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">smart_toy</span>
+<h4>Python Otomasyon</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">İş Akışı Otomasyonu</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Bot Geliştirme</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Web Scraping</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Veri Temizleme</a></li>
+</ul>
+</div>
+<!-- Col 5 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">analytics</span>
+<h4>Veri Analizi</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Power BI Raporlama</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Veri Görselleştirme</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Satış Analizi</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Müşteri Segmentasyonu</a></li>
+</ul>
+</div>
+<!-- Col 6 -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-primary font-semibold border-b border-primary/10 pb-2 mb-2">
+<span class="material-icons text-lg">smartphone</span>
+<h4>Mobil Uygulama</h4>
+</div>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">iOS Geliştirme</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Android Geliştirme</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">React Native</a></li>
+<li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary block transition-colors" href="#">Flutter</a></li>
+</ul>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-black/20 p-4 text-center border-t border-slate-100 dark:border-slate-800">
+<a class="text-sm font-medium text-primary hover:text-primary-hover flex items-center justify-center gap-1 group/link" href="#">
+                                        Tüm hizmetlerimizi inceleyin
+                                        <span class="material-icons text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<a class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors" href="#">Projeler</a>
+<a class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors" href="#">Hakkımızda</a>
+<a class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors" href="#">Blog</a>
+<a class="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors" href="#">İletişim</a>
+</nav>
+<!-- Right Actions -->
+<div class="flex items-center gap-3">
+<a class="hidden md:flex items-center gap-2 px-4 py-2 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-medium rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-icons text-[#25D366] text-xl">whatsapp</span>
+                        WhatsApp
+                    </a>
+<a class="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-hover text-white font-semibold rounded-lg shadow-lg shadow-primary/30 transition-all hover:scale-105 active:scale-95" href="#">
+                        Teklif Al
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area Placeholder -->
+<main class="min-h-screen relative">
+<!-- Hero Section (Placeholder for context) -->
+<section class="relative bg-background-light dark:bg-background-dark pt-16 pb-24 overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute inset-0 z-0">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 -left-24 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20">Türkiye'nin KOBİ Dostu Dijital Ajansı</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                        İşinizi <span class="text-primary">Dijital Dünyada</span> Büyütün
+                    </h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 max-w-lg leading-relaxed">
+                        Modern web teknolojileri, veri odaklı pazarlama ve özel yazılım çözümleriyle işletmenizin potansiyelini açığa çıkarıyoruz.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg font-semibold hover:shadow-xl hover:-translate-y-1 transition-all">
+                            Projelerimizi İncele
+                        </button>
+<button class="px-8 py-3.5 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 rounded-lg font-semibold hover:bg-slate-50 dark:hover:bg-white/5 transition-all">
+                            Bize Ulaşın
+                        </button>
+</div>
+</div>
+<div class="relative">
+<!-- Reusable Block 2: Info Box within Hero context -->
+<div class="absolute -bottom-6 -left-6 z-20 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 max-w-xs animate-fade-in-up">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-primary/10 rounded-lg">
+<span class="material-icons text-primary text-2xl">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white mb-1">Hızlı Başlangıç</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">
+<strong class="text-primary">3 İş Gününde</strong> kapsamlı dijital yol haritanız hazır.
+                                </p>
+</div>
+</div>
+</div>
+<img alt="Team working" class="rounded-2xl shadow-2xl w-full object-cover h-[500px] border border-slate-200 dark:border-slate-700" data-alt="Modern office team working on analytics dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX7tqNE_eWN92BAMVadP_7_akhfYIfT03O4TFOa-i5mcsrziMHuZBfgwlH88vrgDuLfRbo6MNmslmPGXIN0ZnMyMM_vb6LlnIIEaBQHfC2CcZSt85CKnAvBCWjpBboz04QYY8gsC57JgDjJS2pxN9s7iPURW1X_9Z7DWCgQ5nb0zSNnOJZk_8yb9GwWXjjznePrsgAayot2cHMhAulFM6-Wau24M6co5vIFLrudixBl4O4CEt5gyVsf_sF_ft88EE5r4SH7xN_Sb_D"/>
+</div>
+</div>
+</section>
+<!-- Dummy Content Section to show scrolling -->
+<section class="py-20 bg-white dark:bg-[#162926]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-6 rounded-xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-shadow">
+<span class="material-icons text-4xl text-primary mb-4">analytics</span>
+<h3 class="text-xl font-bold mb-2 dark:text-white">Veri Odaklı Strateji</h3>
+<p class="text-slate-600 dark:text-slate-400">Kararlarınızı varsayımlara değil, gerçek verilere dayandırın.</p>
+</div>
+<div class="p-6 rounded-xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-shadow">
+<span class="material-icons text-4xl text-primary mb-4">devices</span>
+<h3 class="text-xl font-bold mb-2 dark:text-white">Mobil Uyumlu Tasarım</h3>
+<p class="text-slate-600 dark:text-slate-400">Her cihazda kusursuz görünen arayüzler tasarlıyoruz.</p>
+</div>
+<div class="p-6 rounded-xl bg-background-light dark:bg-background-dark border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-shadow">
+<span class="material-icons text-4xl text-primary mb-4">support_agent</span>
+<h3 class="text-xl font-bold mb-2 dark:text-white">7/24 Destek</h3>
+<p class="text-slate-600 dark:text-slate-400">Teknik ekibimiz her an yanınızda.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reusable Block 1: CTA Band -->
+<section class="py-16 bg-dark-slate dark:bg-black relative overflow-hidden">
+<!-- Pattern overlay -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+<div class="space-y-2">
+<h2 class="text-3xl md:text-4xl font-bold text-white">
+                            Projeleriniz için <span class="text-primary">30 Dakika Ücretsiz Keşif</span> Toplantısı
+                        </h2>
+<p class="text-slate-400 text-lg max-w-2xl">
+                            İhtiyaçlarınızı dinleyelim, size en uygun dijital çözüm yolunu birlikte çizelim. Herhangi bir taahhüt gerekmez.
+                        </p>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-accent-amber hover:bg-accent-amber-hover text-white font-bold text-lg rounded-lg shadow-lg shadow-orange-900/20 transform transition-all hover:-translate-y-1 active:translate-y-0" href="#">
+<span class="material-icons">calendar_month</span>
+                            Hemen Randevu Oluştur
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Area -->
+<div class="bg-background-light dark:bg-[#0b1615] border-t border-slate-200 dark:border-slate-800 pt-12 pb-6">
+<!-- Trust Badges -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 justify-center md:justify-start group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">verified_user</span>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-200">SLA Garantisi</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">%99.9 Uptime</p>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-center md:justify-start group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">lock</span>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-200">Güvenli Altyapı</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">%100 KVKK Uyumlu</p>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-center md:justify-start group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">code</span>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-200">Yerli Yazılım</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Teknopark Onaylı</p>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-center md:justify-start group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">support</span>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-200">Uzman Destek</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Hızlı Müdahale</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Footer Links -->
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Col 1: Hizmetler -->
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6">Hizmetlerimiz</h3>
+<ul class="space-y-3">
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Web Tasarım &amp; Yazılım</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">E-Ticaret Paketleri</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">SEO &amp; Dijital Pazarlama</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Kurumsal Kimlik</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Mobil Uygulama</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Veri Analitiği</a></li>
+</ul>
+</div>
+<!-- Col 2: Şehirler & Lokasyon -->
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6">Hizmet Bölgelerimiz</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
+<span class="material-icons text-primary text-sm">location_on</span> Ankara Ofis (Merkez)
+                        </li>
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
+<span class="material-icons text-primary text-sm">location_on</span> Konya Bölge
+                        </li>
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
+<span class="material-icons text-primary text-sm">location_on</span> Kayseri Temsilcilik
+                        </li>
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
+<span class="material-icons text-primary text-sm">location_on</span> Eskişehir Şube
+                        </li>
+</ul>
+<div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+<img alt="Turkey Map" class="w-full h-24 object-cover rounded-lg opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" data-alt="Map view of Turkey highlighting service regions" data-location="Turkey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg7PFqpwjj6ScmYynD-ieaRsZJgnXldmiMj6zv_Htg-QK4OaIFJyPMd7kPIe6aVKS8KmjmZ6BPs2sXna_Ym-hhCxuSQAH0rDW-pYC4aOnKnd5l3a7d6wh-fyjNVSaBf0EraZxIYx0UcztS6E16jDptDJ4FpWM-G83hI3bkM-OOhdh7bbNv8RAnj6Sn5FVXjflxvAqObKWMhwO7EGNQCpkuVexn08gKKRuOKXGb20dfGFotK9vCN51TFdCunEOQZ2doMKNJMriGyK9J"/>
+</div>
+</div>
+<!-- Col 3: Kurumsal -->
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6">Kurumsal</h3>
+<ul class="space-y-3">
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Hakkımızda</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Kariyer</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">İletişim</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">KVKK Metni</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Gizlilik Politikası</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Çerez Politikası</a></li>
+</ul>
+</div>
+<!-- Col 4: Newsletter -->
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6">Bülten Aboneliği</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Dijital trendler ve sektörel gelişmelerden haberdar olun.</p>
+<form class="space-y-3">
+<div>
+<label class="sr-only" for="email">E-posta adresi</label>
+<input class="w-full px-4 py-3 rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent text-sm" id="email" placeholder="E-posta adresiniz" type="email"/>
+</div>
+<button class="w-full px-4 py-3 bg-primary hover:bg-primary-hover text-white font-medium rounded-lg transition-colors text-sm flex items-center justify-center gap-2" type="submit">
+                            Abone Ol
+                            <span class="material-icons text-sm">send</span>
+</button>
+</form>
+<div class="mt-6 flex gap-4">
+<a class="w-8 h-8 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#"><span class="font-bold text-xs">LN</span></a>
+<a class="w-8 h-8 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#"><span class="font-bold text-xs">TW</span></a>
+<a class="w-8 h-8 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#"><span class="font-bold text-xs">IG</span></a>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright -->
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-slate-500 dark:text-slate-500">
+                    © 2023 AgencyTurk Dijital Çözümler A.Ş. Tüm hakları saklıdır.
+                </p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-medium text-slate-500">Sistemler Çalışıyor</span>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

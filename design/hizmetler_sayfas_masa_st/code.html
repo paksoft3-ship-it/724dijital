@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hizmetler Sayfası - Dijital Ajans</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b9a5",
+                        "secondary": "#F59E0B",
+                        "neutral-dark": "#0F172A",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#11211f",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'lift': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-neutral-dark dark:text-gray-100 font-display">
+<!-- Header / Navigation Placeholder -->
+<nav class="w-full border-b border-gray-200 dark:border-white/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-white font-bold">A</div>
+<span class="font-bold text-xl tracking-tight text-neutral-dark dark:text-white">Ajans</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-gray-500 dark:text-gray-300 hover:text-primary transition-colors" href="#">Ana Sayfa</a>
+<a class="text-primary font-semibold" href="#">Hizmetler</a>
+<a class="text-gray-500 dark:text-gray-300 hover:text-primary transition-colors" href="#">Projeler</a>
+<a class="text-gray-500 dark:text-gray-300 hover:text-primary transition-colors" href="#">İletişim</a>
+</div>
+<div>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors">Teklif Al</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<section class="relative pt-20 pb-12 overflow-hidden">
+<!-- Abstract Background Pattern -->
+<div class="absolute inset-0 z-0 opacity-30 dark:opacity-10 pointer-events-none">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-primary/20 to-transparent rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/20">Dijital Çözümler</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-neutral-dark dark:text-white mb-6 leading-tight">
+                İhtiyacınıza Uygun <br class="hidden md:block"/> <span class="text-primary">Hizmeti Seçin</span>
+</h1>
+<p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
+                İşletmenizi dijital dünyada büyütmek, operasyonlarınızı optimize etmek ve satışlarınızı artırmak için gereken tüm çözümler tek çatı altında.
+            </p>
+</div>
+</section>
+<!-- 2. Filter Chips -->
+<section class="pb-16 pt-4 sticky top-20 z-40 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm transition-all duration-300 border-b border-transparent data-[stuck=true]:border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap justify-center gap-3">
+<button class="px-5 py-2.5 rounded-full bg-neutral-dark text-white font-medium text-sm shadow-md transition-all ring-2 ring-transparent hover:ring-primary/50">Tümü</button>
+<button class="px-5 py-2.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-neutral-dark dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/10 font-medium text-sm transition-all hover:border-primary/30">Yeni web sitesi</button>
+<button class="px-5 py-2.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-neutral-dark dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/10 font-medium text-sm transition-all hover:border-primary/30">E-ticaret büyüme</button>
+<button class="px-5 py-2.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-neutral-dark dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/10 font-medium text-sm transition-all hover:border-primary/30">Otomasyon</button>
+<button class="px-5 py-2.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-neutral-dark dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/10 font-medium text-sm transition-all hover:border-primary/30">Reklam performansı</button>
+<button class="px-5 py-2.5 rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-neutral-dark dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/10 font-medium text-sm transition-all hover:border-primary/30">Raporlama</button>
+</div>
+</div>
+</section>
+<!-- 3. Service Cards (Grid of 6) -->
+<section class="py-12 bg-white dark:bg-white/5 relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">language</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">Kurumsal Web Tasarım</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Marka kimliğinizi yansıtan, modern ve mobil uyumlu arayüzlerle güven inşa edin.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">React, Next.js, Headless CMS</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>UX/UI Tasarım Süreci</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>SEO Dostu Kodlama</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>CMS Entegrasyonu</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">shopping_cart</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">E-Ticaret Geliştirme</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Satış odaklı, hızlı ve ölçeklenebilir e-ticaret altyapıları ile cironuzu katlayın.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">Shopify, Woocommerce, Magento</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Ödeme Sistemi Entegrasyonu</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Pazaryeri Bağlantıları</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Dönüşüm Optimizasyonu</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">trending_up</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">Performans Pazarlama</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Google ve Meta reklamlarıyla doğru hedef kitleye ulaşıp reklam harcamanızı yatırıma dönüştürün.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">Google Ads, Meta Ads, SEO</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Anahtar Kelime Analizi</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>A/B Testleri</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>ROAS Odaklı Yönetim</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">settings_suggest</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">İş Süreçleri Otomasyonu</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Manuel iş yükünü azaltın, tekrarlayan görevleri otomatikleştirerek ekibinizin verimini artırın.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">Zapier, Make, Python Scripting</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>CRM Otomasyonları</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>E-posta Akışları</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Veri Senkronizasyonu</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">insights</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">Veri Analitiği &amp; Raporlama</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Veriye dayalı kararlar almanız için işletme metriklerinizi anlaşılır dashboardlarda görselleştiriyoruz.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">GA4, Looker Studio, BigQuery</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Özel Dashboard Tasarımı</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Dönüşüm Hunisi Analizi</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Aylık Performans Raporu</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="service-card group bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10 rounded-xl p-8 flex flex-col shadow-soft hover:shadow-lift">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-icons-round text-primary text-3xl group-hover:text-white transition-colors duration-300">smartphone</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-dark dark:text-white mb-2">Mobil Uygulama</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-4 h-12 overflow-hidden text-sm leading-relaxed">Müşterilerinizin her an yanında olun. iOS ve Android için performanslı native uygulamalar.</p>
+<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-6 bg-gray-200 dark:bg-white/10 inline-block px-2 py-1 rounded w-fit">Flutter, React Native, Swift</div>
+<div class="mt-auto pt-6 border-t border-gray-200 dark:border-white/10">
+<ul class="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>App Store Optimizasyonu</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Bildirim Sistemleri</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Kullanıcı Testleri</li>
+</ul>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+                            Detayları Gör <span class="material-icons-round text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Comparison Block -->
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-neutral-dark dark:text-white mb-3">Hangi Hizmet Hangi Hedefe Uygun?</h2>
+<p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Hedeflerinize en hızlı şekilde ulaşmanızı sağlayacak doğru hizmet kombinasyonunu belirleyin.</p>
+</div>
+<div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#152725] shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-gray-50/50 dark:bg-white/5 border-b border-gray-200 dark:border-white/10">
+<th class="p-6 text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider min-w-[200px]">Hizmetler</th>
+<th class="p-6 text-center text-sm font-semibold text-gray-600 dark:text-gray-300 min-w-[120px]">Satış Artırma</th>
+<th class="p-6 text-center text-sm font-semibold text-gray-600 dark:text-gray-300 min-w-[120px]">Marka Bilinirliği</th>
+<th class="p-6 text-center text-sm font-semibold text-gray-600 dark:text-gray-300 min-w-[120px]">Verimlilik</th>
+<th class="p-6 text-center text-sm font-semibold text-gray-600 dark:text-gray-300 min-w-[120px]">Müşteri Sadakati</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200 dark:divide-white/10">
+<tr class="group hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium text-gray-900 dark:text-white">Web Yazılım</td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+</tr>
+<tr class="group hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium text-gray-900 dark:text-white">E-Ticaret</td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+</tr>
+<tr class="group hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium text-gray-900 dark:text-white">Performans Pazarlama</td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+</tr>
+<tr class="group hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium text-gray-900 dark:text-white">Otomasyon</td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+</tr>
+<tr class="group hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium text-gray-900 dark:text-white">Mobil Uygulama</td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-gray-300 dark:text-gray-600">remove</span></td>
+<td class="p-6 text-center"><span class="material-icons-round text-primary">check_circle</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 5. Approach/Package Section -->
+<section class="py-20 relative overflow-hidden bg-white dark:bg-white/5">
+<!-- Background accents -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Stratejimiz</span>
+<h2 class="text-3xl md:text-4xl font-bold text-neutral-dark dark:text-white">Büyüme Yolculuğunuz</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">İşletmenizin bulunduğu aşamaya özel yaklaşım modellerimiz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Package 1: Başlangıç -->
+<div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border-t-4 border-gray-300 dark:border-gray-600 shadow-lg relative">
+<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-800 text-6xl font-black -z-0 opacity-20">01</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold text-neutral-dark dark:text-white mb-4">Başlangıç</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+                            Dijital dünyada varlık göstermeye yeni başlayanlar için temel altyapının kurulması.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-gray-400 text-lg mr-2 mt-0.5">check</span>
+                                Kurumsal Kimlik &amp; Web Sitesi
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-gray-400 text-lg mr-2 mt-0.5">check</span>
+                                Temel SEO Ayarları
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-gray-400 text-lg mr-2 mt-0.5">check</span>
+                                Sosyal Medya Kurulumu
+                            </li>
+</ul>
+</div>
+</div>
+<!-- Package 2: Büyüme -->
+<div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border-t-4 border-primary shadow-xl scale-105 z-10 relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">En Çok Tercih Edilen</div>
+<div class="absolute top-8 right-8 text-primary/10 text-6xl font-black -z-0">02</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold text-primary mb-4">Büyüme</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+                            Ziyaretçi trafiğini satışa dönüştürmek ve pazar payını artırmak isteyenler için.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-primary text-lg mr-2 mt-0.5">check</span>
+                                Performans Pazarlama (Ads)
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-primary text-lg mr-2 mt-0.5">check</span>
+                                Dönüşüm Optimizasyonu (CRO)
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-primary text-lg mr-2 mt-0.5">check</span>
+                                İçerik Pazarlaması
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-primary text-lg mr-2 mt-0.5">check</span>
+                                Aylık Raporlama
+                            </li>
+</ul>
+</div>
+</div>
+<!-- Package 3: Kurumsal -->
+<div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border-t-4 border-secondary shadow-lg relative">
+<div class="absolute top-8 right-8 text-secondary/10 text-6xl font-black -z-0">03</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold text-neutral-dark dark:text-white mb-4">Kurumsal</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+                            Lider konumunu korumak ve verimliliği maksimize etmek isteyen büyük ölçekli yapılar.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-secondary text-lg mr-2 mt-0.5">check</span>
+                                Özel Yazılım Çözümleri
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-secondary text-lg mr-2 mt-0.5">check</span>
+                                İş Süreçleri Otomasyonu
+                            </li>
+<li class="flex items-start text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons-round text-secondary text-lg mr-2 mt-0.5">check</span>
+                                Veri Ambarı &amp; BI
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Final CTA -->
+<section class="py-24 relative overflow-hidden bg-neutral-dark dark:bg-background-dark border-t border-white/10">
+<!-- Background Image/Pattern -->
+<div class="absolute inset-0 z-0 bg-cover bg-center opacity-10" data-alt="Team brainstorming session in modern office abstract" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYzSJov1Gxyy5bfgHuL7CRmRysG8D3Ibh-9R3pFmB59pA0n0iBGOiwIDVgyVjtmZY5SzElJho0TS59KJFaIsXUOFIqGIz-tohFZ9U9GVFmX7xCNJ-Wl7vdcFMo9r0Fstk7UVgK154mgLHxBytmXgcjZVn4Kq16hNtfNq66x9eyxYK28ZaPz--ufEkEowdl7DlHZHNmFrjBp6mvWQ5sc6yVw_OLy2mOLpavghrkefwFiyIJcmIeTbuRyjNew3ungYYVBTSzVe-1ssaz');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-neutral-dark via-neutral-dark/90 to-primary/20 z-0"></div>
+<div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Doğru paketi birlikte belirleyelim.</h2>
+<p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Sizin için en uygun stratejiyi oluşturmak üzere uzman ekibimizle ücretsiz bir görüşme planlayın.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-primary/50 transition-all transform hover:-translate-y-1 text-lg">
+                    Ücretsiz Analiz Alın
+                </button>
+<button class="bg-transparent border-2 border-white/20 hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+                    Hemen Arayın
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer Simple -->
+<footer class="bg-background-light dark:bg-background-dark py-12 border-t border-gray-200 dark:border-white/10 text-center">
+<p class="text-gray-500 dark:text-gray-400 text-sm">© 2023 Dijital Ajans. Tüm hakları saklıdır.</p>
+</footer>
+</body></html>

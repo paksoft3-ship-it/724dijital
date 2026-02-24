@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #0F1729;
+
+  --color-primary: #0F1729;
+  --color-primary-hover: #1E293B;
+  --color-secondary: #14B8A6;
+  --color-accent: #F59E0B;
+
+  --color-neutral-surface: #F8FAFC;
+  --color-neutral-border: #E2E8F0;
+
+  --color-success: #25D366;
+  /* WhatsApp Green */
+  --color-whatsapp: #25D366;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-info: #3B82F6;
+
+  --font-sans: var(--font-manrope);
+
+  --text-5xl: 3rem;
+  /* H1 Desktop: 48px */
+  --text-4xl: 2.25rem;
+  /* H1 Mobile / H2 Desktop: 36px */
+  --text-3xl: 1.875rem;
+  /* H2 Mobile / H3 Desktop: 30px */
+  --text-2xl: 1.5rem;
+  /* H4: 24px */
+  --text-xl: 1.25rem;
+  /* H5: 20px */
+  --text-lg: 1.125rem;
+  /* H6 / Body Large: 18px */
+
+  --animate-ping-slow: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-fade-in: fade-in 1s ease-out;
+
+  @keyframes ping-slow {
+
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0F1729;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14171E;
+    --foreground: #F8FAFC;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+}

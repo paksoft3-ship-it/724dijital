@@ -1,0 +1,127 @@
+{
+    "slug": "seo-hizmeti",
+    "seo": {
+        "title": "SEO Hizmeti | Arama Motoru Optimizasyonu",
+        "description": "SEO ile organik trafiğinizi katlayın. Veri odaklı stratejilerle arama motorlarında zirveye ulaşın.",
+        "ogImage": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&q=80&w=800"
+    },
+    "hero": {
+        "badge": "Arama Motoru Optimizasyonu",
+        "title": "SEO ile Organik Trafiğinizi Katlayın",
+        "subtitle": "Dijital varlığınızı güçlendiren, veri odaklı stratejilerle arama motorlarında zirveye ulaşın ve sürdürülebilir büyüme yakalayın.",
+        "primaryCta": "Hemen Başlayın",
+        "secondaryCta": "SEO Analizi"
+    },
+    "targetAudience": [
+        {
+            "icon": "search",
+            "title": "Google'da Görünmek İsteyenler",
+            "description": "Potansiyel müşterilerin aramalarında ilk sırada çıkmak isteyen işletmeler."
+        }
+    ],
+    "deliverables": [
+        "Teknik SEO Denetimi",
+        "Hız Optimizasyonu",
+        "İçerik Stratejisi",
+        "Otorite İnşası (Backlink)"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Analiz",
+            "duration": "2 Hafta",
+            "description": "Teknik denetim ve kelime araştırması."
+        },
+        {
+            "step": 2,
+            "title": "Optimizasyon",
+            "duration": "4 Hafta",
+            "description": "Site içi hataların giderilmesi."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "search",
+            "label": "Google Search Console"
+        },
+        {
+            "icon": "analytics",
+            "label": "Ahrefs / Semrush"
+        },
+        {
+            "icon": "speed",
+            "label": "PageSpeed Insights"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Standart SEO",
+            "price": "₺7.500/ay",
+            "features": [
+                "Teknik SEO",
+                "10 İçerik Optimizasyonu",
+                "Aylık Raporlama"
+            ],
+            "ctaText": "Başlayalım",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Sonuçları ne zaman görürüz?",
+            "answer": "SEO uzun vadeli bir yatırımdır. Genellikle 3-6 ay arasında belirgin sonuçlar alınır."
+        }
+    ],
+    "summary": {
+        "duration": "6+ Ay",
+        "startingPrice": "5.000 TL",
+        "format": "Aylık Danışmanlık",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Senior SEO Specialist",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    },
+    "customSections": {
+        "roadmap": {
+            "title": "90 Günlük SEO Planı",
+            "items": [
+                {
+                    "step": 1,
+                    "title": "Analiz ve Teşhis",
+                    "description": "Teknik denetim ve rakip analizi ile yol haritasını belirliyoruz."
+                },
+                {
+                    "step": 2,
+                    "title": "Optimizasyon",
+                    "description": "Sayfa içi hataların giderilmesi ve teknik SEO düzeltmeleri."
+                },
+                {
+                    "step": 3,
+                    "title": "Büyüme ve Ölçeklendirme",
+                    "description": "Backlink stratejisi ve performans takibi ile görünürlük artışı."
+                }
+            ]
+        },
+        "solutions": {
+            "title": "Yerel SEO Odak Noktamız",
+            "subtitle": "Bölgesel aramalarda hedef kitlenizin karşısına en doğru zamanda çıkın.",
+            "checkmarks": [
+                "Google Haritalar Optimizasyonu",
+                "Bölgesel Kelime Hedefleme",
+                "İşletme Profili Yönetimi",
+                "Yerel İçerik Stratejisi"
+            ],
+            "grid": [
+                {
+                    "icon": "map",
+                    "title": "Harita Görünürlüğü"
+                },
+                {
+                    "icon": "location_on",
+                    "title": "Yerel Trafik"
+                }
+            ]
+        }
+    }
+}

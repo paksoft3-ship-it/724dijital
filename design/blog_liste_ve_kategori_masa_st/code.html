@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Liste ve Kategori - Dijital Ajans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b9a5",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#11211f",
+                        "navy": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-navy font-display antialiased">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-navy uppercase">Dijital Ajans</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Hizmetler</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Portfolyo</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="#">Blog</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Hakkımızda</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm shadow-primary/20">
+                    Teklif Al
+                </button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1280px] mx-auto px-6 py-8">
+<!-- Breadcrumb -->
+<nav class="flex mb-8 text-sm font-medium text-slate-500">
+<a class="hover:text-primary" href="#">Ana Sayfa</a>
+<span class="mx-2 text-slate-300">/</span>
+<span class="text-navy font-semibold">Blog</span>
+</nav>
+<!-- Hero Section -->
+<section class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-extrabold text-navy mb-6 tracking-tight leading-tight max-w-2xl mx-auto">
+                Büyüme Odaklı Dijital Rehber
+            </h1>
+<!-- Search Bar -->
+<div class="max-w-xl mx-auto mb-8 relative">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-slate-400">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full pl-12 pr-4 py-4 bg-white border-none shadow-xl shadow-slate-200/50 rounded-xl focus:ring-2 focus:ring-primary text-navy placeholder:text-slate-400" placeholder="Örn: Shopify hız optimizasyonu" type="text"/>
+</div>
+<!-- Category Chips -->
+<div class="flex flex-wrap justify-center gap-3">
+<button class="px-5 py-2 bg-primary text-white rounded-full text-sm font-bold shadow-md shadow-primary/20">Hepsi</button>
+<button class="px-5 py-2 bg-white text-slate-600 hover:text-primary hover:bg-primary/5 rounded-full text-sm font-semibold transition-all border border-slate-100">Web Geliştirme</button>
+<button class="px-5 py-2 bg-white text-slate-600 hover:text-primary hover:bg-primary/5 rounded-full text-sm font-semibold transition-all border border-slate-100">E-Ticaret</button>
+<button class="px-5 py-2 bg-white text-slate-600 hover:text-primary hover:bg-primary/5 rounded-full text-sm font-semibold transition-all border border-slate-100">SEO</button>
+<button class="px-5 py-2 bg-white text-slate-600 hover:text-primary hover:bg-primary/5 rounded-full text-sm font-semibold transition-all border border-slate-100">Sosyal Medya</button>
+<button class="px-5 py-2 bg-white text-slate-600 hover:text-primary hover:bg-primary/5 rounded-full text-sm font-semibold transition-all border border-slate-100">Dijital Strateji</button>
+</div>
+</section>
+<!-- Filter & Sort Bar -->
+<div class="bg-white rounded-xl p-4 mb-10 border border-slate-100 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-4">
+<div class="relative group">
+<select class="appearance-none bg-slate-50 border-none rounded-lg py-2 pl-4 pr-10 text-sm font-semibold text-navy focus:ring-1 focus:ring-primary cursor-pointer">
+<option>Zorluk Seviyesi</option>
+<option>Başlangıç</option>
+<option>Orta</option>
+<option>İleri</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-sm">expand_more</span>
+</div>
+<div class="relative group">
+<select class="appearance-none bg-slate-50 border-none rounded-lg py-2 pl-4 pr-10 text-sm font-semibold text-navy focus:ring-1 focus:ring-primary cursor-pointer">
+<option>Okuma Süresi</option>
+<option>&lt; 5 dk</option>
+<option>5-10 dk</option>
+<option>10+ dk</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-sm">expand_more</span>
+</div>
+<div class="relative group">
+<select class="appearance-none bg-slate-50 border-none rounded-lg py-2 pl-4 pr-10 text-sm font-semibold text-navy focus:ring-1 focus:ring-primary cursor-pointer">
+<option>Şehir Odağı</option>
+<option>Global</option>
+<option>İstanbul</option>
+<option>Ankara</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-sm">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Sıralama:</span>
+<select class="bg-transparent border-none text-sm font-bold text-primary focus:ring-0 cursor-pointer">
+<option>En Yeni</option>
+<option>En Çok Okunan</option>
+<option>En Eski</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<!-- Blog Grid (8 columns) -->
+<div class="col-span-12 lg:col-span-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Blog Card 1 -->
+<article class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern office with computer showing digital marketing analytics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDod-GRDQ9ZOzm3sXXaad_4z4HO2PteMTSHKch0PAR_QTj7PHhrX6gPvM3krAqx5ehDZVM0dk6FMA8rjhkMbh-D-rntSMZnkRqip_o8HUKU4zT_p0qZhupFNGCKGhYP1IVPWH6KH4PFRoDzF3wL24C8oRDyh8cdrrHdZEA2nkx-8Ea2Gy6Gnx1DhAZ0hAWA1Wi7dkCWIefdsitFAZKRZ1OAMP-WTqug2BBHTKgvnXmEzd_3U5Y06TT6U4qB1BE5Cpuat5T60KF3vTi0"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg shadow-lg">E-Ticaret</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3 text-xs font-medium text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">calendar_today</span> 12 Haz 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 6 dk okuma</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3 group-hover:text-primary transition-colors leading-snug">
+                                Shopify Hız Optimizasyonu: Satışlarınızı %20 Artırmanın Yolları
+                            </h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                                E-ticaret sitenizin hızı doğrudan dönüşüm oranlarını etkiler. Google Core Web Vitals metriklerini nasıl iyileştireceğinizi ve müşteri deneyimini nasıl artıracağınızı keşfedin.
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold group/link" href="#">
+                                Devamını Oku 
+                                <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Creative team brainstorming social media strategy on whiteboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzOxZgnJhkPEpB3JOgJzGQixHDDC3foiHBUv39IaZJIDadhWe39wGa0uRS7XgufQmmuET38PTnd9xsQQQqjZBJULPdrXq7XPaTydD4Urlf_xdfE3ZiLsi4Iy5NDJzxWrPDjatNOx_2qpME1USQJBjDYQWId7fA711f6S1WUWYTMnfbgL7ah_VJTisZdhcR-_XDdC7nhqAq3aSBSu-eb8vs6mkIVC_CvxvKlrooi-35B2YmHXVN77D-xKQJghzZekBsO3xgZuor5WuI"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg shadow-lg">Sosyal Medya</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3 text-xs font-medium text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">calendar_today</span> 10 Haz 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 4 dk okuma</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3 group-hover:text-primary transition-colors leading-snug">
+                                KOBİ'ler İçin 2024 Instagram Algoritma Rehberi
+                            </h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                                Küçük işletmeler için organik erişimi artırmanın yeni yolları. Reels, Stories ve Feed paylaşımlarında doğru zamanlama nasıl yapılır?
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold group/link" href="#">
+                                Devamını Oku 
+                                <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 3 -->
+<article class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Developer working on coding a modern web application" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB4Fg5Rh_WSXkdSVLIDelyVwKsP4pICbppL81AJFk9ZD7BR8Qi-8j719waMZT_9ro0wKiIM58AUeEyqXwLx1h5e1DkT2WFU05ajQcldXau-kS11YxIPvpZByWeTOezn4bB_PIkGXCL26j2mRRgig-8vJxONnSs7Tk3WXdPBzp6H7OQQtCNneSBE7OllItQaDPmvJ4NXNS0b0F5VHzxa5lQ1Pe8gtqAh-mI6kpygp-lxsy1kpuONmwRJav1_bq5PKIU5zN-pC65ixAf"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg shadow-lg">Web Geliştirme</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3 text-xs font-medium text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">calendar_today</span> 08 Haz 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 8 dk okuma</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3 group-hover:text-primary transition-colors leading-snug">
+                                Neden Headless CMS Tercih Etmelisiniz?
+                            </h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                                Geleneksel CMS yapılarından modern headless mimarisine geçişin avantajları ve teknik gereklilikleri üzerine detaylı bir inceleme.
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold group/link" href="#">
+                                Devamını Oku 
+                                <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 4 -->
+<article class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital marketing strategy data visualization on screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy7FQfgfhjkI5Jcd30-5UtTcyea4A8KBl-mOPgsDzjAKSQvOR_R_aVIokVg2DQN_PRmpq2Fi31826PIWjkktrSIfKpG-OLYm7jAfDJOPl7C-prcb2EAA8b613J2BL5HheZTdOzQMRrjn6-1Ks1I--7MNvFzl76jBLd6jbhXUyRB2Zlf90wKjOjGYoTZm05eY2PN3jT_zpEtTEQg8vW-XzgNCb5CRVv5bMt63gEyKBKpYnBQsZl1ap0XmSA8IMVNaiz93jGx5XDdMEL"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg shadow-lg">Dijital Strateji</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3 text-xs font-medium text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">calendar_today</span> 05 Haz 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 5 dk okuma</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3 group-hover:text-primary transition-colors leading-snug">
+                                Veri Analitiği İle Reklam Bütçenizi Nasıl Optimize Edersiniz?
+                            </h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                                Reklam harcamalarınızın geri dönüşünü (ROAS) artırmak için hangi verileri takip etmeniz gerektiğini öğrenin.
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold group/link" href="#">
+                                Devamını Oku 
+                                <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex items-center justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-slate-400 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold shadow-md shadow-primary/20">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-navy font-bold hover:border-primary hover:text-primary transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-navy font-bold hover:border-primary hover:text-primary transition-all">3</button>
+<span class="px-2 text-slate-400">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-navy font-bold hover:border-primary hover:text-primary transition-all">12</button>
+<button class="px-4 h-10 flex items-center gap-2 rounded-lg border border-slate-200 text-navy font-bold hover:border-primary hover:text-primary transition-all group">
+                        Sonraki
+                        <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Sidebar (4 columns) -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-8">
+<div class="sticky top-24 flex flex-col gap-8">
+<!-- Lead Magnet Card -->
+<div class="bg-gradient-to-br from-navy to-[#1a2e45] text-white p-8 rounded-2xl shadow-xl overflow-hidden relative">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-primary text-[10px] font-bold uppercase rounded-full mb-4">Ücretsiz İndir</span>
+<h4 class="text-2xl font-bold mb-3 leading-tight">Ücretsiz SEO Kontrol Listesi</h4>
+<p class="text-slate-300 text-sm mb-6">Sitenizi Google aramalarında en tepeye taşıyacak 25 kritik maddeyi hemen kontrol edin.</p>
+<button class="w-full bg-white text-navy hover:bg-slate-100 py-3 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                                Listeyi İndir
+                            </button>
+</div>
+<div class="absolute -bottom-6 -right-6 text-primary/10 select-none pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 140px;">checklist</span>
+</div>
+</div>
+<!-- Newsletter Signup -->
+<div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<h4 class="font-bold text-navy">Bültene Abone Ol</h4>
+</div>
+<p class="text-sm text-slate-500 mb-6">Haftalık dijital büyüme ipuçlarını kaçırmayın. Sadece değerli içerik gönderiyoruz.</p>
+<form class="space-y-3">
+<input class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary placeholder:text-slate-400" placeholder="E-posta adresiniz" type="email"/>
+<button class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                                Kayıt Ol
+                            </button>
+</form>
+</div>
+<!-- Recent Posts -->
+<div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+<h4 class="font-bold text-navy mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+                            Son Yazılar
+                        </h4>
+<div class="space-y-6">
+<a class="group flex gap-4" href="#">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Modern workspace with abstract design elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ndELqVpm_tViPjwQiDv7EGNUmYQSTUZoummIBZK01zj7R7ZBTichZwdC58ZZG29deuBw6gI0dH4NoeDbjeoGNt_XKtKCWKMFq_tipB91Z_zdxPsInjq4k2v-C_WZOWTMmoeFpqBhPFSm-xCscAewcz89LJLo_gPTvG6-tD0-etb_Mrx1x33pKWGunfkOWQL17xBkjyis537dJDxguEULEteFKev2HiARKYnMGHn8cOOeTwilgpVEBs4BSRrmznb00JyCIT6R1i7i"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-navy group-hover:text-primary transition-colors line-clamp-2 leading-tight mb-1">UI/UX Trendleri 2024: Kullanıcı Deneyiminde Yeni Dönem</h5>
+<span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">04 Haz 2024</span>
+</div>
+</a>
+<a class="group flex gap-4" href="#">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Infographic showing marketing statistics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUof2Vyk59Tgk1aD1_gr3_qThGKHmntL4rvvgxfR6mZzVBwvUcZGQdMxky1bBa4VDjGyoGFXV9MLIQ3po-Wlk-GeJwtpg7Vq6AVFDzr6I2FJhRyev8iifB67Z_wQvKhKozs8O9jGFLEHa02bUOvFbECw7zsGV7kd8eYnzvhGwta4ywJX1OQs1F-94HcjtuK59Je-xx0FUMWOR-DLeZeMlcQoaSrfKl7nusSn92No3q7GEowc-HngxE-GFw632QX5-3sFQMPUKSyFLX"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-navy group-hover:text-primary transition-colors line-clamp-2 leading-tight mb-1">Google Analytics 4'te Hedef Takibi Nasıl Kurulur?</h5>
+<span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">02 Haz 2024</span>
+</div>
+</a>
+<a class="group flex gap-4" href="#">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Digital marketing presentation slide" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOWTsRZTDTSaDZIcXwTDii5Cq48wRMnzZOvt6A5io5Y_ceZiLakOocGdGVEzoSN9iGrVnpmjV3lO1mk-WcjJKp8kLCah6-fvsAnQWloYtXBcJh9mfmjiDkybcqAzY8QfowIKAdx9rcyG4gXXjAPVZ9vBC9evKyYnpPy18T27gV0yWi-LqVZZU64KAMWLpQKn4hOgwue1-I6p2ZQJ13Qdqul1KejY5ul80SHGCadFOvPrjjIOjDlI9Kv2LAhTyzA4Cf5jtc6LrErPEN"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-navy group-hover:text-primary transition-colors line-clamp-2 leading-tight mb-1">E-Posta Pazarlaması İçin Otomasyon Senaryoları</h5>
+<span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">28 May 2024</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Bottom CTA Band -->
+<section class="mt-20 py-16 bg-navy relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-6 relative z-10 text-center">
+<h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">İşinize özel dijital yol haritası mı arıyorsunuz?</h2>
+<p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto font-medium">Uzman ekibimizle 30 dakika ücretsiz görüşün, büyüme potansiyelinizi beraber keşfedelim.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-4 bg-primary hover:bg-primary/90 text-white rounded-xl font-bold shadow-xl shadow-primary/20 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">rocket_launch</span>
+                    Teklif Al
+                </button>
+<button class="w-full sm:w-auto px-10 py-4 bg-transparent border-2 border-slate-700 hover:border-slate-500 text-white rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">forum</span>
+                    WhatsApp'tan Yaz
+                </button>
+</div>
+</div>
+<!-- Decorative abstract patterns -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full text-primary fill-current" viewbox="0 0 100 100">
+<circle cx="80" cy="20" r="40"></circle>
+</svg>
+</div>
+<div class="absolute bottom-0 left-0 w-1/4 h-full opacity-5 pointer-events-none transform rotate-180">
+<svg class="w-full h-full text-white fill-current" viewbox="0 0 100 100">
+<path d="M0,100 L100,0 L100,100 Z"></path>
+</svg>
+</div>
+</section>
+<!-- Simple Footer -->
+<footer class="bg-navy border-t border-slate-800 py-8">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 bg-primary rounded-md flex items-center justify-center text-[14px] text-white">
+<span class="material-symbols-outlined text-[14px]">rocket_launch</span>
+</div>
+<span class="text-sm font-extrabold text-white tracking-widest uppercase">Dijital Ajans</span>
+</div>
+<p class="text-slate-500 text-sm font-medium">© 2024 Dijital Ajans. Tüm hakları saklıdır.</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">link</span></a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">rss_feed</span></a>
+</div>
+</div>
+</footer>
+</body></html>

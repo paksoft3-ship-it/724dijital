@@ -1,0 +1,177 @@
+{
+    "slug": "dijital-pazarlama",
+    "seo": {
+        "title": "Dijital Pazarlama Ajansı | Performans Odaklı Stratejiler",
+        "description": "Reklam bütçenizi ölçülebilir sonuca dönüştürün. ROI ve performans odaklı stratejilerle dijital varlığınızı büyütüyoruz.",
+        "ogImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800"
+    },
+    "hero": {
+        "badge": "Performans Pazarlaması",
+        "title": "Reklam Bütçenizi Ölçülebilir Sonuca Dönüştürün",
+        "subtitle": "ROI ve performans odaklı stratejilerle dijital varlığınızı büyütüyoruz. Veriye dayalı kararlar alarak reklam harcamalarınızı kazanca dönüştürün.",
+        "primaryCta": "Hemen Başlayın",
+        "secondaryCta": "Vaka Çalışmaları"
+    },
+    "targetAudience": [
+        {
+            "icon": "trending_up",
+            "title": "Büyümek İsteyen İşletmeler",
+            "description": "Dijital kanallar üzerinden satışlarını artırmak isteyen markalar."
+        },
+        {
+            "icon": "ads_click",
+            "title": "Veri Odaklı Karar Vericiler",
+            "description": "Reklam harcamalarının sonucunu net bir şekilde görmek isteyen yöneticiler."
+        }
+    ],
+    "deliverables": [
+        "Google Ads Yönetimi",
+        "Meta Ads (FB/IG) Yönetimi",
+        "Dönüşüm Optimizasyonu",
+        "Detaylı ROI Raporlama"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Strateji",
+            "duration": "1 Hafta",
+            "description": "Hedef kitle ve kanal belirleme."
+        },
+        {
+            "step": 2,
+            "title": "Kurulum",
+            "duration": "1 Hafta",
+            "description": "Piksel ve takip kodları entegrasyonu."
+        },
+        {
+            "step": 3,
+            "title": "Optimizasyon",
+            "duration": "Sürekli",
+            "description": "A/B testleri ve bütçe yönetimi."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "google",
+            "label": "Google Ads"
+        },
+        {
+            "icon": "facebook",
+            "label": "Meta Ads"
+        },
+        {
+            "icon": "dashboard",
+            "label": "GA4 & GTM"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Büyüme",
+            "price": "₺9.500/ay",
+            "features": [
+                "Tüm Reklam Platformları",
+                "Gelişmiş Dashboard",
+                "Remarketing"
+            ],
+            "ctaText": "Teklif Al",
+            "isPopular": true
+        }
+    ],
+    "faq": [
+        {
+            "question": "Sonuçları ne zaman görmeye başlarız?",
+            "answer": "İlk 1-2 hafta sonunda optimizasyon verileri netleşmeye başlar."
+        },
+        {
+            "question": "Bütçe yönetimi nasıl yapılıyor?",
+            "answer": "Harcamalar doğrudan sizin kartınızdan platforma ödenir, biz sadece hizmet bedeli alırız."
+        }
+    ],
+    "summary": {
+        "duration": "Sürekli Hizmet",
+        "startingPrice": "4.500 TL",
+        "format": "Aylık Yönetim",
+        "contactPerson": {
+            "name": "Anıl Can",
+            "role": "Performans Direktörü",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    },
+    "customSections": {
+        "platforms": {
+            "title": "Reklam Platformları",
+            "subtitle": "Uzman kadromuzla hedef kitlenize en doğru kanaldan ulaşıyoruz.",
+            "items": [
+                {
+                    "icon": "ads_click",
+                    "title": "Google Ads",
+                    "description": "Arama Ağı, Görüntülü Reklam ve Alışveriş reklamları ile doğru kitleye ulaşın.",
+                    "features": [
+                        "Search Optimizasyonu",
+                        "YouTube Stratejileri",
+                        "GDN Erişimi"
+                    ]
+                },
+                {
+                    "icon": "campaign",
+                    "title": "Meta Ads",
+                    "description": "Instagram ve Facebook üzerinden gelişmiş hedefleme seçenekleri ile satışları artırın.",
+                    "features": [
+                        "Story & Reels Reklamları",
+                        "Lookalike Kitleler",
+                        "Katalog Reklamları"
+                    ]
+                }
+            ]
+        },
+        "funnel": {
+            "title": "Pazarlama Hunisi Yaklaşımımız",
+            "subtitle": "Potansiyel müşterilerinizi sadık alıcılara dönüştüren sistematik akış.",
+            "steps": [
+                {
+                    "icon": "visibility",
+                    "title": "Farkındalık",
+                    "description": "Markanızı doğru kitleye tanıtın."
+                },
+                {
+                    "icon": "favorite",
+                    "title": "İlgi",
+                    "description": "Merak uyandıran içeriklerle bağ kurun."
+                },
+                {
+                    "icon": "shopping_cart",
+                    "title": "Dönüşüm",
+                    "description": "Satın alma eylemini tetikleyin."
+                },
+                {
+                    "icon": "replay",
+                    "title": "Sadakat",
+                    "description": "Yeniden hedefleme ile bağlılık artırın."
+                }
+            ]
+        },
+        "metrics": {
+            "title": "Performans Metrikleri",
+            "items": [
+                {
+                    "label": "Ortalama ROAS",
+                    "value": "8.4x",
+                    "change": "+2.1",
+                    "trend": "up"
+                },
+                {
+                    "label": "Dönüşüm Oranı",
+                    "value": "4.82%",
+                    "change": "+0.5%",
+                    "trend": "up"
+                },
+                {
+                    "label": "Lead Maliyeti",
+                    "value": "₺18.50",
+                    "change": "-12%",
+                    "trend": "down"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "slug": "e-ticaret-gelistirme",
+    "seo": {
+        "title": "E-Ticaret Çözümleri | Satış Odaklı Online Mağazalar",
+        "description": "Kullanıcı deneyimi odaklı, yüksek performanslı e-ticaret altyapıları ile markanızı dijital dünyada bir adım öne taşıyoruz.",
+        "ogImage": "/images/services/e-commerce-og.jpg"
+    },
+    "hero": {
+        "badge": "Dijital Dönüşüm",
+        "title": "E-Ticaret Çözümleri ile Satışlarınızı Katlayın",
+        "subtitle": "Kullanıcı deneyimi odaklı, yüksek performanslı ve mobil uyumlu e-ticaret altyapıları ile markanızı dijital dünyada bir adım öne taşıyoruz. Güvenli ödeme sistemleri ve modern arayüzler bir arada.",
+        "primaryCta": "Hemen Başlayalım",
+        "secondaryCta": "Örnekleri İncele"
+    },
+    "targetAudience": [
+        {
+            "icon": "storefront",
+            "title": "Startup & Girişimler",
+            "description": "Hızlı pazara giriş yapmak isteyen ve ölçeklenebilir bir altyapıya ihtiyaç duyan yeni nesil girişimler için ideal."
+        },
+        {
+            "icon": "business",
+            "title": "KOBİ'ler",
+            "description": "Fiziksel mağazasını dijitale taşımak veya mevcut eski altyapısını modernize etmek isteyen işletmeler."
+        },
+        {
+            "icon": "domain",
+            "title": "Kurumsal Markalar",
+            "description": "Özel entegrasyonlara (ERP, CRM) ve yüksek trafik kapasitesine ihtiyaç duyan büyük ölçekli markalar."
+        },
+        {
+            "icon": "public",
+            "title": "İhracat Yapanlar (E-İhracat)",
+            "description": "Çoklu dil ve para birimi desteği ile global pazarlara açılmayı hedefleyen ihracatçı firmalar."
+        }
+    ],
+    "deliverables": [
+        "Özel UX/UI Tasarım",
+        "Responsive (Mobil Uyumlu) Kodlama",
+        "Yönetim Paneli Entegrasyonu",
+        "Ödeme Sistemleri Kurulumu (Iyzico, Stripe)",
+        "Temel SEO Optimizasyonu",
+        "Kargo Entegrasyonları",
+        "1 Yıl Ücretsiz SSL ve Hosting",
+        "Google Analytics Kurulumu"
+    ],
+    "timeline": [
+        {
+            "step": 1,
+            "title": "Keşif ve Analiz",
+            "duration": "1. Hafta",
+            "description": "İhtiyaçlarınızı dinliyor, rakip analizi yapıyor ve proje yol haritasını birlikte belirliyoruz."
+        },
+        {
+            "step": 2,
+            "title": "Tasarım ve Onay",
+            "duration": "2-3. Hafta",
+            "description": "Marka kimliğinize uygun arayüz tasarımlarını (UI) hazırlıyor ve onayınıza sunuyoruz."
+        },
+        {
+            "step": 3,
+            "title": "Geliştirme ve Kodlama",
+            "duration": "4-5. Hafta",
+            "description": "Onaylanan tasarımları, seçilen teknoloji altyapısı ile kodluyor ve işlevsel hale getiriyoruz."
+        },
+        {
+            "step": 4,
+            "title": "Test ve Canlıya Alım",
+            "duration": "6. Hafta",
+            "description": "Tüm fonksiyonları test ediyor, hataları gideriyor ve sitenizi yayına alıyoruz."
+        }
+    ],
+    "techStack": [
+        {
+            "icon": "code",
+            "label": "React.js"
+        },
+        {
+            "icon": "css",
+            "label": "Tailwind CSS"
+        },
+        {
+            "icon": "storage",
+            "label": "Node.js"
+        },
+        {
+            "icon": "cloud",
+            "label": "AWS"
+        }
+    ],
+    "miniCases": [
+        {
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuALNkl7zg9C5TPL4FWW3PZSqlO56l_kGjIPZ01tOc0UueNiAKzQFCfZkHBMeTc3UWnWmUw0Bw-UxhkwjAjUy38NdVkBBisUx-j2kalbuhQTEMuCWD-ihIpdfk-cFxXwMSwSdSuFSvJXvhABS4NUMDK8KWIVhQ08fBbMlOammaBsGKU15FnrvPdNtDhfuN1QNIZ4jgK--irE2cHdOGC127mGbSfznrdnX5GkormMPuc8vuaJibm2SCBRRvOrqpxC8C1m_Eg4Cyx8dmNH",
+            "alt": "Modern e-commerce dashboard interface with charts",
+            "link": "#"
+        },
+        {
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCCx2iob3fmsNt1TBISjXdRHaL3gaWfpSJipd3pfSrh7ViAzQHr1L2HSz2-DSljCiy5CFBZcGe9wEG3oPV0s9y_jHTrwvyFsdlQOFj6PQBK0K-doBpKo3rmo2lcK91ezyOG2-ABi_3q2A1LgZdxn4gGvdYnr40yQZi_XSKiTGyibWImqsHjvRLAQQqHc2pbX1JX2EWL1Nroaw53_NC6KyATI2XYSm0j60gbxd44PWsLcGqYLUNFYJIoxB718ig5Ejvj3cCCUySoKzgn",
+            "alt": "Clean mobile shopping app interface mockup",
+            "link": "#"
+        }
+    ],
+    "packages": [
+        {
+            "title": "Başlangıç",
+            "price": "₺15.000",
+            "features": [
+                "Hazır Tema",
+                "50 Ürün Girişi",
+                "Standart SEO"
+            ],
+            "ctaText": "Seç"
+        },
+        {
+            "title": "Pro",
+            "price": "₺25.000",
+            "features": [
+                "Özel Tasarım",
+                "Sınırsız Ürün",
+                "Gelişmiş SEO",
+                "Pazaryeri Entegrasyonu"
+            ],
+            "isPopular": true,
+            "ctaText": "Seç"
+        },
+        {
+            "title": "Kurumsal",
+            "price": "Teklif Al",
+            "features": [
+                "Tamamen Özel Altyapı",
+                "ERP/CRM Entegrasyonu",
+                "7/24 Öncelikli Destek"
+            ],
+            "ctaText": "İletişime Geç"
+        }
+    ],
+    "faq": [
+        {
+            "question": "Bakım hizmeti veriyor musunuz?",
+            "answer": "Evet, projenin canlıya alınmasından sonraki ilk 1 ay ücretsiz destek veriyoruz. Sonrasında aylık veya yıllık bakım anlaşmaları ile teknik destek sağlamaya devam ediyoruz."
+        },
+        {
+            "question": "Kendi hostingimi kullanabilir miyim?",
+            "answer": "Elbette. Eğer mevcut bir hosting altyapınız varsa ve gerekli teknik gereksinimleri (PHP sürümü, veritabanı vb.) karşılıyorsa kurulumu oraya yapabiliriz."
+        },
+        {
+            "question": "Ödeme koşulları nasıl?",
+            "answer": "Genellikle projenin başında %40, tasarım onayı sonrası %30 ve proje tesliminde kalan %30 şeklinde çalışıyoruz."
+        }
+    ],
+    "summary": {
+        "duration": "4-6 Hafta",
+        "startingPrice": "15.000 TL",
+        "format": "Canlı Yayın + Kaynak Kodlar",
+        "contactPerson": {
+            "name": "Ayşe Yılmaz",
+            "role": "Müşteri Deneyimi",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyZ23JTdUUPwOLqRXqYFex0kOAzev1kitBDYC6Dh4fPKTzSCTHDP0wvxbJSmx1Zr_QV7QUN7YQW-rq_Mkivsl94whdtbSWs-xVqo-SR_Oe8Vv2Vuz40097UoNZ2bOsB4xE_bO15OaH8frb0z8iAXlBH8o-esAMfu9Hpme4QuT1eDITuCPIPcqxhofrI42-JPcPGiEja1lZtrLEr2zjMjIhtfwZVtw8w60eetIYvqQUcyRCxQri3TZUyJ-xejqygJ_BINQLiLRDYtmf"
+        }
+    }
+}

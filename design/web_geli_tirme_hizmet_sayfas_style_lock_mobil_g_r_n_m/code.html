@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb36a",
+                        "background-light": "#F6F8F8",
+                        "background-dark": "#151d17",
+                        "neutral-dark": "#1F2B2B",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.08)',
+                    }
+                },
+            },
+        }
+    </script>
+<title>Web Geliştirme Hizmet Sayfası</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-dark antialiased">
+<!-- Main Container (Mobile focused 375px style) -->
+<div class="relative mx-auto min-h-screen max-w-[450px] bg-background-light pb-24 shadow-2xl">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-background-light/80 px-6 py-4 backdrop-blur-md">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl">code</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-neutral-dark">AjansDijital</span>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-soft">
+<span class="material-symbols-outlined text-neutral-dark">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="px-6 py-8">
+<div class="mb-6 overflow-hidden rounded-xl shadow-soft">
+<div class="aspect-[16/9] w-full bg-cover bg-center" data-alt="Modern workspace with laptop showing code and design tools" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA02I__7E9DA5BxJTTsk_cQhdNMdx4L5-_hWkLzgIcHUyqp72aqwGND26JMueZVS-xm2SXVqi0lonUXtMSt4Higm7qu4WMpyh9LqIbLYwoa7ZbNHsKBKTBsWsAk_s5l8_0VazYFkf_nlWPRL-8tsCNt2oGPjYQebF4qTqEMhB33bnEXm28NF8acLsC-73nHv6sCBMtRONLq5IfMorqeL341ZWvo91bhAAFkZzGtxEVkkFPIAh6dT_qnQWYlVjtULcIGu4Ni709GVWLe');"></div>
+</div>
+<h1 class="mb-4 text-3xl font-extrabold leading-tight text-neutral-dark">
+                Profesyonel Web Tasarım ve Geliştirme Hizmetleri
+            </h1>
+<p class="text-lg leading-relaxed text-neutral-dark/70">
+                Modern, hızlı ve dönüşüm odaklı web siteleri ile dijital varlığınızı güçlendirin. İşinizi bir üst seviyeye taşıyoruz.
+            </p>
+</section>
+<!-- Problem Section -->
+<section class="px-6 py-10 bg-white/50">
+<h2 class="mb-6 text-xl font-bold text-neutral-dark">Karşılaştığınız Zorluklar</h2>
+<div class="space-y-4">
+<div class="flex gap-4 rounded-xl bg-white p-4 shadow-soft">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-500">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<h3 class="font-bold text-neutral-dark">Yavaş Yükleme</h3>
+<p class="text-sm text-neutral-dark/60">Siteniz geç açıldığı için potansiyel müşterilerinizi mi kaybediyorsunuz?</p>
+</div>
+</div>
+<div class="flex gap-4 rounded-xl bg-white p-4 shadow-soft">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-500">
+<span class="material-symbols-outlined">stay_current_portrait</span>
+</div>
+<div>
+<h3 class="font-bold text-neutral-dark">Mobil Uyumsuzluk</h3>
+<p class="text-sm text-neutral-dark/60">Mobil cihazlarda kötü görünen bir arayüz marka güveninizi sarsar.</p>
+</div>
+</div>
+<div class="flex gap-4 rounded-xl bg-white p-4 shadow-soft">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-500">
+<span class="material-symbols-outlined">trending_down</span>
+</div>
+<div>
+<h3 class="font-bold text-neutral-dark">Düşük Dönüşüm</h3>
+<p class="text-sm text-neutral-dark/60">Ziyaretçileriniz aksiyon almadan sayfanızdan hemen ayrılıyor mu?</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solutions/Deliverables Section -->
+<section class="px-6 py-12">
+<h2 class="mb-2 text-2xl font-bold text-neutral-dark">Size Özel Çözümler</h2>
+<p class="mb-8 text-neutral-dark/60">İşletmenizi dijitalde öne çıkaracak tüm teknolojik altyapıyı sağlıyoruz.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-xl bg-white p-5 shadow-soft">
+<span class="material-symbols-outlined mb-3 text-primary text-3xl">rocket_launch</span>
+<h4 class="font-bold text-neutral-dark">Yüksek Performans</h4>
+</div>
+<div class="rounded-xl bg-white p-5 shadow-soft">
+<span class="material-symbols-outlined mb-3 text-primary text-3xl">palette</span>
+<h4 class="font-bold text-neutral-dark">Modern UI/UX</h4>
+</div>
+<div class="rounded-xl bg-white p-5 shadow-soft">
+<span class="material-symbols-outlined mb-3 text-primary text-3xl">search</span>
+<h4 class="font-bold text-neutral-dark">SEO Uyumlu</h4>
+</div>
+<div class="rounded-xl bg-white p-5 shadow-soft">
+<span class="material-symbols-outlined mb-3 text-primary text-3xl">security</span>
+<h4 class="font-bold text-neutral-dark">Güvenli Altyapı</h4>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="bg-white px-6 py-12">
+<h2 class="mb-8 text-2xl font-bold text-neutral-dark">Süreç Nasıl İşliyor?</h2>
+<div class="relative ml-4 border-l-2 border-primary/20 pl-8 space-y-10">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary ring-4 ring-white"></div>
+<h3 class="font-bold text-neutral-dark">1. Planlama ve Strateji</h3>
+<p class="text-sm text-neutral-dark/60">Hedef kitlenizi analiz ediyor, sitenizin yol haritasını belirliyoruz.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary ring-4 ring-white"></div>
+<h3 class="font-bold text-neutral-dark">2. UI/UX Tasarım</h3>
+<p class="text-sm text-neutral-dark/60">Kullanıcı dostu ve markanızı yansıtan modern arayüzler tasarlıyoruz.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary ring-4 ring-white"></div>
+<h3 class="font-bold text-neutral-dark">3. Geliştirme</h3>
+<p class="text-sm text-neutral-dark/60">En güncel teknolojilerle hızlı ve güvenli kodlama sürecini tamamlıyoruz.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary ring-4 ring-white"></div>
+<h3 class="font-bold text-neutral-dark">4. Test ve Yayım</h3>
+<p class="text-sm text-neutral-dark/60">Tüm kontrolleri yaptıktan sonra projenizi canlıya alıyoruz.</p>
+</div>
+</div>
+</section>
+<!-- Case Studies -->
+<section class="px-6 py-12">
+<h2 class="mb-6 text-2xl font-bold text-neutral-dark">Başarı Hikayeleri</h2>
+<div class="space-y-6">
+<div class="group overflow-hidden rounded-xl bg-white shadow-soft">
+<div class="aspect-video w-full bg-cover bg-center" data-alt="Screenshot of an elegant e-commerce website design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDufQMgtAuBCCroJInG9NXnpobuNLkXsEqkrbKwQgeeaUYweOVFfet0PXeyRamgIiYPK4n6heGAEPb9kVCZE0la0nYCe_1nopeXuBF1U_Hva65oYCq6cLdaZKVSwkP-8Ed2_odXDRl62KuVMPoLgPb4k0JshWiljcjsxV1cyAlImhWW34hydPKeAXg9Wg2DA1STHyi0KZazJd-OV_Bzc58vemqaNwpcb_ZE67lXCGX1idd0cIxsqsHUGBpKwgJ255Fl6bnucqsrr8mf');"></div>
+<div class="p-4">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">E-Ticaret</span>
+<h3 class="mt-1 font-bold text-neutral-dark text-lg">Moda Dünyası Yenileme</h3>
+</div>
+</div>
+<div class="group overflow-hidden rounded-xl bg-white shadow-soft">
+<div class="aspect-video w-full bg-cover bg-center" data-alt="Corporate website presentation on multiple devices" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYyLXPRMyDuc7obDeNdYWEMNcRDuA8CeYeNf2E2yXPGINUyksTkv2iEGgvAtZw3RwFZY6K9vj9aBLMXH12nnr2VTHUn5lv0UN5j9PAJH7cYw8lG8Nn23Yl5aEGJI99IuibUtB0u8Rm9Y8BH4m9U3-yY5_TCkqP0M-LbXmQRDUEsB0hrBMl7HF4IRBg94wPN8ptEuSOAg0IGdyOZU1kz2FuSDqsWnJwl6hxOw7_PSa8fF_-8dGnel72ZwofmRf-1mjh3F0VGYwPb6YA');"></div>
+<div class="p-4">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Kurumsal</span>
+<h3 class="mt-1 font-bold text-neutral-dark text-lg">TechLog Lojistik Portalı</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-white px-6 py-12">
+<h2 class="mb-6 text-2xl font-bold text-neutral-dark">Sıkça Sorulanlar</h2>
+<div class="space-y-4">
+<details class="group rounded-xl border border-neutral-dark/5 bg-background-light p-4" open="">
+<summary class="flex cursor-pointer items-center justify-between font-bold text-neutral-dark list-none">
+                        Süreç ne kadar sürüyor?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-sm leading-relaxed text-neutral-dark/60">
+                        Projenin kapsamına göre genellikle 4 ile 8 hafta arasında tamamlanmaktadır.
+                    </p>
+</details>
+<details class="group rounded-xl border border-neutral-dark/5 bg-background-light p-4">
+<summary class="flex cursor-pointer items-center justify-between font-bold text-neutral-dark list-none">
+                        Teknik destek sağlıyor musunuz?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-sm leading-relaxed text-neutral-dark/60">
+                        Evet, yayım sonrası 6 ay boyunca ücretsiz teknik destek ve bakım hizmeti sunuyoruz.
+                    </p>
+</details>
+<details class="group rounded-xl border border-neutral-dark/5 bg-background-light p-4">
+<summary class="flex cursor-pointer items-center justify-between font-bold text-neutral-dark list-none">
+                        SEO çalışması dahil mi?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-sm leading-relaxed text-neutral-dark/60">
+                        Tüm projelerimizi temel SEO standartlarına uygun, Google dostu bir altyapı ile teslim ediyoruz.
+                    </p>
+</details>
+</div>
+</section>
+<!-- Final CTA / Footer Info -->
+<section class="px-6 py-12 pb-32 text-center">
+<h2 class="mb-4 text-2xl font-bold text-neutral-dark">Hazır mısınız?</h2>
+<p class="mb-8 text-neutral-dark/60">Hemen ücretsiz bir ön görüşme planlayalım ve projenizi konuşalım.</p>
+<div class="flex flex-col gap-4 text-sm text-neutral-dark/40">
+<p>© 2024 AjansDijital. Tüm hakları saklıdır.</p>
+<div class="flex justify-center gap-6">
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">LinkedIn</a>
+<a class="hover:text-primary" href="#">Behance</a>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-1/2 z-[100] w-full max-w-[450px] -translate-x-1/2 bg-white/80 p-4 backdrop-blur-xl border-t border-neutral-dark/5">
+<button class="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-4 text-base font-bold text-white shadow-lg active:scale-95 transition-all">
+                Web Sitemi Yenilemek İstiyorum
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

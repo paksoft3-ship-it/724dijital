@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veri Analizi ve Raporlama - Dijital Ajans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bb3a5",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#151d1c",
+                        "text-main": "#1f2b2b",
+                        "text-sub": "#5f6b6d",
+                        "border-soft": "#e3ecea",
+                        "surface-soft": "#dff1ee",
+                        "success": "#6bbf59"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "header": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light text-text-main antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-border-soft px-4 md:px-10 lg:px-20 py-4">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h2 class="text-text-main text-xl font-extrabold tracking-tight">Dijital Ajans</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-text-sub hover:text-primary text-sm font-semibold transition-colors" href="#">Hizmetler</a>
+<a class="text-primary text-sm font-semibold border-b-2 border-primary pb-1" href="#">Veri Analizi</a>
+<a class="text-text-sub hover:text-primary text-sm font-semibold transition-colors" href="#">Vaka Çalışmaları</a>
+<a class="text-text-sub hover:text-primary text-sm font-semibold transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm">
+                    Teklif Al
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto">
+<!-- Hero Section -->
+<section class="px-6 md:px-10 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12">
+<div class="flex-1 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Veri Odaklı Büyüme
+                </div>
+<h1 class="text-text-main text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
+                    Verilerinizi Anlamlı <br/><span class="text-primary">Kararlara Dönüştürün</span>
+</h1>
+<p class="text-text-sub text-lg md:text-xl max-w-2xl leading-relaxed">
+                    Veriye dayalı büyüme stratejileri ile işinizi ölçeklendirin. Karmaşık verileri temizliyor, modelliyor ve aksiyon alınabilir içgörülere dönüştürüyoruz.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+                        Hemen Başlayın
+                    </button>
+<button class="bg-white border border-border-soft text-text-main px-8 py-4 rounded-xl text-lg font-bold hover:bg-background-light transition-all">
+                        Süreç Nasıl İşler?
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative bg-white p-4 rounded-2xl shadow-2xl border border-border-soft overflow-hidden">
+<div class="w-full aspect-[4/3] bg-background-light rounded-xl overflow-hidden bg-cover bg-center" data-alt="Modern data dashboard showing growth charts and KPIs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfR5-boz6NrlKtUUBTcedh25yQHhrQqbTXqq8NCaZsGots28slxj5yaJ_5Junjnaltwce0PkmhVmnLF0wdJq5zzRJ_yaNQzyvEO6_SXA3KWreV6ysGYO2R47rvalYtTALH2XOHuV3hnomM5MMSZjLtIVJ9WgCcEjRsHk11-P-GVLWTyzk_sHq70u-ZysXyG4sorZmuyhyXcE3lHpW8jjr3M3rA3jCRmtBTEs2OcL_WMGYvS44lQrNCZIFObj6Sx3_sYWzRU30hZhUd')"></div>
+</div>
+</div>
+</section>
+<!-- Data Sources Grid -->
+<section class="px-6 md:px-10 py-16">
+<div class="mb-12">
+<h2 class="text-text-main text-3xl font-extrabold mb-4">Veri Kaynakları</h2>
+<p class="text-text-sub">Tüm veri ekosisteminizi tek bir merkezde topluyoruz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Source Card 1 -->
+<div class="bg-white p-8 rounded-xl border border-border-soft hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">ads_click</span>
+</div>
+<h3 class="text-text-main text-xl font-bold mb-3">Reklam Kanalları</h3>
+<p class="text-text-sub text-sm leading-relaxed">Google Ads, Meta Ads ve TikTok Ads verilerinizi otomatik olarak çekiyoruz.</p>
+</div>
+<!-- Source Card 2 -->
+<div class="bg-white p-8 rounded-xl border border-border-soft hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">shopping_cart</span>
+</div>
+<h3 class="text-text-main text-xl font-bold mb-3">E-Ticaret Altyapıları</h3>
+<p class="text-text-sub text-sm leading-relaxed">Shopify, WooCommerce ve Magento entegrasyonu ile satış verilerinizi analiz edin.</p>
+</div>
+<!-- Source Card 3 -->
+<div class="bg-white p-8 rounded-xl border border-border-soft hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<h3 class="text-text-main text-xl font-bold mb-3">CRM Sistemleri</h3>
+<p class="text-text-sub text-sm leading-relaxed">Salesforce ve HubSpot verileriyle müşteri yaşam boyu değerini ölçümleyin.</p>
+</div>
+<!-- Source Card 4 -->
+<div class="bg-white p-8 rounded-xl border border-border-soft hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">description</span>
+</div>
+<h3 class="text-text-main text-xl font-bold mb-3">Excel/Çevrimdışı Veri</h3>
+<p class="text-text-sub text-sm leading-relaxed">Offline satışlar ve manuel veri setlerini dijital raporlarınızla birleştirin.</p>
+</div>
+</div>
+</section>
+<!-- Service Steps Section -->
+<section class="mx-6 md:mx-10 my-16 bg-surface-soft rounded-3xl p-8 md:p-16">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="text-text-main text-3xl md:text-4xl font-extrabold mb-6">Hizmet Sürecimiz</h2>
+<p class="text-text-sub text-lg">Karmaşık ham veriden stratejik yol haritasına uzanan 4 aşamalı metodolojimiz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="bg-white p-8 rounded-2xl relative shadow-sm">
+<div class="absolute -top-4 -left-4 size-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-lg">1</div>
+<h3 class="text-text-main font-bold text-lg mb-3 pt-2">Veri Temizleme</h3>
+<p class="text-text-sub text-sm">Hatalı ve mükerrer verileri ayıklayarak veri setinizi analize hazır hale getiriyoruz.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-8 rounded-2xl relative shadow-sm">
+<div class="absolute -top-4 -left-4 size-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-lg">2</div>
+<h3 class="text-text-main font-bold text-lg mb-3 pt-2">Modelleme</h3>
+<p class="text-text-sub text-sm">Veriler arasındaki ilişkileri kuruyor, büyüme metriklerinizi tanımlıyoruz.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-8 rounded-2xl relative shadow-sm">
+<div class="absolute -top-4 -left-4 size-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-lg">3</div>
+<h3 class="text-text-main font-bold text-lg mb-3 pt-2">Dashboard Tasarımı</h3>
+<p class="text-text-sub text-sm">İhtiyacınız olan tüm verileri tek bakışta anlayabileceğiniz paneller tasarlıyoruz.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-white p-8 rounded-2xl relative shadow-sm">
+<div class="absolute -top-4 -left-4 size-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-lg">4</div>
+<h3 class="text-text-main font-bold text-lg mb-3 pt-2">Stratejik İçgörü</h3>
+<p class="text-text-sub text-sm">Veri sonuçlarını yorumlayarak işinizi büyütecek aksiyon planları sunuyoruz.</p>
+</div>
+</div>
+</section>
+<!-- KPI Metrics -->
+<section class="px-6 md:px-10 py-16">
+<h2 class="text-text-main text-3xl font-extrabold mb-12 text-center">Örnek KPI Metrikleri</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-10 rounded-2xl border border-border-soft text-center shadow-sm">
+<p class="text-text-sub font-medium mb-2 uppercase tracking-wide text-xs">Müşteri Edinme Maliyeti (CAC)</p>
+<div class="text-4xl font-extrabold text-text-main mb-4">₺124.50</div>
+<div class="inline-flex items-center gap-1 text-success font-bold text-sm bg-success/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+                        12% İyileşme
+                    </div>
+</div>
+<div class="bg-white p-10 rounded-2xl border border-border-soft text-center shadow-sm">
+<p class="text-text-sub font-medium mb-2 uppercase tracking-wide text-xs">Yaşam Boyu Değer (LTV)</p>
+<div class="text-4xl font-extrabold text-text-main mb-4">₺2,850</div>
+<div class="inline-flex items-center gap-1 text-success font-bold text-sm bg-success/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        24% Artış
+                    </div>
+</div>
+<div class="bg-white p-10 rounded-2xl border border-border-soft text-center shadow-sm">
+<p class="text-text-sub font-medium mb-2 uppercase tracking-wide text-xs">Dönüşüm Oranı</p>
+<div class="text-4xl font-extrabold text-text-main mb-4">4.82%</div>
+<div class="inline-flex items-center gap-1 text-success font-bold text-sm bg-success/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        0.5% Artış
+                    </div>
+</div>
+</div>
+</section>
+<!-- Report Mockup Section -->
+<section class="px-6 md:px-10 py-16">
+<div class="bg-white rounded-3xl border border-border-soft overflow-hidden shadow-xl">
+<div class="p-8 border-b border-border-soft flex justify-between items-center">
+<div>
+<h2 class="text-text-main text-2xl font-extrabold">Örnek Raporlama Panelleri</h2>
+<p class="text-text-sub text-sm">Sizin için hazırladığımız özel dashboard arayüzleri.</p>
+</div>
+<div class="flex gap-2">
+<div class="size-3 rounded-full bg-red-400"></div>
+<div class="size-3 rounded-full bg-yellow-400"></div>
+<div class="size-3 rounded-full bg-green-400"></div>
+</div>
+</div>
+<div class="p-4 md:p-10 bg-background-light/50 grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-white p-6 rounded-xl border border-border-soft shadow-sm">
+<div class="flex justify-between mb-6">
+<span class="font-bold text-text-main">Haftalık Satış Trendi</span>
+<span class="text-primary text-xs font-bold">SON 7 GÜN</span>
+</div>
+<div class="h-48 bg-background-light rounded-lg flex items-end justify-between px-4 pb-2 gap-2">
+<div class="w-full bg-primary/20 rounded-t-sm h-[30%]"></div>
+<div class="w-full bg-primary/40 rounded-t-sm h-[50%]"></div>
+<div class="w-full bg-primary/30 rounded-t-sm h-[40%]"></div>
+<div class="w-full bg-primary/60 rounded-t-sm h-[70%]"></div>
+<div class="w-full bg-primary/50 rounded-t-sm h-[60%]"></div>
+<div class="w-full bg-primary rounded-t-sm h-[90%]"></div>
+<div class="w-full bg-primary/80 rounded-t-sm h-[80%]"></div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-border-soft shadow-sm flex flex-col justify-center">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-sub">Google Ads</span>
+<span class="text-sm font-bold text-text-main">45%</span>
+</div>
+<div class="w-full bg-background-light rounded-full h-2">
+<div class="bg-primary h-2 rounded-full w-[45%]"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-sub">Meta Ads</span>
+<span class="text-sm font-bold text-text-main">32%</span>
+</div>
+<div class="w-full bg-background-light rounded-full h-2">
+<div class="bg-primary/70 h-2 rounded-full w-[32%]"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-sub">Organic</span>
+<span class="text-sm font-bold text-text-main">23%</span>
+</div>
+<div class="w-full bg-background-light rounded-full h-2">
+<div class="bg-primary/40 h-2 rounded-full w-[23%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="px-6 md:px-10 py-16 max-w-4xl mx-auto">
+<h2 class="text-text-main text-3xl font-extrabold mb-12 text-center">Sıkça Sorulan Sorular</h2>
+<div class="space-y-4">
+<div class="bg-white rounded-xl border border-border-soft overflow-hidden">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-background-light/50 transition-colors">
+<span class="text-text-main font-bold">Verilerimiz ne kadar güvende?</span>
+<span class="material-symbols-outlined text-text-sub">expand_more</span>
+</button>
+<div class="px-6 pb-5 text-text-sub text-sm leading-relaxed">
+                        Tüm veri entegrasyonlarımız uçtan uca şifreleme ve endüstri standardı güvenlik protokolleri ile korunmaktadır. Verileriniz sadece sizin erişiminize açık özel sunucularda barındırılır.
+                    </div>
+</div>
+<div class="bg-white rounded-xl border border-border-soft overflow-hidden">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-background-light/50 transition-colors">
+<span class="text-text-main font-bold">Raporlama süreci ne kadar sürer?</span>
+<span class="material-symbols-outlined text-text-sub">expand_more</span>
+</button>
+<div class="px-6 pb-5 text-text-sub text-sm hidden">
+                        İlk kurulum ve veri temizleme süreci genellikle 10-15 iş günü arasında tamamlanır. Sonrasında verileriniz anlık olarak dashboard'unuza yansır.
+                    </div>
+</div>
+<div class="bg-white rounded-xl border border-border-soft overflow-hidden">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-background-light/50 transition-colors">
+<span class="text-text-main font-bold">Hangi veri kaynaklarını bağlayabiliriz?</span>
+<span class="material-symbols-outlined text-text-sub">expand_more</span>
+</button>
+<div class="px-6 pb-5 text-text-sub text-sm hidden">
+                        Popüler tüm reklam, e-ticaret ve CRM araçlarının yanı sıra API desteği olan tüm platformları ve özel veri setlerini bağlayabiliyoruz.
+                    </div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-6 md:px-10 py-24">
+<div class="bg-text-main rounded-[2rem] p-10 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="relative z-10">
+<h2 class="text-white text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">
+                        İşinizi Büyütmek İçin <br/>Verilerinizi Kullanın
+                    </h2>
+<p class="text-white/70 text-lg mb-12 max-w-2xl mx-auto">
+                        Karmaşıklıktan kurtulun ve gerçek rakamlara dayalı kararlar almaya bugün başlayın.
+                    </p>
+<button class="bg-primary text-white px-12 py-5 rounded-2xl text-xl font-bold hover:scale-105 transition-transform shadow-2xl shadow-primary/40">
+                        Veri Analizi İçin Teklif Al
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-border-soft py-12 px-6 md:px-10 lg:px-20">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<span class="text-text-main font-extrabold text-xl tracking-tight">Dijital Ajans</span>
+</div>
+<div class="flex gap-8 text-text-sub text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
+<a class="hover:text-primary transition-colors" href="#">Kullanım Şartları</a>
+<a class="hover:text-primary transition-colors" href="#">İletişim</a>
+</div>
+<p class="text-text-sub text-sm">© 2024 Dijital Ajans. Tüm Hakları Saklıdır.</p>
+</div>
+</footer>
+</body></html>

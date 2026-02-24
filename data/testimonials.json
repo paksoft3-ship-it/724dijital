@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Ahmet Yılmaz",
+        "role": "CEO",
+        "company": "Yılmaz Mobilya",
+        "quote": "AjansX ile çalışmaya başladıktan sonra online satışlarımızda %40 artış gördük. Profesyonel yaklaşımları ve yerel pazar bilgileri harika.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBm8eE6eM0BM1H5sJO8nQsyrmI_SoKYrVxRUW8tpjoKYWDO5lj54N891KjHT3neG7nGVtqUrSuS33j4EkSQgeqnR1Qn-_L-wxIGAOiJd33_nV1J8nIudcnCLPmlSEcknc3wMWsbuj6V6dFfCsxH4cU0ZpEO-hagYrNWyOy96RZTDOd-084XCp2Q78GiKcEjIX4ck-6qDtrgD0WKSVebaXl38o_qYZu1A0JlpxucdjZFZyoibyP60M8mt0GTt2cHHPlMKDs06gX49gkE",
+        "rating": 5,
+        "service": "E-Ticaret",
+        "sector": "Mobilya",
+        "results": [
+            "%40 Satış Artışı",
+            "10k+ Aylık Ziyaretçi"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Ayşe Demir",
+        "role": "Pazarlama Müdürü",
+        "company": "TechSolutions",
+        "quote": "SEO çalışmalarımızda beklediğimizin çok üzerinde bir verim aldık. Teknik destekleri çok hızlı ve çözüm odaklı.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBm8eE6eM0BM1H5sJO8nQsyrmI_SoKYrVxRUW8tpjoKYWDO5lj54N891KjHT3neG7nGVtqUrSuS33j4EkSQgeqnR1Qn-_L-wxIGAOiJd33_nV1J8nIudcnCLPmlSEcknc3wMWsbuj6V6dFfCsxH4cU0ZpEO-hagYrNWyOy96RZTDOd-084XCp2Q78GiKcEjIX4ck-6qDtrgD0WKSVebaXl38o_qYZu1A0JlpxucdjZFZyoibyP60M8mt0GTt2cHHPlMKDs06gX49gkE",
+        "rating": 5,
+        "service": "SEO Hizmeti",
+        "sector": "Teknoloji",
+        "results": [
+            "1. Sayfa Sıralaması",
+            "%25 Lead Artışı"
+        ]
+    }
+]

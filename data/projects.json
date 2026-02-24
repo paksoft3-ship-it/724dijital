@@ -1,0 +1,37 @@
+[
+    {
+        "slug": "anadolu-tekstil",
+        "title": "Anadolu Tekstil B2B Portal",
+        "category": "E-Ticaret",
+        "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1974",
+        "featured": true,
+        "description": "Toptan satış süreçlerini dijitalleştiren B2B platformu ile sipariş yönetimi.",
+        "stats": [
+            "%120 Lead",
+            "2x Hız"
+        ]
+    },
+    {
+        "slug": "konya-makine",
+        "title": "Konya Makine IoT Paneli",
+        "category": "Veri Analizi",
+        "image": "https://images.unsplash.com/photo-1551288049-bbbda5366391?auto=format&fit=crop&q=80&w=2070",
+        "featured": true,
+        "description": "Üretim bandındaki makinelerin verimliliğini anlık takip eden sistem.",
+        "stats": [
+            "%35 Verim",
+            "7/24 Takip"
+        ]
+    },
+    {
+        "slug": "kayseri-lojistik",
+        "title": "Kayseri Lojistik Takip",
+        "category": "Mobil App",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=1974",
+        "featured": true,
+        "description": "Saha personeli ve araç filosu için geliştirilen rota optimizasyon uygulaması.",
+        "stats": [
+            "%20 Maliyet Düşüşü"
+        ]
+    }
+]
