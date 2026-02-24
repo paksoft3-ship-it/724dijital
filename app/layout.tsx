@@ -7,6 +7,14 @@ export const metadata: Metadata = {
     template: "%s | Anıl Yazılım",
   },
   description: "Web geliştirme, e-ticaret, SEO, reklam yönetimi ve otomasyon çözümleri.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

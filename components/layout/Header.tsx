@@ -34,14 +34,13 @@ export default function Header({ data }: HeaderProps) {
             )}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-12">
+                <div className="flex justify-between items-center h-20">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="w-9 h-9 bg-gradient-to-br from-secondary to-teal-700 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-secondary/30 transition-transform group-hover:scale-110">
-                            {data.brandName.charAt(0)}
-                        </div>
-                        <span className="font-bold text-lg tracking-tight text-primary dark:text-white">
-                            {data.brandName}
-                        </span>
+                        <img
+                            src="/logo2.png"
+                            alt={data.brandName}
+                            className="h-16 w-auto transition-transform group-hover:scale-105"
+                        />
                     </Link>
 
                     {/* Desktop Nav */}

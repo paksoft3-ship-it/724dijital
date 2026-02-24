@@ -61,10 +61,11 @@ export default function Footer({ data }: FooterProps) {
                     {/* Brand Info */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-secondary rounded flex items-center justify-center text-white font-bold">
-                                {data.brandName.charAt(0)}
-                            </div>
-                            <span className="font-bold text-lg text-primary dark:text-white">{data.brandName}</span>
+                            <img
+                                src="/logo2.png"
+                                alt={data.brandName}
+                                className="h-14 w-auto"
+                            />
                         </Link>
 
                         <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
