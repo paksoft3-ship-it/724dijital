@@ -60,11 +60,11 @@ export default function Footer({ data }: FooterProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Info */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-2">
+                        <Link href="/" className="flex items-center">
                             <img
                                 src="/logo2.png"
                                 alt={data.brandName}
-                                className="h-14 w-auto"
+                                className="h-10 w-auto object-contain"
                             />
                         </Link>
 

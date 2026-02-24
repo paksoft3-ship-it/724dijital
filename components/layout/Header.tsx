@@ -35,11 +35,11 @@ export default function Header({ data }: HeaderProps) {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
-                    <Link href="/" className="flex items-center gap-2 group">
+                    <Link href="/" className="flex items-center group">
                         <img
                             src="/logo2.png"
                             alt={data.brandName}
-                            className="h-16 w-auto transition-transform group-hover:scale-105"
+                            className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
                         />
                     </Link>
 

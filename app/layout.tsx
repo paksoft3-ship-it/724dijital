@@ -8,11 +8,7 @@ export const metadata: Metadata = {
   },
   description: "Web geliştirme, e-ticaret, SEO, reklam yönetimi ve otomasyon çözümleri.",
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.png", type: "image/png" },
-    ],
-    shortcut: "/favicon.ico",
+    icon: "/favicon.png",
     apple: "/favicon.png",
   },
 };
