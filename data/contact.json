@@ -7,16 +7,16 @@
         {
             "type": "phone",
             "label": "Bizi Arayın",
-            "value": "+90 540 150 58 58",
+            "value": "+90 531 383 05 58",
             "icon": "phone",
-            "href": "tel:+905401505858"
+            "href": "tel:+905313830558"
         },
         {
             "type": "whatsapp",
             "label": "WhatsApp İletişim",
             "value": "Anında Cevap Alın",
             "icon": "message-circle",
-            "href": "https://wa.me/905401505858"
+            "href": "https://wa.me/905313830558"
         },
         {
             "type": "email",
