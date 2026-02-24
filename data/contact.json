@@ -7,16 +7,16 @@
         {
             "type": "phone",
             "label": "Bizi Arayın",
-            "value": "+90 212 000 00 00",
+            "value": "+90 540 150 58 58",
             "icon": "phone",
-            "href": "tel:+902120000000"
+            "href": "tel:+905401505858"
         },
         {
             "type": "whatsapp",
             "label": "WhatsApp İletişim",
             "value": "Anında Cevap Alın",
             "icon": "message-circle",
-            "href": "https://wa.me/905000000000"
+            "href": "https://wa.me/905401505858"
         },
         {
             "type": "email",
