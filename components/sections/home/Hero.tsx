@@ -19,7 +19,7 @@ interface HeroProps {
 
 export default function Hero({ data }: HeroProps) {
     return (
-        <section className="relative pt-0 pb-12 lg:pt-0 lg:pb-20 overflow-hidden bg-white dark:bg-background-dark">
+        <section className="relative pt-0 pb-12 lg:pt-0 lg:pb-20 overflow-hidden bg-gradient-to-br from-[#F0FDFB] via-[#F5F7FA] to-[#EEF2FF]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Content */}
@@ -55,6 +55,7 @@ export default function Hero({ data }: HeroProps) {
                                 <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
+
                     </div>
 
                     {/* Right Content */}

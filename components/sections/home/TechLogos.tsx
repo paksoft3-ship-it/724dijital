@@ -14,7 +14,7 @@ export default function TechLogos() {
     ];
 
     return (
-        <section className="py-16 border-y border-neutral-border bg-white dark:bg-slate-900">
+        <section className="py-16 border-y border-neutral-border bg-[#F5F7FA]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p className="text-center text-xs font-black text-slate-500 uppercase tracking-widest mb-8">
                     Kullandığımız Teknolojiler

@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function TrustedLogos() {
     return (
-        <section className="py-10 border-y border-neutral-border bg-neutral-surface/30 dark:bg-slate-900/30">
+        <section className="py-10 border-y border-neutral-border bg-[#F5F7FA]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mb-6">
                     Türkiye genelinde 200+ KOBİ’lerle çalışıyoruz

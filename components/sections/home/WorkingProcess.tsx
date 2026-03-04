@@ -15,7 +15,7 @@ interface WorkingProcessProps {
 
 export default function WorkingProcess({ steps }: WorkingProcessProps) {
     return (
-        <section className="py-20 bg-neutral-surface/20 dark:bg-slate-900/50">
+        <section className="py-20 bg-[#F5F7FA]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-2xl md:text-4xl font-extrabold text-primary dark:text-white mb-4">

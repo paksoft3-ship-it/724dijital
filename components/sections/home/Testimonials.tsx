@@ -17,7 +17,7 @@ interface TestimonialsProps {
 
 export default function Testimonials({ data }: TestimonialsProps) {
     return (
-        <section className="py-20 bg-neutral-surface/10 dark:bg-slate-900/50">
+        <section className="py-20 bg-[#F5F7FA]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-2xl md:text-4xl font-extrabold text-center text-primary dark:text-white mb-12 px-4">
                     Müşterilerimiz Ne Diyor?

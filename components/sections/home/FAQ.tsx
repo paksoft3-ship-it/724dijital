@@ -20,7 +20,7 @@ export default function FAQ() {
     ];
 
     return (
-        <section className="py-20 bg-white dark:bg-background-dark">
+        <section className="py-20 bg-white">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-2xl md:text-4xl font-extrabold text-center text-primary dark:text-white mb-12">
                     Sıkça Sorulan Sorular
